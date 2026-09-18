@@ -1,2 +1,55 @@
 # Repositories reviewed and not added to the list, one owner/repo per line.
 # The weekly discovery job skips everything listed here.
+
+# Other curated lists (candidates for a future "Related Lists" section)
+AbdelStark/awesome-typesafe
+AnotiaWang/awesome-jev
+hellogumbo/awesome-jev
+yibie/awesome-jev
+
+# Reviewed 2026-09-18, not added
+benomahony/nouls
+blakestone-x/jev-mcp
+BunsDev/typesafe-ai-playground
+compozy/yoshi
+dabit3/jev-experiments
+dannote/jev
+daseinlabs/open-jev
+DevMortimer/pi-typesafe
+gamesonrblx/Jevbridge
+genai-craft/openvons
+hr98w/jev-visual
+IAmUnbounded/save-token-jev-clean
+jem-computer/bb-live
+jomatsu/pi-jev-auto-mode
+jon-devlapaz/jev-me
+JoshuaSP/open-jev
+kitze/skillbox
+kshetrajna12/reflex
+Mapika/decider
+mejiasd3v/pi-jev-router
+mizchi/jev-playground
+monteduro/killmyidea
+NandhaKishorM/laya
+olanotolu/jevbetter
+opaielsheikh/ai-elo-ranker
+r-ms/mini-jev
+rorshopping/jev-on-a-laptop
+saiashirwad/effect-questions
+shantanugoel/ask-jev-skill
+shantanugoel/mario-jev
+shiftynick/jev-axi
+sorrycc/typesafe-snake
+superagents-lab/jev-search
+trungdq88/youtube-sponsor-detection
+Twister915/typesafe-ai
+vinilana/jev-eval-agent
+vlad-terin/jev-use
+wmoto-ai/local-decision-playground
+wundercorp/loki
+wy-coliney/jev-browser-use
+y0usaf/pi-jev
+Ying-Kai-Liao/jev-browser
+zadescoxp/Jev-Trades
+zmtomorrow/TypeAR
+karanb192/awesome-claude-code-mods
