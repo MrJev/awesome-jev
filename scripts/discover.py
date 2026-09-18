@@ -11,11 +11,13 @@ import base64
 import os
 import re
 import sys
+import time
 
 from github import get, listed_repos
 
 IGNORE_FILE = os.path.join(os.path.dirname(__file__), "..", ".github", "discovery-ignore.txt")
 SINCE = "2026-09-01"  # Jev launched 2026-09-15; nothing older is relevant
+MIN_STARS = 5  # below this, a repo resurfaces automatically once it gains traction
 
 QUERIES = [
     f"jev typesafe in:name,description,readme created:>={SINCE}",
@@ -55,27 +57,41 @@ def mentions_typesafe(repo):
     return is_signal(body)
 
 
+def search(query):
+    """Yield every result for a repository search (the API caps this at 1000)."""
+    for page in range(1, 11):
+        res = get("/search/repositories", {"q": query, "sort": "updated", "per_page": 100, "page": page}) or {}
+        items = res.get("items", [])
+        yield from items
+        if len(items) < 100:
+            return
+        time.sleep(2)  # stay under the search rate limit (30 requests/minute)
+
+
 def main():
     skip = {f"{o}/{r}".lower() for o, r, _ in listed_repos()} | load_ignore()
     skip.add(os.environ.get("GITHUB_REPOSITORY", "MrJev/awesome-jev").lower())
 
     found = {}
     for q in QUERIES:
-        res = get("/search/repositories", {"q": q, "sort": "updated", "per_page": 50}) or {}
-        for repo in res.get("items", []):
+        for repo in search(q):
             name = repo["full_name"].lower()
             if name in skip or name in found:
                 continue
             if mentions_typesafe(repo):
                 found[name] = repo
 
-    if not found:
-        print("No new Jev projects found.")
+    ranked = sorted(
+        (r for r in found.values() if r["stargazers_count"] >= MIN_STARS),
+        key=lambda r: r["stargazers_count"], reverse=True,
+    )
+    below = len(found) - len(ranked)
+    if not ranked:
+        print(f"No new Jev projects with {MIN_STARS}+ stars ({below} smaller ones skipped).")
         return 0
 
-    ranked = sorted(found.values(), key=lambda r: r["stargazers_count"], reverse=True)
-    print(f"Automated weekly search found {len(ranked)} repositories that mention Jev / TypeSafe "
-          "and are not in the list yet.\n")
+    print(f"Automated weekly search found {len(ranked)} repositories with {MIN_STARS}+ stars that "
+          f"mention Jev / TypeSafe and are not in the list yet ({below} with fewer stars are not shown).\n")
     print("For each one: check that it actually calls Jev and has a usable README, then either "
           "add it to the README (write your own description) or add `owner/repo` to "
           "`.github/discovery-ignore.txt`. Checked items disappear on the next run.\n")
