@@ -6,6 +6,8 @@ Jev answers structured questions (**Choice**, **Score**, **Noul**) about program
 
 There are over a thousand Jev repositories on GitHub. This list is selective: every entry has been checked to actually call Jev (or reproduce it) and to have a usable README.
 
+Browse and filter this list, and read guides on getting started and pricing, at **[mrjev.com](https://mrjev.com/projects/)**.
+
 **This is an unofficial, community-maintained list. It is not affiliated with or endorsed by TypeSafe AI.** Performance numbers quoted here are reported by each project's author unless noted otherwise.
 
 ## Contents
