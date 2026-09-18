@@ -1,0 +1,43 @@
+name: Discover new projects
+
+on:
+  schedule:
+    - cron: "0 3 * * 1" # Mondays 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Search GitHub
+        id: search
+        run: |
+          set +e
+          python scripts/discover.py > report.md
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open or update the discovery issue
+        if: steps.search.outputs.status == '1'
+        run: bash scripts/issue.sh open discovery "New Jev projects to review" report.md
+
+      - name: Close the discovery issue when nothing is pending
+        if: steps.search.outputs.status == '0'
+        run: bash scripts/issue.sh close discovery
+
+      - name: Fail on script errors
+        if: steps.search.outputs.status != '0' && steps.search.outputs.status != '1'
+        run: exit 1

@@ -1,0 +1,47 @@
+name: Links
+
+on:
+  pull_request:
+    paths: [README.md]
+  schedule:
+    - cron: "0 1 * * 1" # Mondays 01:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: --no-progress --max-retries 3 --retry-wait-time 5 README.md
+          output: lychee-report.md
+          fail: false
+          token: ${{ github.token }}
+
+      - name: Fail the pull request on broken links
+        if: github.event_name == 'pull_request' && steps.lychee.outputs.exit_code != 0
+        run: |
+          cat lychee-report.md >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+
+      - name: Open or update the broken-links issue
+        if: github.event_name != 'pull_request' && steps.lychee.outputs.exit_code != 0
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: bash scripts/issue.sh open broken-links "Broken links in README" lychee-report.md
+
+      - name: Close the broken-links issue when all links work
+        if: github.event_name != 'pull_request' && steps.lychee.outputs.exit_code == 0
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: bash scripts/issue.sh close broken-links

@@ -1,0 +1,43 @@
+name: Project health
+
+on:
+  schedule:
+    - cron: "0 2 * * 1" # Mondays 02:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Check listed projects
+        id: check
+        run: |
+          set +e
+          python scripts/health.py > report.md
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open or update the health issue
+        if: steps.check.outputs.status == '1'
+        run: bash scripts/issue.sh open project-health "Listed projects need attention" report.md
+
+      - name: Close the health issue when everything is healthy
+        if: steps.check.outputs.status == '0'
+        run: bash scripts/issue.sh close project-health
+
+      - name: Fail on script errors
+        if: steps.check.outputs.status != '0' && steps.check.outputs.status != '1'
+        run: exit 1

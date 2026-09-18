@@ -1,0 +1,48 @@
+name: Suggest a project
+description: Recommend a project or resource that uses Jev.
+title: "Add: "
+labels: [suggestion]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Link
+      description: GitHub repository (or the branch/folder where the Jev integration lives).
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Agent Integrations (MCP)
+        - Coding Agents & Developer Tools
+        - Command-Line Tools
+        - Browser & Computer Use
+        - Model Routing
+        - Search & Knowledge Graphs
+        - Games & Real-Time Demos
+        - Finance
+        - Articles & Analysis
+        - Other / new section
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What does it use Jev for?
+      description: One or two sentences. Include any speed, cost, or accuracy numbers the author reports, with a link to where they're reported.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: The project actually calls Jev / TypeSafe System One, not just mentions it.
+          required: true
+        - label: It has a README that explains what it does and how to run it.
+          required: true
+        - label: It isn't already in the list.
+          required: true

@@ -1,0 +1,2 @@
+# Repositories reviewed and not added to the list, one owner/repo per line.
+# The weekly discovery job skips everything listed here.
