@@ -1,2 +1,3 @@
-# Blocks automated requests (HTTP 403) but works in a browser.
+# These sites block automated requests (HTTP 403) from CI but work in a browser.
 https://www.datacamp.com/
+https://anthonymaio.substack.com/
