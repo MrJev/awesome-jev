@@ -115,6 +115,7 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 ## Data & Observability
 
 - [pg-jev](https://github.com/realZachi/pg-jev) - PostgreSQL extension to filter, rank, and classify rows with plain-language conditions.
+- [jevql](https://github.com/kylemclaren/jevql) - A psql-shaped CLI and Go/TypeScript/Python SDKs that add `jev()`, `jev_prob`, `jev_choice`, and `jev_score` to queries against a vanilla Postgres with no extension. The SQL runs on the server and Jev judges the surviving rows in batches.
 - [duckdb-jev](https://github.com/colliber/duckdb-jev) - DuckDB extension that returns Jev's answers as real SQL types.
 - [Jev Logs](https://github.com/reachjalil/jevlogs) - Scores OpenTelemetry logs for diagnostic value, priority, and routing before expensive LLM analysis.
 
