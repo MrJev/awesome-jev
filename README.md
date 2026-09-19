@@ -111,7 +111,7 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [jev-ultrafast](https://github.com/browser-use/jev-ultrafast) - Fast browser agent from Browser Use. Jev decides each step and which element to act on; a small model is called only when text needs to be typed. The authors report a full Google Flights search in about 7.1 seconds.
 - [typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) - macOS computer use without sending screenshots to a large model. The screen is read deterministically and Jev picks the next action.
 - [Jev Browser](https://github.com/jkudish/jev-browser) - Headless browser automation through an MCP server, CLI, or library. Jev picks one action per step.
-- [Mobile Jev](https://github.com/droidrun/mobile-jev) - Phone automation from DroidRun. The demo sets up an Uber ride in about 21 seconds.
+- [Mobile Jev](https://github.com/droidrun/mobile-jev) - Android phone automation from DroidRun on its Mobilerun device cloud, with Jev choosing every operation and target. The author reports reaching Uber's payment selection in about 21 seconds.
 - [agent-desktop](https://github.com/lahfir/agent-desktop) - macOS desktop automation over accessibility trees. Since v0.9.2, its jev-desktop scripts let Jev choose which control to operate and which action to take.
 
 ## Data & Observability
