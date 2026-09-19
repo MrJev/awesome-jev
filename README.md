@@ -77,7 +77,7 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [Jev Codex Router](https://github.com/0xNatoshi/jev-codex-router) - Picks the model, reasoning depth, and speed mode for every Codex turn based on how hard Jev judges it to be. The author reports about 60% lower cost when replaying 237 real turns.
 - [Foreman](https://github.com/thruwire/foreman) - Puts Jev as a fast supervisor above slower coding agents such as Codex, starting from a ticket, spec, or bug report.
 - [Winnow](https://github.com/GhalebDweikat/winnow) - Context sieve for Claude Code. Jev judges each tool result (Read, Bash, Grep output) for relevance before it enters the context window.
-- [Jev Review](https://github.com/devagrawal09/jev-review) - Staged code-review workflow with a local dashboard. Jev triages correctness, security, reliability, compatibility, and test risk, then hands the important findings to a heavier model.
+- [Jev Review](https://github.com/devagrawal09/jev-review) - Staged code-review workflow for JavaScript and TypeScript with a local dashboard. Jev screens correctness, security, reliability, compatibility, and test risk, then scores severity and suggests a reviewer, with no generative model involved.
 - [Jev Review MCP](https://github.com/NiazMorshed2007/jev-review) - Local-first MCP server for continuous software-quality review by coding agents.
 - [jev-code](https://github.com/devagrawal09/jev-code) - Bounded Jev workflows for coding agents.
 - [SkillRanker](https://github.com/Dicklesworthstone/skillranker) - Rust CLI that ranks which agent skills fit the next step from live session context, with Claude Code hooks.
