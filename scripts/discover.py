@@ -17,7 +17,7 @@ from github import get, listed_repos
 
 IGNORE_FILE = os.path.join(os.path.dirname(__file__), "..", ".github", "discovery-ignore.txt")
 SINCE = "2026-09-01"  # Jev launched 2026-09-15; nothing older is relevant
-MIN_STARS = 5  # below this, a repo resurfaces automatically once it gains traction
+MIN_STARS = 10  # the inclusion bar in CONTRIBUTING.md; below this, a repo resurfaces automatically once it gains traction
 
 QUERIES = [
     f"jev typesafe in:name,description,readme created:>={SINCE}",
@@ -90,7 +90,7 @@ def main():
         print(f"No new Jev projects with {MIN_STARS}+ stars ({below} smaller ones skipped).")
         return 0
 
-    print(f"Automated weekly search found {len(ranked)} repositories with {MIN_STARS}+ stars that "
+    print(f"Automated daily search found {len(ranked)} repositories with {MIN_STARS}+ stars that "
           f"mention Jev / TypeSafe and are not in the list yet ({below} with fewer stars are not shown).\n")
     print("For each one: check that it actually calls Jev and has a usable README, then either "
           "add it to the README (write your own description) or add `owner/repo` to "
