@@ -70,6 +70,8 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [askjev](https://github.com/pZacca/askjev) - MCP server published on npm, with setup instructions for Claude Code, Claude Desktop, Cursor, and Codex.
 - [jev-eval-mcp](https://github.com/BYK/jev-mcp) - Eval-first MCP server that focuses on knowing whether Jev's answers can be trusted for your task.
 - [Building with Jev](https://github.com/dbreunig/building-with-jev-skill) - Agent skill for writing programs that call Jev: question design, state structure, confidence thresholds, and diagnosing wrong answers.
+- [Jev Sift](https://github.com/kbhuw/jev-sift) - MCP plugin that asks Jev which files, web pages, or text snippets are relevant to a query, so the agent reads selectively.
+- [Jevbridge](https://github.com/tacticocc/Jevbridge) - ACP and MCP adapter that pairs Jev with any LLM agent, including Codex, Claude, Grok, and OpenCode, for typed decisions and computer use.
 
 ## Coding Agents & Developer Tools
 
@@ -82,6 +84,8 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [jev-code](https://github.com/devagrawal09/jev-code) - Bounded Jev workflows for coding agents.
 - [SkillRanker](https://github.com/Dicklesworthstone/skillranker) - Rust CLI that ranks which agent skills fit the next step from live session context, with Claude Code hooks.
 - [JevLint](https://github.com/huntedman/JevLint) - Checks code against conventions written in plain English, in a write-check-fix loop with your coding agent.
+- [compact-adviser](https://github.com/kunchenguid/compact-adviser) - Agent plugin that asks Jev whether the session is at a safe point to `/compact`, and can run it automatically on Pi and Claude Code.
+- [jev-pruner](https://github.com/tamaratran/jev-pruner) - Claude Code plugin that uses Jev to trim long Bash output before it reaches the model, leaving errors, source code, and structured output untouched.
 
 ## Guardrails & Safety
 
@@ -89,12 +93,15 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [jev-gates](https://github.com/rashedInt32/jev-gates) - Six calibrated gates for Claude Code (rules, scope, intent, done, claims, and commit honesty) that escalate but never approve.
 - [pi-warden](https://github.com/DevMortimer/pi-warden) - Guardrails for the Pi coding agent. Jev judges every write and edit against the rules in `pi-warden.md`.
 - [jev-belay](https://github.com/valentynkit/jev-belay) - Claude Code Stop hook that checks the transcript for evidence before letting a "done" through, and spends one four-question Jev call only when files changed with no passing check since. Fails open on every error path.
+- [Abide](https://github.com/coldteadotai/abide) - Hooks into Claude Code, Codex, and OpenCode, and asks Jev one question per rule whether each edit breaks your AGENTS.md or CLAUDE.md rules.
 
 ## Model Routing
 
 - [jev-router](https://github.com/gargpratyush/jev-router) - Per-turn model routing for Claude Code and Codex. Simple work goes to the fast tier and difficult work to the strong tier.
 - [tiershift](https://github.com/iamvatsalpatel/tiershift) - Sends each LLM request to the cheapest model tier that can handle it and escalates on evidence.
 - [safer-with-jev](https://github.com/andrelandgraf/safer-with-jev) - Neon Function proxy for the Neon AI Gateway. Jev classifies each request and routes it to the right downstream model.
+- [jev-gateway](https://github.com/vinilana/jev-gateway) - Local gateway for Codex and Claude Code that asks Jev which tool to call next and passes everything else to your usual model.
+- [JevRouter](https://github.com/BillionsBobby/JevRouter) - Routes each agent step to a model, subagent, Skill, MCP tool, or CLI with one Jev Choice, requiring confirmation for risky capabilities and keeping decision receipts.
 
 ## Command-Line Tools
 
@@ -105,6 +112,8 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [commit-miner](https://github.com/devanshbatham/commit-miner) - Classifies Git commits into bug fixes, security fixes with CWEs, and change types.
 - [TypeSafe AI Playground](https://github.com/markjaquith/typesafe-ai-playground) - Rust CLI of Jev experiments, including PHI detection, code-comment review, live tone analysis, and occupation and industry classification.
 - [jev-commit](https://github.com/valentynkit/jev-commit) - Pre-commit hook where one Jev call checks whether the commit message matches the staged diff, flags debug leftovers and unmentioned work, and blocks only when it finds a credential.
+- [semgrep (uehaj)](https://github.com/uehaj/jev-semgrep) - Grep by meaning: Jev scores each line against a description in any language, with AND, OR, and NOT. A single dependency-free Node file.
+- [jeff (Alurith)](https://github.com/Alurith/jeff) - Read-only Go CLI that checks files against rules such as unclear responsibility or weak error handling with Jev, locally or in CI.
 
 ## Browser & Computer Use
 
@@ -113,6 +122,9 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [Jev Browser](https://github.com/jkudish/jev-browser) - Headless browser automation through an MCP server, CLI, or library. Jev picks one action per step.
 - [Mobile Jev](https://github.com/droidrun/mobile-jev) - Android phone automation from DroidRun on its Mobilerun device cloud, with Jev choosing every operation and target. The author reports reaching Uber's payment selection in about 21 seconds.
 - [agent-desktop](https://github.com/lahfir/agent-desktop) - macOS desktop automation over accessibility trees. Since v0.9.2, its jev-desktop scripts let Jev choose which control to operate and which action to take.
+- [Jev-cu](https://github.com/Sac-Y/Jev-cu) - Codex computer-use skill where Jev picks the next element and action from on-screen text, with a local policy gate for sensitive steps. README in Chinese.
+- [voice-browser](https://github.com/moritzkremb/jev-voice-browser) - Voice-controlled Chromium: on each partial transcript, one Jev request judges intent, target element, and whether the command is complete or destructive.
+- [JevScout](https://github.com/hqman/JevScout) - Coding-agent skill that drives Chrome over CDP to look for jobs on company sites, with Jev scoring pages and links.
 
 ## Data & Observability
 
@@ -120,6 +132,9 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [jevql](https://github.com/kylemclaren/jevql) - A psql-shaped CLI and Go/TypeScript/Python SDKs that add `jev()`, `jev_prob`, `jev_choice`, and `jev_score` to queries against a vanilla Postgres with no extension. The SQL runs on the server and Jev judges the surviving rows in batches.
 - [duckdb-jev](https://github.com/colliber/duckdb-jev) - DuckDB extension that returns Jev's answers as real SQL types.
 - [Jev Logs](https://github.com/reachjalil/jevlogs) - Scores OpenTelemetry logs for diagnostic value, priority, and routing before expensive LLM analysis.
+- [pg_typesafe](https://github.com/giuliosmall/pg_typesafe) - Pre-alpha PostgreSQL extension that calls Jev from SQL for Choice, Noul, and Score, with `EXECUTE` revoked from `PUBLIC` by default.
+- [tax-doc-classifier](https://github.com/kyotofin/tax-doc-classifier) - Classifies tax-document pages into IRS forms and page kinds with one Jev request per page, driven by a JSON file of form descriptions.
+- [doc-router](https://github.com/misbahsy/doc-router) - Rust tool that asks Jev which PDF pages actually need OCR, extracting text pages locally and sending only the rest to your OCR provider.
 
 ## Search & Knowledge Graphs
 
@@ -134,6 +149,10 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [Jev Moderation Bot](https://github.com/brainstormity/Jev-Moderation-Bot) - Discord bot that filters spam and scam links in real time and escalates repeat offenses.
 - [jevmeter](https://github.com/ChetasLua/jevmeter) - Scores every sentence in a video and renders a live Jev meter as a 16:9 edit.
 - [jev-skip](https://github.com/valentynkit/jev-skip) - Browser extension that reads the caption track and paints a sponsor-probability overlay on the YouTube seek bar before the intro ends, with no crowd database. The author reports catching 77% of SponsorBlock's sponsor seconds across 23 videos at $0.0008 per video.
+- [Jev Chat](https://github.com/w3cj/jev-chat) - Chat-style command bar where Jev picks the tool, arguments, and reply type, and code builds every reply from tool data.
+- [Sharp](https://github.com/tshmieldev/sharp) - Browser extension that filters your X timeline by plain-language rules, with Jev as the default classifier.
+- [lurk](https://github.com/getanyapi-com/lurk) - Self-hostable Reddit buyer-intent finder that uses Jev to judge every post and comment a scan reads.
+- [jev-paint](https://github.com/achimala/jev-paint) - Local app that turns Jev's per-pixel probability distributions into paintings.
 
 ## Evaluation & Benchmarks
 
@@ -149,6 +168,12 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [NanoJev](https://github.com/TianyuCodings/NanoJev) - 0.6B parallel decision model with an end-to-end training pipeline.
 - [openjev-sglang](https://github.com/ekzhang/openjev-sglang) - Jev-compatible API server running an open model on SGLang.
 - [jevmlx](https://github.com/bnsd55/jevmlx) - Jev-style typed decisions from local MLX models on Apple Silicon.
+- [kev](https://github.com/jaredpalmer/kev) - Jev-style decision models from 0.5B to 8B, built as LoRA adapters on Qwen and served behind a Jev-compatible `/v1/systemone` API.
+- [LocalJev](https://github.com/githubnext/localjev) - Local Jev-compatible `/v1/systemone` server for Bun that asks DiffusionGemma for probabilities, from GitHub Next.
+- [Bespoke Nimble](https://github.com/bespokelabsai/nimble) - Open data, training recipe, and a 9B model for Jev-style choice and true/false decisions on Apple Silicon or NVIDIA GPUs.
+- [Simple Jev](https://github.com/featherless-ai/simple-jev) - Turns open Hugging Face models into a Jev-style classifier endpoint by reading next-token logits, with a public demo API.
+- [OpenJev](https://github.com/razorback16/openjev) - Jev-compatible decision server on DiffusionGemma 26B-A4B through vLLM, including questions about images. TypeSafe's SDKs work against it unchanged.
+- [jeff](https://github.com/logan-markewich/jeff) - Self-hosted implementation of Jev's System One API on the 400M-parameter GLiFormer model. The official SDK works after changing the base URL.
 
 ## Games & Real-Time Demos
 
@@ -165,6 +190,7 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 - [Prism](https://github.com/irfndi/prism-liquidity-agent) - Liquidity-provision agent for Meteora DLMM. Jev judges toxic flow, market stress, and mean-reversion likelihood in shadow/advisory mode only, without driving trades. Not financial advice.
 - [jev-trader](https://github.com/jarrodwatts/jev-trader) - Asks Jev buy or sell on every Monad block and places real post-only limit orders on the Kuru MON-USDC book. Not financial advice.
+- [Jev Trade](https://github.com/aowang-ai/jev-trade) - Hyperliquid trading bot based on jev-trader, where Jev decides buy, sell, or hold on every tick for five coins. Dry-runs without a private key.
 
 ## Articles & Analysis
 

@@ -1,5 +1,5 @@
 # Repositories reviewed and not added to the list, one owner/repo per line.
-# The weekly discovery job skips everything listed here.
+# The discovery job skips everything listed here.
 
 # Other curated lists (candidates for a future "Related Lists" section)
 AbdelStark/awesome-typesafe
@@ -53,3 +53,13 @@ Ying-Kai-Liao/jev-browser
 zadescoxp/Jev-Trades
 zmtomorrow/TypeAR
 karanb192/awesome-claude-code-mods
+cobanov/awesome-jev
+fatwang2/awesome-jev
+logicrw/awesome-jev-projects
+OmniJev/awesome-jev
+kraayenjon/awesome-jev
+valentynkit/awesome-jev-typesafe
+JackZeng/Jev_apps
+
+# Not added: automates a signed-in LinkedIn session to browse and collect profiles (LinkedIn's terms prohibit this)
+skeptrunedev/jev-recruiter
