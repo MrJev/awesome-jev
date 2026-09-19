@@ -88,6 +88,7 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [tripwire](https://github.com/noelzappy/tripwire) - Runs seven checks on every LLM response in one Jev call, as AI SDK middleware or an OpenAI-compatible proxy.
 - [jev-gates](https://github.com/rashedInt32/jev-gates) - Six calibrated gates for Claude Code (rules, scope, intent, done, claims, and commit honesty) that escalate but never approve.
 - [pi-warden](https://github.com/DevMortimer/pi-warden) - Guardrails for the Pi coding agent. Jev judges every write and edit against the rules in `pi-warden.md`.
+- [jev-belay](https://github.com/valentynkit/jev-belay) - Claude Code Stop hook that checks the transcript for evidence before letting a "done" through, and spends one four-question Jev call only when files changed with no passing check since. Fails open on every error path.
 
 ## Model Routing
 
@@ -103,6 +104,7 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [jev-shell-history](https://github.com/mrnugget/jev-shell-history) - Fish-style zsh autosuggestions, ranked by Jev from your recent history.
 - [commit-miner](https://github.com/devanshbatham/commit-miner) - Classifies Git commits into bug fixes, security fixes with CWEs, and change types.
 - [TypeSafe AI Playground](https://github.com/markjaquith/typesafe-ai-playground) - Rust CLI of Jev experiments, including PHI detection, code-comment review, live tone analysis, and occupation and industry classification.
+- [jev-commit](https://github.com/valentynkit/jev-commit) - Pre-commit hook where one Jev call checks whether the commit message matches the staged diff, flags debug leftovers and unmentioned work, and blocks only when it finds a credential.
 
 ## Browser & Computer Use
 
@@ -123,6 +125,7 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 - [Blink](https://github.com/ellipsis-dev/blink) - Semantic codebase search. At each directory level Jev ranks which files and folders are most likely relevant and sends more walkers there.
 - [neo4jev](https://github.com/jexp/neo4jev) - Navigates a Neo4j graph by having Jev score neighbouring relationships, then beam-searching for the most probable path.
+- [jev.nvim](https://github.com/valentynkit/jev.nvim) - Neovim plugin that splits the buffer into functions with Treesitter, has Jev score each one against a plain-language question, and lists the answers in the quickfix window ranked by probability.
 
 ## Apps & Browser Extensions
 
@@ -130,6 +133,7 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [TypeSafe AdBlock](https://github.com/realZachi/typesafe-adblock) - Chrome extension that asks Jev whether each DOM element is an ad and removes the ones that are.
 - [Jev Moderation Bot](https://github.com/brainstormity/Jev-Moderation-Bot) - Discord bot that filters spam and scam links in real time and escalates repeat offenses.
 - [jevmeter](https://github.com/ChetasLua/jevmeter) - Scores every sentence in a video and renders a live Jev meter as a 16:9 edit.
+- [jev-skip](https://github.com/valentynkit/jev-skip) - Browser extension that reads the caption track and paints a sponsor-probability overlay on the YouTube seek bar before the intro ends, with no crowd database. The author reports catching 77% of SponsorBlock's sponsor seconds across 23 videos at $0.0008 per video.
 
 ## Evaluation & Benchmarks
 
@@ -155,6 +159,7 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [JevPilot](https://github.com/standardagents/jevpilot) - Three.js driving simulator with a Jev-powered autopilot.
 - [jev-drone](https://github.com/RomanSlack/jev-drone) - Camera-only quadrotor in MuJoCo with Jev making judgment calls at about 2.5 Hz.
 - [Jev Chess Lab](https://github.com/denikuchero/jev-chess-lab) - Recorded chess experiments with a candid result: Jev on its own still blunders pieces.
+- [jev-plays-pokemon-red](https://github.com/valentynkit/jev-plays-pokemon-red) - Pokemon Red on PyBoy where code owns the route and the arithmetic and Jev only picks at branches, logging a Brier-scored faint prediction against RAM state on every battle turn.
 
 ## Finance
 
