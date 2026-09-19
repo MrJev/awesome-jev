@@ -139,7 +139,7 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Open Models & Reproductions
 
-- [OpenJev](https://github.com/TheoLeeCJ/openjev) - Jev-style decisions from a frozen 4B model on a single RTX 3090, with a browser demo.
+- [SemIf](https://github.com/TheoLeeCJ/SemIf) - Jev-style decisions from a frozen 4B model on a single RTX 3090, with a browser demo. Formerly OpenJev.
 - [Jevlike](https://github.com/vinnylarouge/jevlike) - Train a small model that scores a changing list of text options in one pass.
 - [NanoJev](https://github.com/TianyuCodings/NanoJev) - 0.6B parallel decision model with an end-to-end training pipeline.
 - [openjev-sglang](https://github.com/ekzhang/openjev-sglang) - Jev-compatible API server running an open model on SGLang.
