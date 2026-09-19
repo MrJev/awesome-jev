@@ -2,6 +2,7 @@
 
 Thanks for helping grow the list! Please follow these guidelines:
 
+- **Traction: 10+ GitHub stars.** Smaller projects are welcome once they reach it; the daily discovery search picks them up automatically. Official TypeSafe projects and clear exceptions (for example, a notable team's release) can be added earlier.
 - **Jev must be central.** The project should actually call Jev / TypeSafe System One, not just mention it. If the integration lives on a branch or in a subfolder, link to that location.
 - **One pull request per addition**, placed in the most relevant section.
 - **Format:** `- [Name](link) - Short description.` Start the description with a capital letter and end it with a period. Keep it to one or two sentences and don't use marketing language.
