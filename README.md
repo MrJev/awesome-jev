@@ -10,8 +10,10 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 **This is an unofficial, community-maintained list. It is not affiliated with or endorsed by TypeSafe AI.** Performance numbers quoted here are reported by each project's author unless noted otherwise.
 
+
 ## Contents
 
+- [Trending](#trending)
 - [Official Resources](#official-resources)
 - [Community SDKs](#community-sdks)
 - [Libraries & Integrations](#libraries--integrations)
@@ -29,6 +31,31 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [Games & Real-Time Demos](#games--real-time-demos)
 - [Finance](#finance)
 - [Articles & Analysis](#articles--analysis)
+
+<!-- trending:start -->
+
+## Trending
+
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-09-20.
+
+| Project                        | Stars | This week |
+| ------------------------------ | ----: | --------: |
+| browser-use/jev-ultrafast      | 8,643 |    +5,000 |
+| tamaratran/fast-jev-compaction | 4,278 |    +2,323 |
+| TianyuCodings/NanoJev          |   927 |      +791 |
+| jarrodwatts/jev-trader         | 1,291 |      +609 |
+| awlevin/typesafe-computer-use  |   520 |      +339 |
+| vinnylarouge/jevlike           |   990 |      +213 |
+| droidrun/mobile-jev            |   224 |      +161 |
+| thruwire/foreman               |   390 |      +147 |
+| devagrawal09/jev-review        |   352 |      +143 |
+| realZachi/pg-jev               |   216 |      +125 |
+
+**New to this list this week:** `jaredpalmer/kev`, `bespokelabsai/nimble`, `githubnext/localjev`, `Sac-Y/Jev-cu`, `featherless-ai/simple-jev` and 31 more.
+
+Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
+
+<!-- trending:end -->
 
 ## Official Resources
 
@@ -60,7 +87,7 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [ruby_llm-typesafe](https://github.com/kieranklaassen/ruby_llm-typesafe) - TypeSafe provider for RubyLLM 2.
 - [hono-jev-router](https://github.com/yusukebe/hono-jev-router) - Experimental Hono router that matches requests against plain-language descriptions instead of paths.
 - [jev-tree](https://github.com/reachjalil/jev-tree) - Recursive Choice over a taxonomy, for picking among more options than a single Choice question allows.
-- [n8n-nodes-typesafe](https://github.com/zampierid4p/n8n-nodes-typesafe-ai) - n8n community node for asking typed questions inside workflows.
+- [n8n-nodes-typesafe](https://github.com/zampierid4p/n8n-nodes-typesafe) - n8n community node for asking typed questions inside workflows.
 - [Jev for Home Assistant](https://github.com/AboveColin/HA-Jev) - Home Assistant integration that turns Jev's answers about your house into entities.
 
 ## Agent Integrations (MCP & Skills)
@@ -76,12 +103,12 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 ## Coding Agents & Developer Tools
 
 - [fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) - Claude Code plugin that replaces the compaction summary with Jev decisions. Every tool call and result is scored; stale ones are dropped or truncated, and everything kept stays verbatim.
-- [Jev Codex Router](https://github.com/0xNatoshi/jev-codex-router) - Picks the model, reasoning depth, and speed mode for every Codex turn based on how hard Jev judges it to be. The author reports about 60% lower cost when replaying 237 real turns.
+- [Jev Codex Router](https://github.com/0xNatoshi/jev-codex-router) *(archived)* - Picks the model, reasoning depth, and speed mode for every Codex turn based on how hard Jev judges it to be. The author reports about 60% lower cost when replaying 237 real turns.
 - [Foreman](https://github.com/thruwire/foreman) - Puts Jev as a fast supervisor above slower coding agents such as Codex, starting from a ticket, spec, or bug report.
 - [Winnow](https://github.com/GhalebDweikat/winnow) - Context sieve for Claude Code. Jev judges each tool result (Read, Bash, Grep output) for relevance before it enters the context window.
 - [Jev Review](https://github.com/devagrawal09/jev-review) - Staged code-review workflow for JavaScript and TypeScript with a local dashboard. Jev screens correctness, security, reliability, compatibility, and test risk, then scores severity and suggests a reviewer, with no generative model involved.
 - [Jev Review MCP](https://github.com/NiazMorshed2007/jev-review) - Local-first MCP server for continuous software-quality review by coding agents.
-- [jev-code](https://github.com/devagrawal09/jev-code) - Bounded Jev workflows for coding agents.
+- [Stanley Code](https://github.com/devagrawal09/stanley-code) - Bounded Jev workflows for coding agents (formerly jev-code).
 - [SkillRanker](https://github.com/Dicklesworthstone/skillranker) - Rust CLI that ranks which agent skills fit the next step from live session context, with Claude Code hooks.
 - [JevLint](https://github.com/huntedman/JevLint) - Checks code against conventions written in plain English, in a write-check-fix loop with your coding agent.
 - [compact-adviser](https://github.com/kunchenguid/compact-adviser) - Agent plugin that asks Jev whether the session is at a safe point to `/compact`, and can run it automatically on Pi and Claude Code.
