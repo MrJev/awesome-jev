@@ -70,3 +70,9 @@ AppitStudio/awesome-jev
 yzfly/awesome-jev-zh
 everyai-com/jev-directory
 mizzlelover/jev-hub
+
+# No Jev integration: lists Jev among the agents it monitors, which it is not
+whyashthakker/beam-cli
+
+# Superseded by openJev-verdict-2.0 from the same author, which is listed
+Heman10x-NGU/Verdict-open-jev
