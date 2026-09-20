@@ -13,12 +13,15 @@ import os
 import sys
 from datetime import datetime, timedelta, timezone
 
-from github import get, listed_repos
+from github import REPO_LINK, get
 
 DATA = os.path.join(os.path.dirname(__file__), "..", "data", "stars.json")
 README = os.path.join(os.path.dirname(__file__), "..", "README.md")
 START = "<!-- trending:start -->"
 END = "<!-- trending:end -->"
+STATS = os.path.join(os.path.dirname(__file__), "..", "data", "stats.json")
+STATS_START = "<!-- stats:start -->"
+STATS_END = "<!-- stats:end -->"
 
 HISTORY_DAYS = 45  # snapshots older than this are dropped
 WINDOW_DAYS = 7  # growth window
@@ -31,6 +34,20 @@ LIST_LAUNCH = "2026-09-18"  # first snapshot: everything was "new", so it is not
 
 def today():
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
+def project_repos():
+    """GitHub repos linked from the list itself, ignoring the Related Lists section:
+    those are other people's lists, not entries, and must not chart as trending."""
+    with open(README, encoding="utf-8") as f:
+        text = f.read().split("## Related Lists", 1)[0]
+    seen, out = set(), []
+    for owner, repo, branch in REPO_LINK.findall(text):
+        key = (owner.lower(), repo.lower())
+        if key not in seen:
+            seen.add(key)
+            out.append((owner, repo, branch or None))
+    return out
 
 
 def load():
@@ -114,10 +131,26 @@ def block(store):
     return "\n".join(lines)
 
 
+def entry_count(readme):
+    """List items that are entries: a linked project or resource, one per line."""
+    body = readme.split("## Official Resources", 1)[-1].split("## Related Lists", 1)[0]
+    return sum(1 for line in body.split("\n") if line.startswith("- ["))
+
+
+def stats_line(readme):
+    return f"**{entry_count(readme)} entries \u00b7 every one checked to actually call Jev \u00b7 last reviewed {today()}**"
+
+
+def replace_block(text, start, end, body):
+    head, rest = text.split(start, 1)
+    _old, tail = rest.split(end, 1)
+    return head + start + "\n" + body + "\n" + end + tail
+
+
 def main():
     dry = "--dry-run" in sys.argv
     store = load()
-    repos = listed_repos()
+    repos = project_repos()
     current = snapshot(repos)
     if len(current) < 10:
         print(f"only {len(current)} repos resolved; refusing to overwrite history", file=sys.stderr)
@@ -141,8 +174,14 @@ def main():
         return 2
     head, rest = readme.split(START, 1)
     _old, tail = rest.split(END, 1)
+    readme = head + text + tail
+    if STATS_START in readme and STATS_END in readme:
+        readme = replace_block(readme, STATS_START, STATS_END, stats_line(readme))
     with open(README, "w", encoding="utf-8") as f:
-        f.write(head + text + tail)
+        f.write(readme)
+    with open(STATS, "w", encoding="utf-8") as f:
+        json.dump({"entries": entry_count(readme), "updated": today()}, f, indent=1)
+        f.write("\n")
 
     os.makedirs(os.path.dirname(DATA), exist_ok=True)
     with open(DATA, "w", encoding="utf-8") as f:

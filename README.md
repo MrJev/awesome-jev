@@ -1,10 +1,26 @@
 # Awesome Jev [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+[![Entries](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FMrJev%2Fawesome-jev%2Fmain%2Fdata%2Fstats.json&query=%24.entries&label=entries&color=informational)](#contents)
+[![Last reviewed](https://img.shields.io/github/last-commit/MrJev/awesome-jev?label=last%20reviewed)](https://github.com/MrJev/awesome-jev/commits/main)
+[![Links](https://github.com/MrJev/awesome-jev/actions/workflows/links.yml/badge.svg)](https://github.com/MrJev/awesome-jev/actions/workflows/links.yml)
+[![Project health](https://github.com/MrJev/awesome-jev/actions/workflows/health.yml/badge.svg)](https://github.com/MrJev/awesome-jev/actions/workflows/health.yml)
+
 > A curated list of projects, integrations, and resources for Jev, TypeSafe AI's System One model: typed decisions with calibrated confidence instead of text.
 
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
-There are over a thousand Jev repositories on GitHub. This list is selective: every entry has been checked to actually call Jev (or reproduce it) and to have a usable README.
+<!-- stats:start -->
+**118 entries · every one checked to actually call Jev · last reviewed 2026-09-20**
+<!-- stats:end -->
+
+There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
+
+- **Jev is central.** Someone opened the code and confirmed the project calls Jev (or reproduces it), rather than naming it in a README.
+- **10+ stars**, so a day-one burst of near-identical repositories does not fill the list. Official projects and notable teams can arrive earlier.
+- **It runs.** A README that explains what it does and how to run it.
+- **Numbers carry a source.** Speed, cost and accuracy figures come from the project itself and are marked as author-reported.
+
+Listing is not endorsement, and a description is not a safety review. Several entries here send code, prompts or screen contents to a third party; some have no licence. Read what a tool sends before you install it — [what each tool sends](https://mrjev.com/best-jev-tools/#what-each-tool-sends-and-where) says so for every project we have run.
 
 Browse and filter this list, and read guides on getting started and pricing, at **[mrjev.com](https://mrjev.com/projects/)**.
 
@@ -14,6 +30,8 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 ## Contents
 
 - [Trending](#trending)
+- [Recent Developments](#recent-developments)
+- [What We Found Running These](#what-we-found-running-these)
 - [Official Resources](#official-resources)
 - [Community SDKs](#community-sdks)
 - [Libraries & Integrations](#libraries--integrations)
@@ -40,14 +58,14 @@ Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-09-2
 
 | Project                        | Stars | This week |
 | ------------------------------ | ----: | --------: |
-| browser-use/jev-ultrafast      | 8,643 |    +5,000 |
-| tamaratran/fast-jev-compaction | 4,278 |    +2,323 |
-| TianyuCodings/NanoJev          |   927 |      +791 |
-| jarrodwatts/jev-trader         | 1,291 |      +609 |
+| browser-use/jev-ultrafast      | 8,678 |    +5,035 |
+| tamaratran/fast-jev-compaction | 4,285 |    +2,330 |
+| TianyuCodings/NanoJev          |   933 |      +797 |
+| jarrodwatts/jev-trader         | 1,298 |      +616 |
 | awlevin/typesafe-computer-use  |   520 |      +339 |
-| vinnylarouge/jevlike           |   990 |      +213 |
-| droidrun/mobile-jev            |   224 |      +161 |
-| thruwire/foreman               |   390 |      +147 |
+| vinnylarouge/jevlike           |   992 |      +215 |
+| droidrun/mobile-jev            |   226 |      +163 |
+| thruwire/foreman               |   393 |      +150 |
 | devagrawal09/jev-review        |   352 |      +143 |
 | realZachi/pg-jev               |   216 |      +125 |
 
@@ -56,6 +74,36 @@ Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-09-2
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
 <!-- trending:end -->
+
+## Recent Developments
+
+The Jev ecosystem is days old and moving; these are the changes that affected the projects below.
+
+| Date       | What changed                                                                                                                                               | Source                                                                                   |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| 2026-09-18 | Python SDK 0.7.0. Breaking: Pydantic replaces msgspec, and `system_one()` gains `response_model` to parse answers into your own model.                     | [Release notes](https://github.com/typesafe-ai/typesafe-sdk-python/releases/tag/v0.7.0)  |
+| 2026-09-18 | Jev on OpenRouter: `typesafe/jev-1.13` plus a latest alias, at TypeSafe's own price.                                                                       | [Model page](https://openrouter.ai/typesafe/jev-1.13)                                    |
+| 2026-09-16 | Jev on Vercel AI Gateway as `typesafe-ai/jev`, through AI SDK 7's experimental evaluate API, with zero-data-retention and no-training as provider options. | [Announcement](https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway) |
+| 2026-09-15 | JavaScript SDK 0.6.0. Breaking: `Score` criteria became an ordered array.                                                                                  | [Release notes](https://github.com/typesafe-ai/typesafe-sdk-js/releases/tag/v0.6.0)      |
+
+Dated timeline with sources: [mrjev.com/changelog](https://mrjev.com/changelog/).
+
+## What We Found Running These
+
+Every project we review is run in a container with a real Jev key. A sample of what that turned up, and what came of it.
+
+| Project               | What running it turned up                                                                                                                     | Review                                                            |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| pi-warden             | Redaction missed the password in a `postgres://` URL, and the holds database failed on a fresh machine. Fixed by the maintainer the same day. | [Read](https://mrjev.com/projects/devmortimer-pi-warden/)         |
+| jev-router            | v0.3.0 left recent prompts in `/tmp` readable by other users on Linux. Fix merged upstream.                                                   | [Read](https://mrjev.com/projects/gargpratyush-jev-router/)       |
+| jev-browser           | Every typing step presses Enter, so filling a contact form submits it.                                                                        | [Read](https://mrjev.com/projects/jkudish-jev-browser/)           |
+| tax-doc-classifier    | Right on every IRS page we tried, but `result.form` still names a form for a page that is not a federal form at all; gate on `gated`.         | [Read](https://mrjev.com/projects/kyotofin-tax-doc-classifier/)   |
+| abide                 | The README promises zero data retention on every call; on the direct-key path it is never requested, as we confirmed on the wire.             | [Read](https://mrjev.com/projects/coldteadotai-abide/)            |
+| Jev-cu                | The policy gate matches a label already truncated to 120 characters, so a long label can hide the word 'delete'.                              | [Read](https://mrjev.com/projects/sac-y-jev-cu/)                  |
+| typesafe-computer-use | The README said no screenshot is sent; the final answer includes one.                                                                         | [Read](https://mrjev.com/projects/awlevin-typesafe-computer-use/) |
+| Foreman               | Codex ran with the Jev key in its environment; since v0.3.0 the key is stripped first.                                                        | [Read](https://mrjev.com/projects/thruwire-foreman/)              |
+
+All 38 reviews, with what each tool sends and where: [mrjev.com/best-jev-tools](https://mrjev.com/best-jev-tools/).
 
 ## Official Resources
 
@@ -225,6 +273,18 @@ Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects
 - [A deep dive into Jev](https://flaviocopes.com/jev/) - Hands-on developer walkthrough.
 - [Jev: TypeSafe's System One Model That Never Hallucinates](https://www.datacamp.com/blog/system-one-models-jev) - Overview from DataCamp.
 - [TypeSafe AI debuts model for machines that plays Doom](https://www.theregister.com/ai-and-ml/2026/09/16/typesafe-ai-debuts-model-for-machines-that-plays-doom/5296711) - Launch coverage from The Register.
+
+## Related Lists
+
+Other community lists of Jev projects, each with its own scope and bar:
+
+- [awesome-jev-by-typesafe](https://github.com/Anil-matcha/awesome-jev-by-typesafe) - Broad list with decision tables and a use-case map.
+- [yibie/awesome-jev](https://github.com/yibie/awesome-jev) - Category files with written inclusion criteria.
+- [cobanov/awesome-jev](https://github.com/cobanov/awesome-jev) - Large list with sourced research notes.
+- [fatwang2/awesome-jev](https://github.com/fatwang2/awesome-jev) - Uses Jev itself to review incoming pull requests.
+- [awesome-jev-projects](https://github.com/logicrw/awesome-jev-projects) - Structured metadata per entry, in four languages.
+- [hellogumbo/awesome-jev](https://github.com/hellogumbo/awesome-jev) - The largest list, with a searchable site.
+- [OmniJev/awesome-jev](https://github.com/OmniJev/awesome-jev) - Papers, open reproductions and independent evaluations.
 
 ## Contributing
 

@@ -30,7 +30,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md data/stars.json
+          git add README.md data/stars.json data/stats.json
           git diff --cached --quiet && echo "nothing changed" && exit 0
-          git commit -m "Trending: refresh star snapshots and the weekly table"
+          git commit -m "Trending: refresh star snapshots, the weekly table, and the entry count"
           git push
