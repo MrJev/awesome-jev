@@ -38,10 +38,15 @@ def get(path, params=None):
         raise
 
 
+# Repos under this heading are other people's lists, not entries: they are not
+# checked for health and they do not chart as trending.
+NOT_OUR_ENTRIES = "## Related Lists"
+
+
 def listed_repos():
     """GitHub repos linked from the README as (owner, repo, branch_or_None)."""
     with open(README, encoding="utf-8") as f:
-        text = f.read()
+        text = f.read().split(NOT_OUR_ENTRIES, 1)[0]
     seen, out = set(), []
     for owner, repo, branch in REPO_LINK.findall(text):
         key = (owner.lower(), repo.lower())

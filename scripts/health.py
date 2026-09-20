@@ -11,6 +11,10 @@ from github import get, listed_repos
 
 STALE_DAYS = 60    # mark as "(unmaintained)"
 ARCHIVE_DAYS = 90  # move to an "Archived" section
+# Entries added before the 10-star bar stay, but an abandoned one should not: an
+# entry this small that has also stopped moving is an experiment, not a project.
+FAINT_STARS = 5
+FAINT_IDLE_DAYS = 30
 
 
 def days_since(iso):
@@ -40,12 +44,18 @@ def check(owner, repo, branch):
             last_push = b["commit"]["commit"]["committer"]["date"]
 
     idle = days_since(last_push)
+    stars = data["stargazers_count"]
+    if stars < FAINT_STARS and idle >= FAINT_IDLE_DAYS and not data["archived"]:
+        problems.append(
+            f"{stars} stars and no commits for {idle} days; below the {FAINT_STARS}-star floor "
+            "for an inactive entry, so remove it unless it is the only client for its language"
+        )
     if idle >= ARCHIVE_DAYS:
         problems.append(f"no commits for {idle} days; move to Archived")
     elif idle >= STALE_DAYS:
         problems.append(f"no commits for {idle} days; mark as (unmaintained)")
 
-    row = f"| {link} | {data['stargazers_count']} | {last_push[:10]} | {idle} |"
+    row = f"| {link} | {stars} | {last_push[:10]} | {idle} |"
     problem = f"{link}: " + "; ".join(problems) + "." if problems else None
     return row, problem
 
@@ -72,7 +82,11 @@ def main():
     print("|---|---:|---|---:|")
     print("\n".join(rows))
     print("\n</details>")
-    print(f"\nThresholds: unmaintained after {STALE_DAYS} days, archive after {ARCHIVE_DAYS} days.")
+    print(
+        f"\nThresholds: unmaintained after {STALE_DAYS} days, archive after {ARCHIVE_DAYS} days, "
+        f"remove when under {FAINT_STARS} stars and idle for {FAINT_IDLE_DAYS} days. "
+        "New entries need 10+ stars (CONTRIBUTING.md); entries added before that bar are not removed for stars alone."
+    )
     return 1 if problems else 0
 
 

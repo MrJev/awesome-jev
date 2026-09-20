@@ -13,7 +13,7 @@ import os
 import sys
 from datetime import datetime, timedelta, timezone
 
-from github import REPO_LINK, get
+from github import get, listed_repos
 
 DATA = os.path.join(os.path.dirname(__file__), "..", "data", "stars.json")
 README = os.path.join(os.path.dirname(__file__), "..", "README.md")
@@ -34,20 +34,6 @@ LIST_LAUNCH = "2026-09-18"  # first snapshot: everything was "new", so it is not
 
 def today():
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
-
-
-def project_repos():
-    """GitHub repos linked from the list itself, ignoring the Related Lists section:
-    those are other people's lists, not entries, and must not chart as trending."""
-    with open(README, encoding="utf-8") as f:
-        text = f.read().split("## Related Lists", 1)[0]
-    seen, out = set(), []
-    for owner, repo, branch in REPO_LINK.findall(text):
-        key = (owner.lower(), repo.lower())
-        if key not in seen:
-            seen.add(key)
-            out.append((owner, repo, branch or None))
-    return out
 
 
 def load():
@@ -150,7 +136,7 @@ def replace_block(text, start, end, body):
 def main():
     dry = "--dry-run" in sys.argv
     store = load()
-    repos = project_repos()
+    repos = listed_repos()
     current = snapshot(repos)
     if len(current) < 10:
         print(f"only {len(current)} repos resolved; refusing to overwrite history", file=sys.stderr)
