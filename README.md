@@ -169,7 +169,7 @@ All 38 reviews, with what each tool sends and where: [mrjev.com/best-jev-tools](
 - [JevLint](https://github.com/huntedman/JevLint) - Checks code against conventions written in plain English, in a write-check-fix loop with your coding agent.
 - [compact-adviser](https://github.com/kunchenguid/compact-adviser) - Agent plugin that asks Jev whether the session is at a safe point to `/compact`, and can run it automatically on Pi and Claude Code.
 - [jev-pruner](https://github.com/tamaratran/jev-pruner) - Claude Code plugin that uses Jev to trim long Bash output before it reaches the model, leaving errors, source code, and structured output untouched.
-- [perch](https://github.com/lakeday-org/perch) - Semantic code linting: rules written as sentences, run over a project from npm with its own CI action and hosted dashboard.
+- [perch](https://github.com/lakeday-org/perch) - Semantic linter that reads each method together with its callers and callees before asking about it. Rules are sentences in a YAML file.
 - [jev-lint (mizchi)](https://github.com/mizchi/jev-lint) - Checks whether a function does what its name says, whether a comment is still true, and whether a test verifies what it claims, with a cutoff per rule.
 - [patdown](https://github.com/tyler-dot-earth/patdown) - Lints a tree against fuzzy rules kept in one markdown file, behind a provider-neutral interface so the judge can be swapped. Its LICENSE is not a recognised open-source license.
 - [agent-dispatcher](https://github.com/nahid-sparktales/agent-dispatcher) - Routes a Claude Code or Codex task to one of 27 specialist roles and defines what evidence will count as done.
