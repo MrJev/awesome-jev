@@ -137,6 +137,7 @@ All 38 reviews, with what each tool sends and where: [mrjev.com/best-jev-tools](
 - [jev-tree](https://github.com/reachjalil/jev-tree) - Recursive Choice over a taxonomy, for picking among more options than a single Choice question allows.
 - [n8n-nodes-typesafe](https://github.com/zampierid4p/n8n-nodes-typesafe) - n8n community node for asking typed questions inside workflows.
 - [Jev for Home Assistant](https://github.com/AboveColin/HA-Jev) - Home Assistant integration that turns Jev's answers about your house into entities.
+- [jevcache](https://github.com/hyperspaceai/jevcache) - Local decision cache keyed on (model, schema, state), with redaction and canonicalisation before hashing, for cheaper repeats and deterministic replay in CI. No license file at the time of writing.
 
 ## Agent Integrations (MCP & Skills)
 
@@ -147,6 +148,7 @@ All 38 reviews, with what each tool sends and where: [mrjev.com/best-jev-tools](
 - [Building with Jev](https://github.com/dbreunig/building-with-jev-skill) - Agent skill for writing programs that call Jev: question design, state structure, confidence thresholds, and diagnosing wrong answers.
 - [Jev Sift](https://github.com/kbhuw/jev-sift) - MCP plugin that asks Jev which files, web pages, or text snippets are relevant to a query, so the agent reads selectively.
 - [Jevbridge](https://github.com/tacticocc/Jevbridge) - ACP and MCP adapter that pairs Jev with any LLM agent, including Codex, Claude, Grok, and OpenCode, for typed decisions and computer use.
+- [Hermes Jev Skills](https://github.com/kerpopule/hermes-jev-skills) - Bundle of skills that hand an agent's small decisions to Jev: model routing, skill selection, retrieval filtering, compaction, and computer use, with a routing dashboard. Works with Hermes, Claude Code, and Codex.
 
 ## Coding Agents & Developer Tools
 
@@ -161,6 +163,7 @@ All 38 reviews, with what each tool sends and where: [mrjev.com/best-jev-tools](
 - [JevLint](https://github.com/huntedman/JevLint) - Checks code against conventions written in plain English, in a write-check-fix loop with your coding agent.
 - [compact-adviser](https://github.com/kunchenguid/compact-adviser) - Agent plugin that asks Jev whether the session is at a safe point to `/compact`, and can run it automatically on Pi and Claude Code.
 - [jev-pruner](https://github.com/tamaratran/jev-pruner) - Claude Code plugin that uses Jev to trim long Bash output before it reaches the model, leaving errors, source code, and structured output untouched.
+- [perch](https://github.com/lakeday-org/perch) - Semantic code linting: rules written as sentences, run over a project from npm with its own CI action and hosted dashboard.
 
 ## Guardrails & Safety
 
@@ -189,6 +192,7 @@ All 38 reviews, with what each tool sends and where: [mrjev.com/best-jev-tools](
 - [jev-commit](https://github.com/valentynkit/jev-commit) - Pre-commit hook where one Jev call checks whether the commit message matches the staged diff, flags debug leftovers and unmentioned work, and blocks only when it finds a credential.
 - [semgrep (uehaj)](https://github.com/uehaj/jev-semgrep) - Grep by meaning: Jev scores each line against a description in any language, with AND, OR, and NOT. A single dependency-free Node file.
 - [jeff (Alurith)](https://github.com/Alurith/jeff) - Read-only Go CLI that checks files against rules such as unclear responsibility or weak error handling with Jev, locally or in CI.
+- [jegrep](https://github.com/can1357/jegrep) - Semantic grep with no embeddings, index, or daemon: it searches the live tree on every run and matches concepts rather than strings.
 
 ## Browser & Computer Use
 
@@ -235,6 +239,7 @@ All 38 reviews, with what each tool sends and where: [mrjev.com/best-jev-tools](
 - [Janus](https://github.com/FirasSX914/Janus) - Measures Jev's calibration and confidence-based routing on Banking77 and Web of Science.
 - [jev-benchmarks](https://github.com/AbdelStark/jev-benchmarks) - Probability-aware evaluation: calibration, and how much work can be automated at a fixed error budget.
 - [typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark) - Compares LLM structured output with Jev on latency, cost, and judgment quality.
+- [jev-align](https://github.com/sutro-sh/jev-align) - CLI from Sutro that finds the examples a Jev function is least sure about, asks you to label them, and uses GEPA to improve the question.
 
 ## Open Models & Reproductions
 
@@ -249,6 +254,7 @@ All 38 reviews, with what each tool sends and where: [mrjev.com/best-jev-tools](
 - [Simple Jev](https://github.com/featherless-ai/simple-jev) - Turns open Hugging Face models into a Jev-style classifier endpoint by reading next-token logits, with a public demo API.
 - [OpenJev](https://github.com/razorback16/openjev) - Jev-compatible decision server on DiffusionGemma 26B-A4B through vLLM, including questions about images. TypeSafe's SDKs work against it unchanged.
 - [jeff](https://github.com/logan-markewich/jeff) - Self-hosted implementation of Jev's System One API on the 400M-parameter GLiFormer model. The official SDK works after changing the base URL.
+- [Von](https://github.com/wfzyx/von) - Non-autoregressive System One model with Python and TypeScript clients, published on Hugging Face under Apache 2.0. The author reports sub-25ms inference.
 
 ## Games & Real-Time Demos
 
@@ -284,6 +290,9 @@ Other community lists of Jev projects, each with its own scope and bar:
 - [fatwang2/awesome-jev](https://github.com/fatwang2/awesome-jev) - Uses Jev itself to review incoming pull requests.
 - [awesome-jev-projects](https://github.com/logicrw/awesome-jev-projects) - Structured metadata per entry, in four languages.
 - [hellogumbo/awesome-jev](https://github.com/hellogumbo/awesome-jev) - The largest list, with a searchable site.
+- [v-modal/awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools) - Tools only, no articles or models.
+- [AppitStudio/awesome-jev](https://github.com/AppitStudio/awesome-jev) - Resources paired with runnable examples.
+- [yzfly/awesome-jev-zh](https://github.com/yzfly/awesome-jev-zh) - Chinese-language list, refreshed daily.
 - [OmniJev/awesome-jev](https://github.com/OmniJev/awesome-jev) - Papers, open reproductions and independent evaluations.
 
 ## Contributing

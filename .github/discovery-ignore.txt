@@ -63,3 +63,10 @@ JackZeng/Jev_apps
 
 # Not added: automates a signed-in LinkedIn session to browse and collect profiles (LinkedIn's terms prohibit this)
 skeptrunedev/jev-recruiter
+
+# Other people's lists: see the Related Lists section instead
+v-modal/awesome-jev-tools
+AppitStudio/awesome-jev
+yzfly/awesome-jev-zh
+everyai-com/jev-directory
+mizzlelover/jev-hub
