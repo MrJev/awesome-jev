@@ -58,15 +58,15 @@ Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-09-2
 
 | Project                        | Stars | This week |
 | ------------------------------ | ----: | --------: |
-| browser-use/jev-ultrafast      | 8,775 |    +5,132 |
-| tamaratran/fast-jev-compaction | 4,307 |    +2,352 |
-| TianyuCodings/NanoJev          |   964 |      +828 |
-| jarrodwatts/jev-trader         | 1,303 |      +621 |
-| awlevin/typesafe-computer-use  |   523 |      +342 |
-| vinnylarouge/jevlike           |   995 |      +218 |
-| droidrun/mobile-jev            |   228 |      +165 |
-| thruwire/foreman               |   393 |      +150 |
-| devagrawal09/jev-review        |   354 |      +145 |
+| browser-use/jev-ultrafast      | 9,002 |    +5,359 |
+| tamaratran/fast-jev-compaction | 4,352 |    +2,397 |
+| TianyuCodings/NanoJev          | 1,021 |      +885 |
+| jarrodwatts/jev-trader         | 1,324 |      +642 |
+| awlevin/typesafe-computer-use  |   529 |      +348 |
+| vinnylarouge/jevlike           | 1,002 |      +225 |
+| droidrun/mobile-jev            |   232 |      +169 |
+| thruwire/foreman               |   402 |      +159 |
+| devagrawal09/jev-review        |   358 |      +149 |
 | realZachi/pg-jev               |   218 |      +127 |
 
 **New to this list this week:** `jaredpalmer/kev`, `bespokelabsai/nimble`, `githubnext/localjev`, `Sac-Y/Jev-cu`, `featherless-ai/simple-jev` and 31 more.
