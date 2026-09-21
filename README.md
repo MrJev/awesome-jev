@@ -92,18 +92,20 @@ Dated timeline with sources: [mrjev.com/changelog](https://mrjev.com/changelog/)
 
 Every project we review is run in a container with a real Jev key. A sample of what that turned up, and what came of it.
 
-| Project               | What running it turned up                                                                                                                     | Review                                                            |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| pi-warden             | Redaction missed the password in a `postgres://` URL, and the holds database failed on a fresh machine. Fixed by the maintainer the same day. | [Read](https://mrjev.com/projects/devmortimer-pi-warden/)         |
-| jev-router            | v0.3.0 left recent prompts in `/tmp` readable by other users on Linux. Fix merged upstream.                                                   | [Read](https://mrjev.com/projects/gargpratyush-jev-router/)       |
-| jev-browser           | Every typing step presses Enter, so filling a contact form submits it.                                                                        | [Read](https://mrjev.com/projects/jkudish-jev-browser/)           |
-| tax-doc-classifier    | Right on every IRS page we tried, but `result.form` still names a form for a page that is not a federal form at all; gate on `gated`.         | [Read](https://mrjev.com/projects/kyotofin-tax-doc-classifier/)   |
-| abide                 | The README promises zero data retention on every call; on the direct-key path it is never requested, as we confirmed on the wire.             | [Read](https://mrjev.com/projects/coldteadotai-abide/)            |
-| Jev-cu                | The policy gate matches a label already truncated to 120 characters, so a long label can hide the word 'delete'.                              | [Read](https://mrjev.com/projects/sac-y-jev-cu/)                  |
-| typesafe-computer-use | The README said no screenshot is sent; the final answer includes one.                                                                         | [Read](https://mrjev.com/projects/awlevin-typesafe-computer-use/) |
-| Foreman               | Codex ran with the Jev key in its environment; since v0.3.0 the key is stripped first.                                                        | [Read](https://mrjev.com/projects/thruwire-foreman/)              |
+| Project               | What running it turned up                                                                                                                        | Review                                                            |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| pi-warden             | Redaction missed the password in a `postgres://` URL, and the holds database failed on a fresh machine. Fixed by the maintainer the same day.    | [Read](https://mrjev.com/projects/devmortimer-pi-warden/)         |
+| jev-router            | v0.3.0 left recent prompts in `/tmp` readable by other users on Linux. Fix merged upstream.                                                      | [Read](https://mrjev.com/projects/gargpratyush-jev-router/)       |
+| jev-browser           | Every typing step presses Enter, so filling a contact form submits it.                                                                           | [Read](https://mrjev.com/projects/jkudish-jev-browser/)           |
+| tax-doc-classifier    | Right on every IRS page we tried, but `result.form` still names a form for a page that is not a federal form at all; gate on `gated`.            | [Read](https://mrjev.com/projects/kyotofin-tax-doc-classifier/)   |
+| abide                 | The README promised zero data retention on every call; on the direct-key path it was never requested, as we confirmed on the wire. README fixed. | [Read](https://mrjev.com/projects/coldteadotai-abide/)            |
+| Jev-cu                | The policy gate matches a label already truncated to 120 characters, so a long label can hide the word 'delete'.                                 | [Read](https://mrjev.com/projects/sac-y-jev-cu/)                  |
+| typesafe-computer-use | The README said no screenshot is sent; the final answer includes one.                                                                            | [Read](https://mrjev.com/projects/awlevin-typesafe-computer-use/) |
+| Foreman               | Codex ran with the Jev key in its environment; since v0.3.0 the key is stripped first.                                                           | [Read](https://mrjev.com/projects/thruwire-foreman/)              |
+| jeff                  | `jeff check .` sent a `.pem` private key and a config file with a password, whole. Fixed in v0.1.0; we re-ran the harness to confirm.            | [Read](https://mrjev.com/projects/alurith-jeff/)                  |
+| Von                   | The published weights lost their classification head, so the default install answered at random. Restored by the author the same day.            | [Read](https://mrjev.com/projects/wfzyx-von/)                     |
 
-All 38 reviews, with what each tool sends and where: [mrjev.com/best-jev-tools](https://mrjev.com/best-jev-tools/).
+All 143 reviews, with what each tool sends and where: [mrjev.com/best-jev-tools](https://mrjev.com/best-jev-tools/).
 
 ## Official Resources
 
