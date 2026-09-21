@@ -76,3 +76,21 @@ whyashthakker/beam-cli
 
 # Superseded by openJev-verdict-2.0 from the same author, which is listed
 Heman10x-NGU/Verdict-open-jev
+
+# Not a Jev project: mentions it in passing or catalogues something else
+kydlikebtc/awesome-grokbot
+peter123023/awesome-free-llm-api
+kairunwen/Awesome-Robot-Use-Agent
+
+# No Jev integration: browser code adapted from jev-ultrafast, but it runs local LLMs
+APUS-AI-Lab/fast-browser-use
+
+# Other people's lists: see the Related Lists section instead
+heyjunpenn/awesome-jev
+walidboulanouar/awesome-jev-use-cases
+Promethe-us/awesome-jev
+anandi1989/awesome-jev-usecases
+aliaihub/awesome-jev-usecases
+everyinfra/jev-radar
+OmniJev/awesome-jev-gallery
+
