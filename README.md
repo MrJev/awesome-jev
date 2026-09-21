@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**209 entries · every one checked to actually call Jev · last reviewed 2026-09-21**
+**208 entries · every one checked to actually call Jev · last reviewed 2026-09-21**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -32,6 +32,7 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 - [Trending](#trending)
 - [Recent Developments](#recent-developments)
 - [What We Found Running These](#what-we-found-running-these)
+- [Running Without Jev](#running-without-jev)
 - [Official Resources](#official-resources)
 - [Community SDKs](#community-sdks)
 - [Libraries & Integrations](#libraries--integrations)
@@ -108,6 +109,28 @@ Every project we review is run in a container with a real Jev key. A sample of w
 
 All 143 reviews, with what each tool sends and where: [mrjev.com/best-jev-tools](https://mrjev.com/best-jev-tools/).
 
+## Running Without Jev
+
+Jev is a paid API, so a fair question is which of these still work if you would rather not pay for it ([#17](https://github.com/MrJev/awesome-jev/issues/17)). Two things get mixed up in that question, and they are worth separating.
+
+Routing Jev through OpenRouter or Vercel's AI Gateway is **not** an alternative model. It is the same paid model with a different bill and an extra hop. Many entries offer it, and it changes nothing about cost per decision or licensing.
+
+Pointing a tool at a *different* model is the question people are actually asking. The table below is only what we checked ourselves, by running each tool against a server of our own. A project missing from it means we have not checked, not that the answer is no.
+
+| Tool                                                                                 | Points at a non-Jev endpoint?                                           | How we know                                                                       |
+| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| [Jevvy](https://mrjev.com/projects/panachy-jevvy/)                                   | Yes — `provider: "custom"`, any endpoint, optional key                  | We ran its Claude Code hook against a local server of ours                        |
+| [jev-use](https://mrjev.com/projects/shitianfang-jev-use/)                           | Yes — `TYPESAFE_BASE_URL`, and `JEV_BACKEND=mock` for a keyless dry run | We ran its PreToolUse hook adapter against a local server of ours                 |
+| [JCR](https://mrjev.com/projects/niazmorshed2007-jcr/)                               | Yes — the SDK's own `TYPESAFE_BASE_URL`                                 | We ran the resolver against a local server of ours                                |
+| [hermes-jev-approvals](https://mrjev.com/projects/anpicasso-hermes-jev-approvals/)   | Yes — a custom `base_url` with an optional `key_env`                    | Read in its code and covered by its own boundary test; we did not drive that path |
+| [Jev Skills](https://mrjev.com/projects/wuyoscar-jev-skill/)                         | No — an allow-list of exactly two endpoints, both Jev routes            | We tried a third and it was refused, by design                                    |
+| [Jev Agent Skill Router](https://mrjev.com/projects/godsboy-jev-agent-skill-router/) | No — one hardcoded endpoint                                             | We had to patch the constant to test it                                           |
+| [Jev DSH](https://mrjev.com/projects/devin-axis-jev-dsh-decision/)                   | No — endpoint constant, no override                                     | We injected a fetcher to test it                                                  |
+| [jev-seo](https://mrjev.com/projects/akashpriyadarshii-jev-seo/)                     | No — hardcoded constant, no override                                    | We patched the line, then reverted and diffed                                     |
+| [jevscan-evm](https://mrjev.com/projects/devtooligan-jevscan-evm/)                   | No — endpoint constant, no override                                     | Same                                                                              |
+
+For tools that need no Jev at all, the whole Open Models & Reproductions section below is that answer: those projects replace the model rather than the route. Two things to check before picking one. First, the weights' licence, not just the repository's — most are MIT or Apache-2.0 on the code, while the weights vary: OpenThai-SystemOne and PlayJev are Apache-2.0 on both with the base model credited, Von's published weights carry no licence tag at all, and NanoJev declares none on either the model or the dataset. Second, what shape it is: several are a library rather than an API, so choosekit reads probabilities straight out of your own llama.cpp but ships no HTTP server, while OpenThai-SystemOne and others speak `POST /v1/systemone`, which existing SDK code reaches with a base-URL change.
+
 ## Official Resources
 
 - [TypeSafe AI](https://typesafe.ai) - Homepage and early-access waitlist.
@@ -158,7 +181,6 @@ All 143 reviews, with what each tool sends and where: [mrjev.com/best-jev-tools]
 - [Jev Sift](https://github.com/kbhuw/jev-sift) - MCP plugin that asks Jev which files, web pages, or text snippets are relevant to a query, so the agent reads selectively.
 - [Jevbridge](https://github.com/tacticocc/Jevbridge) - ACP and MCP adapter that pairs Jev with any LLM agent, including Codex, Claude, Grok, and OpenCode, for typed decisions and computer use.
 - [Hermes Jev Skills](https://github.com/kerpopule/hermes-jev-skills) - Bundle of skills that hand an agent's small decisions to Jev: model routing, skill selection, retrieval filtering, compaction, and computer use, with a routing dashboard. Works with Hermes, Claude Code, and Codex.
-- [evaluate (PyModel)](https://github.com/PyModel/typesafe-mcp) - stdio MCP server exposing one `evaluate` tool; the host agent still reasons, edits, and executes.
 - [jev-mcp (burnigtm)](https://github.com/burnigtm/jev-mcp) - MCP server whose tools route the next step and decide whether a partner model is needed, for Cursor, Codex, and any MCP client.
 - [jevwire](https://github.com/Brainwires/jevwire) - An MCP server, an embeddable decision library, and an escalate-only Claude Code plugin in one repository.
 - [pi-jev](https://github.com/TheoOliveira/pi-jev) - Semantic tool routing and skill discovery for the Pi coding agent: Jev picks which inactive tools to activate for the prompt at hand.
