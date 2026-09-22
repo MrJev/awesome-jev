@@ -9,21 +9,16 @@ benomahony/nouls
 blakestone-x/jev-mcp
 BunsDev/typesafe-ai-playground
 compozy/yoshi
-dabit3/jev-experiments
 dannote/jev
 daseinlabs/open-jev
 DevMortimer/pi-typesafe
 gamesonrblx/Jevbridge
 genai-craft/openvons
-hr98w/jev-visual
 IAmUnbounded/save-token-jev-clean
 jem-computer/bb-live
 jomatsu/pi-jev-auto-mode
 jon-devlapaz/jev-me
 JoshuaSP/open-jev
-kitze/skillbox
-kshetrajna12/reflex
-Mapika/decider
 mejiasd3v/pi-jev-router
 mizchi/jev-playground
 monteduro/killmyidea
@@ -36,15 +31,12 @@ shantanugoel/ask-jev-skill
 shantanugoel/mario-jev
 shiftynick/jev-axi
 sorrycc/typesafe-snake
-superagents-lab/jev-search
 trungdq88/youtube-sponsor-detection
 Twister915/typesafe-ai
 vinilana/jev-eval-agent
 vlad-terin/jev-use
 wmoto-ai/local-decision-playground
 wundercorp/loki
-wy-coliney/jev-browser-use
-y0usaf/pi-jev
 Ying-Kai-Liao/jev-browser
 zadescoxp/Jev-Trades
 zmtomorrow/TypeAR
@@ -94,3 +86,9 @@ ilyamk/jev-gmail-ai-spam-filter-and-labeling
 # or reproduce Jev. Checked in the code, not just the description.
 jlt-commons/awesome-jolt
 TypeLLM/TypeLLM
+
+# Jev is present but not central: a real call exists, yet the feature is
+# optional and the project is about something else. Checked 2026-09-22 --
+# skillbox calls Jev from src/server/recommendations.ts, but its own README
+# calls them "optional Jev recommendations" and 5 of 35 source files mention it.
+kitze/skillbox

@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**247 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**254 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -200,6 +200,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Coding Agents & Developer Tools
 
+- [pi-jev](https://github.com/y0usaf/pi-jev) - Jev as a decision layer for the Pi coding agent in three places: a gate that judges `bash`, `write` and `edit` calls before they run, an output judge that reads what a `bash` call printed, and a tool the model can call directly.
 - [matchcn](https://github.com/francesco0242/matchcn) - Semantic index across shadcn-format registries: components are tagged once across six dimensions and committed, and your brief is classified at query time to match against them. Ships as an MCP server.
 - [fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) - Claude Code plugin that replaces the compaction summary with Jev decisions. Every tool call and result is scored; stale ones are dropped or truncated, and everything kept stays verbatim.
 - [Jev Codex Router](https://github.com/0xNatoshi/jev-codex-router) *(archived)* - Picks the model, reasoning depth, and speed mode for every Codex turn based on how hard Jev judges it to be. The author reports about 60% lower cost when replaying 237 real turns.
@@ -275,6 +276,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Browser & Computer Use
 
+- [Jev Browser Use](https://github.com/wy-coliney/jev-browser-use) - Browser skill that splits the work: Jev handles navigation, clicks, toggles and scrolling while the coding agent thinks and verifies. Uses your existing browser connection, with no extra driver.
 - [jev-ultrafast](https://github.com/browser-use/jev-ultrafast) - Fast browser agent from Browser Use. Jev decides each step and which element to act on; a small model is called only when text needs to be typed. The authors report a full Google Flights search in about 7.1 seconds.
 - [typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) - macOS computer use without sending screenshots to a large model. The screen is read deterministically and Jev picks the next action.
 - [Jev Browser](https://github.com/jkudish/jev-browser) - Headless browser automation through an MCP server, CLI, or library. Jev picks one action per step.
@@ -309,6 +311,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Search & Knowledge Graphs
 
+- [Jev Search](https://github.com/superagents-lab/jev-search) - Search the web in plain language: Jev answers typed questions about your request, and the app uses those judgments to pick the query, the sources and the time range before ranking what comes back. Installable from the browser as an app.
 - [Blink](https://github.com/ellipsis-dev/blink) - Semantic codebase search. At each directory level Jev ranks which files and folders are most likely relevant and sends more walkers there.
 - [neo4jev](https://github.com/jexp/neo4jev) - Navigates a Neo4j graph by having Jev score neighbouring relationships, then beam-searching for the most probable path.
 - [jev.nvim](https://github.com/valentynkit/jev.nvim) - Neovim plugin that splits the buffer into functions with Treesitter, has Jev score each one against a plain-language question, and lists the answers in the quickfix window ranked by probability.
@@ -357,6 +360,9 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Open Models & Reproductions
 
+- [decider](https://github.com/Mapika/decider) - A family of System One-style models that never generate text: one forward pass over a state and typed questions returns a probability distribution per question. Ships ten text games and a Super Mario Bros agent where each move is one typed decision over the legal actions.
+- [reflex](https://github.com/kshetrajna12/reflex) - A small open decision model for your own GPU: fixed answer options in, per-option percentages out, with no free text so it cannot answer off the list.
+- [Jev Visual](https://github.com/hr98w/jev-visual) - Multiple typed questions about one image in a single pass, on Qwen3.5-0.8B with MLX on Apple Silicon. States plainly that it explores the pattern and does not claim to reproduce Jev's architecture or training. Chinese and English.
 - [Laya](https://github.com/NandhaKishorM/laya) - Non-autoregressive decision engine over 100+ languages: three checkpoints and a router that detects the script and dispatches per request. Its benchmarks end with a limits section naming the datasets it does not generalise to and the headline figure that came from a training split.
 - [JEV-CPU](https://github.com/leesk212/JEV-CPU) - A CPU port of SemIf that swaps only the model loader and reuses the scoring code unchanged, so you can read a decision out of a small model's option logits on a laptop with no GPU.
 - [Dev-0.4B](https://github.com/mpnikhil/dev-0.4b) - A 399M bidirectional encoder with one universal choice head, answering Choice, Noul and Score in a single forward pass. Every README figure reconciles to an evaluation JSON shipped in the repository.
@@ -396,6 +402,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Games & Real-Time Demos
 
+- [Jev experiments](https://github.com/dabit3/jev-experiments) - Latency-focused demos from Nader Dabit, each app in its own directory with its own README. No licence file at the time of writing.
 - [Jev Tetris](https://github.com/trungdq88/jev-tetris) - Two models play Tetris on a shared seeded piece sequence under the same clock; a piece that lands before the answer arrives locks where it fell. No licence file.
 - [1v1 Jev](https://github.com/emrickgarrett/OneVOneJev) - Three.js quickscope arena where Jev decides movement, aiming, ADS, firing, and jumping at roughly 9 Hz.
 - [TypeSafe Mario](https://github.com/fhshaik/typesafe-mario) - Jev picks NES controller inputs for Super Mario Bros. from emulator state, with no screenshots.
