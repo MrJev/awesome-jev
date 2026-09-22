@@ -100,3 +100,19 @@ OmniJev/awesome-jev-gallery
 # advertise them. Both were checked on 2026-09-22 and do what their READMEs say.
 Futureppo/typesafe_register
 2951461586/Jev-Register-Tool
+
+# Reviewed 2026-09-22 and not added: we cannot exercise them on this machine,
+# and we do not list what we have not run. Hardware we do not have:
+Micha0827/snapjudge
+ipenywis/laya-ultrafast
+peterfriese/jev-foundation-models
+virajbhartiya/laya-vs-jev
+
+# Needs a third-party account or a social platform we will not sign up for
+# or scrape.
+jev-chat/jev-chat-jarvis
+jev-chat/jev-chat-windows
+jev-chat/jev-chat-jarvis-mac
+manifoldor/xtags
+CTNicholas/jev-workflow-builder
+ilyamk/jev-gmail-ai-spam-filter-and-labeling
