@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**218 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**222 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -230,6 +230,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [is-malicious](https://github.com/luantak/is-malicious) - Sends source, configuration, build, and CI files to Jev and points at the files and lines that look deceptive or data-stealing. Its README says a clean report is not proof a project is safe.
 - [jevscan-evm](https://github.com/devtooligan/jevscan-evm) - Produces a heat map of likely bugs in EVM code. The author's own warning: a proof of concept whose code they did not read.
 - [Jevmind](https://github.com/dealerdefi/Jevmind) - Nine skills over one brain: a shell-command gate, a diff triage, a router and more, each decision appended to a hash-chained ledger that names any record edited afterwards. Runs offline on local reflexes or against Jev.
+- [Canny](https://github.com/qkal/Canny) - Stop hook for Claude Code and Codex CLI that refuses a "done" while no check has passed since the last edit. Jev can only relax that refusal and never cause one, and it still blocks with no API key at all.
+- [dsh-jev](https://github.com/buberlo/dsh-jev) - Decision layer for DeepSeek Harness whose failure policy rejects the value `allow` at configuration time, from plain JavaScript as well as TypeScript. Its verify script installs the built tarballs into a fresh consumer before testing them.
 
 ## Model Routing
 
@@ -240,6 +242,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [JevRouter](https://github.com/BillionsBobby/JevRouter) - Routes each agent step to a model, subagent, Skill, MCP tool, or CLI with one Jev Choice, requiring confirmation for risky capabilities and keeping decision receipts.
 - [Grok Bot Jev Router](https://github.com/Bodila51/grok-bot-jev) - Classifies a Grok Bot request before expensive research, browser, retry, or subagent work, so it can reuse a fresh artifact or stop a failing retry.
 - [pi-jev-router](https://github.com/philippdubach/pi-jev-router) - Ranks the OpenRouter catalogue per task, takes the Pareto frontier over quality, cost and latency, and routes pi to the knee point.
+- [Helm](https://github.com/Jimuelle07/Helm) - Picks which of the coding agents on your machine should take a task, from an answer set a probe builds, so an agent you have not installed cannot be recommended. Installs as a Claude Code plugin, a Gemini CLI extension, or an Agent Skill.
 
 ## Command-Line Tools
 
@@ -258,6 +261,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Sniff Test](https://github.com/DanRWilloughby/snifftest) - Prose linter for AI writing tells: countable regex rules run locally, and one judgment question covers the rest.
 - [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) - Rust CLI and MCP server for SEO and GEO work, scraping DuckDuckGo instead of paying for a search API.
 - [JevGrep](https://github.com/nassim-arifette/jevgrep) - Semantic code search for agents, as a CLI or MCP server: ask what the code does and get source excerpts with paths and line numbers.
+- [evoke](https://github.com/evoke-build/evoke) - Turns a sentence into a call of a small program you installed from Git, run only when the confidence gate allows. A CLI, a package manager for those recipes, and a TypeScript SDK over the same core; your overlay may tighten a reflex's effect but never loosen it.
 
 ## Browser & Computer Use
 
