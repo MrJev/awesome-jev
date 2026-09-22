@@ -94,3 +94,9 @@ aliaihub/awesome-jev-usecases
 everyinfra/jev-radar
 OmniJev/awesome-jev-gallery
 
+
+# Bulk account creation against typesafe.ai, and API-key harvesting with it.
+# Not listed and not reviewed: we do not run these, and listing them would
+# advertise them. Both were checked on 2026-09-22 and do what their READMEs say.
+Futureppo/typesafe_register
+2951461586/Jev-Register-Tool
