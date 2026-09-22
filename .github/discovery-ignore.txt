@@ -1,11 +1,10 @@
 # Repositories reviewed and not added to the list, one owner/repo per line.
 # The discovery job skips everything listed here.
 
-# Other curated lists (candidates for a future "Related Lists" section)
+# Other curated lists that are not in Related Lists. Anything under that
+# heading is already skipped by discovery, so it does not belong here.
 AbdelStark/awesome-typesafe
 AnotiaWang/awesome-jev
-hellogumbo/awesome-jev
-yibie/awesome-jev
 
 # Reviewed 2026-09-18, not added
 benomahony/nouls
@@ -53,9 +52,6 @@ Ying-Kai-Liao/jev-browser
 zadescoxp/Jev-Trades
 zmtomorrow/TypeAR
 karanb192/awesome-claude-code-mods
-cobanov/awesome-jev
-fatwang2/awesome-jev
-logicrw/awesome-jev-projects
 OmniJev/awesome-jev
 kraayenjon/awesome-jev
 valentynkit/awesome-jev-typesafe
@@ -65,9 +61,6 @@ JackZeng/Jev_apps
 skeptrunedev/jev-recruiter
 
 # Other people's lists: see the Related Lists section instead
-v-modal/awesome-jev-tools
-AppitStudio/awesome-jev
-yzfly/awesome-jev-zh
 everyai-com/jev-directory
 mizzlelover/jev-hub
 
@@ -92,8 +85,6 @@ Promethe-us/awesome-jev
 anandi1989/awesome-jev-usecases
 aliaihub/awesome-jev-usecases
 everyinfra/jev-radar
-OmniJev/awesome-jev-gallery
-
 
 # Bulk account creation against typesafe.ai, and API-key harvesting with it.
 # Not listed and not reviewed: we do not run these, and listing them would
@@ -116,3 +107,8 @@ jev-chat/jev-chat-jarvis-mac
 manifoldor/xtags
 CTNicholas/jev-workflow-builder
 ilyamk/jev-gmail-ai-spam-filter-and-labeling
+
+# Matched only by an incidental mention, or adjacent work that does not call
+# or reproduce Jev. Checked in the code, not just the description.
+jlt-commons/awesome-jolt
+TypeLLM/TypeLLM

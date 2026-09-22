@@ -43,10 +43,7 @@ def get(path, params=None):
 NOT_OUR_ENTRIES = "## Related Lists"
 
 
-def listed_repos():
-    """GitHub repos linked from the README as (owner, repo, branch_or_None)."""
-    with open(README, encoding="utf-8") as f:
-        text = f.read().split(NOT_OUR_ENTRIES, 1)[0]
+def _repos_in(text):
     seen, out = set(), []
     for owner, repo, branch in REPO_LINK.findall(text):
         key = (owner.lower(), repo.lower())
@@ -54,3 +51,25 @@ def listed_repos():
             seen.add(key)
             out.append((owner, repo, branch or None))
     return out
+
+
+def listed_repos():
+    """Our own entries: GitHub repos linked from the README above `Related Lists`.
+
+    Used for health checks and trending, where other people's lists are not ours
+    to chart or to keep alive.
+    """
+    with open(README, encoding="utf-8") as f:
+        return _repos_in(f.read().split(NOT_OUR_ENTRIES, 1)[0])
+
+
+def readme_repos():
+    """Every GitHub repo the README links, `Related Lists` included.
+
+    Discovery asks a different question from health and trending: not "is this
+    one of ours", but "have we already dealt with this". A competing list we
+    added under `Related Lists` has been dealt with, and must not come back as
+    a candidate every morning.
+    """
+    with open(README, encoding="utf-8") as f:
+        return _repos_in(f.read())
