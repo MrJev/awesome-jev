@@ -18,7 +18,7 @@ import re
 import sys
 import time
 
-from github import get, listed_repos
+from github import get, readme_repos
 
 IGNORE_FILE = os.path.join(os.path.dirname(__file__), "..", ".github", "discovery-ignore.txt")
 ISSUE_LABEL = "discovery"
@@ -121,7 +121,7 @@ def write_title(pending):
 
 
 def main():
-    skip = {f"{o}/{r}".lower() for o, r, _ in listed_repos()} | load_ignore()
+    skip = {f"{o}/{r}".lower() for o, r, _ in readme_repos()} | load_ignore()
     skip.add(os.environ.get("GITHUB_REPOSITORY", "MrJev/awesome-jev").lower())
 
     found = {}

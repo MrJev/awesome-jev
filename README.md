@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**239 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**241 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -157,6 +157,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 ## Libraries & Integrations
 
 - [typesafe.pro](https://github.com/chigwell/typesafe.pro) - The full server behind `api.typesafe.pro`, a free anonymous front door that speaks Jev's request shape and forwards to TypeSafe on the operator's own key. AGPL-3.0, so you can run it yourself.
+- [jev-cookbook](https://github.com/nexibeo/jev-cookbook) - Fifteen runnable recipes calling Jev through OpenRouter - support triage, dedupe, PII column scanning, reranking, moderation and more - each shipping the output it produced beside it.
 - [Advocaat](https://github.com/pithings/advocaat) - Small type-safe TypeScript client for asking Jev about your data, with an agent skill for designing questions.
 - [jev-harness](https://github.com/AntonioCoppe/jev-harness) - TypeScript library that wraps Jev answers in policies, confidence gates, shadow mode, and reusable recipes.
 - [zod-jev](https://github.com/jomatsu/zod-jev) - Adds Jev semantic checks to Zod 4 schemas. Zod validates the shape; Jev validates the meaning.
@@ -313,6 +314,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 ## Apps & Browser Extensions
 
 - [Passage (Working Memory Jev)](https://github.com/AustinAWay/Working-Memory-Jev) - Localhost tool for educators that flags where instructional text may ask a reader to hold too many ideas at once. Its evaluation opens by naming the two tests its own model fails. Custom licence, not open source.
+- [RikkaHub Plus](https://github.com/MiaoWuNYA/rikkahub-sillytavern-android) - Android chat client with a built-in Jev client: it scores stored memories for relevance in batches before retrieval, and exposes Jev to the model as a callable judgment tool. Endpoint and key are set in its settings. Chinese documentation.
 - [unclutter](https://github.com/kitze/unclutter) - Browser extension that removes page clutter using Jev and reusable template rules.
 - [TypeSafe AdBlock](https://github.com/realZachi/typesafe-adblock) - Chrome extension that asks Jev whether each DOM element is an ad and removes the ones that are.
 - [Jev Moderation Bot](https://github.com/brainstormity/Jev-Moderation-Bot) - Discord bot that filters spam and scam links in real time and escalates repeat offenses.
@@ -438,6 +440,9 @@ Other community lists of Jev projects, each with its own scope and bar:
 - [AppitStudio/awesome-jev](https://github.com/AppitStudio/awesome-jev) - Resources paired with runnable examples.
 - [yzfly/awesome-jev-zh](https://github.com/yzfly/awesome-jev-zh) - Chinese-language list, refreshed daily.
 - [OmniJev/awesome-jev-gallery](https://github.com/OmniJev/awesome-jev-gallery) - Papers, open reproductions and independent evaluations.
+- [awesome-typesafe-jev](https://github.com/AbdelStark/awesome-typesafe-jev) - Source-backed field guide, pairing SDKs and demos with independent evaluations.
+- [BeatAPI/awesome-jev](https://github.com/BeatAPI/awesome-jev) - Catalogue with a stated star threshold, reviewed through pull requests, plus a live gallery.
+- [awesome-jev-live](https://github.com/wh000wh000/awesome-jev-live) - Index rebuilt automatically every few hours with no curation threshold, so it is far larger and unfiltered.
 
 ## Contributing
 
