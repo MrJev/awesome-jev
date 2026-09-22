@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**241 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**246 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -200,6 +200,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Coding Agents & Developer Tools
 
+- [matchcn](https://github.com/francesco0242/matchcn) - Semantic index across shadcn-format registries: components are tagged once across six dimensions and committed, and your brief is classified at query time to match against them. Ships as an MCP server.
 - [fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) - Claude Code plugin that replaces the compaction summary with Jev decisions. Every tool call and result is scored; stale ones are dropped or truncated, and everything kept stays verbatim.
 - [Jev Codex Router](https://github.com/0xNatoshi/jev-codex-router) *(archived)* - Picks the model, reasoning depth, and speed mode for every Codex turn based on how hard Jev judges it to be. The author reports about 60% lower cost when replaying 237 real turns.
 - [Foreman](https://github.com/thruwire/foreman) - Puts Jev as a fast supervisor above slower coding agents such as Codex, starting from a ticket, spec, or bug report.
@@ -250,6 +251,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Command-Line Tools
 
+- [jev (shaharia-lab)](https://github.com/shaharia-lab/jev-cli) - Rust CLI whose exit codes separate a false gate from an answer inside your abstain band, so a script can take a third branch and ask a person. Lints the request before it spends anything.
 - [SemDecide](https://github.com/sharziki/semdecide) - Unix-style CLI for typed semantic decisions: classify, score, filter, and guard inside shell scripts, CI, and data pipelines.
 - [jev-repl](https://github.com/aoprisan/jev-ts-repl) - Terminal REPL for shaping System One requests before writing code. Simulates answers when no API key is set.
 - [triagedy](https://github.com/m0rphtail/triagedy) - Security alert triage as a Unix filter: JSONL alerts in, typed decisions out.
@@ -313,6 +315,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Apps & Browser Extensions
 
+- [Jev demos](https://github.com/mayank953/Jev) - Seven side-by-side demos that run with no keys and label themselves simulated. Each visitor's key gets its own budget by fingerprint, and any key is redacted out of upstream errors.
 - [Passage (Working Memory Jev)](https://github.com/AustinAWay/Working-Memory-Jev) - Localhost tool for educators that flags where instructional text may ask a reader to hold too many ideas at once. Its evaluation opens by naming the two tests its own model fails. Custom licence, not open source.
 - [RikkaHub Plus](https://github.com/MiaoWuNYA/rikkahub-sillytavern-android) - Android chat client with a built-in Jev client: it scores stored memories for relevance in batches before retrieval, and exposes Jev to the model as a callable judgment tool. Endpoint and key are set in its settings. Chinese documentation.
 - [unclutter](https://github.com/kitze/unclutter) - Browser extension that removes page clutter using Jev and reusable template rules.
@@ -392,6 +395,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Games & Real-Time Demos
 
+- [Jev Tetris](https://github.com/trungdq88/jev-tetris) - Two models play Tetris on a shared seeded piece sequence under the same clock; a piece that lands before the answer arrives locks where it fell. No licence file.
 - [1v1 Jev](https://github.com/emrickgarrett/OneVOneJev) - Three.js quickscope arena where Jev decides movement, aiming, ADS, firing, and jumping at roughly 9 Hz.
 - [TypeSafe Mario](https://github.com/fhshaik/typesafe-mario) - Jev picks NES controller inputs for Super Mario Bros. from emulator state, with no screenshots.
 - [Jev Plays StarCraft](https://github.com/phyous/tsai-sc) - Jev plays the first StarCraft shareware mission, with its recorded action probabilities.
@@ -412,6 +416,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Finance
 
+- [BTC 5m Decision Lab](https://github.com/frankda/jev-poly-crypto-demo) - Research tool for Polymarket's BTC 5-minute markets: Jev scores the direction, separate code decides the entry, and any TRADING_MODE other than paper throws at startup. No licence file.
 - [Prism](https://github.com/irfndi/prism-liquidity-agent) - Liquidity-provision agent for Meteora DLMM. Jev judges toxic flow, market stress, and mean-reversion likelihood in shadow/advisory mode only, without driving trades. Not financial advice.
 - [jev-trader](https://github.com/jarrodwatts/jev-trader) - Asks Jev buy or sell on every Monad block and places real post-only limit orders on the Kuru MON-USDC book. Not financial advice.
 - [Jev Trade](https://github.com/aowang-ai/jev-trade) - Hyperliquid trading bot based on jev-trader, where Jev decides buy, sell, or hold on every tick for five coins. Dry-runs without a private key.
