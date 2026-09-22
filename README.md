@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**216 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**217 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -286,6 +286,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [pg_typesafe](https://github.com/giuliosmall/pg_typesafe) - Pre-alpha PostgreSQL extension that calls Jev from SQL for Choice, Noul, and Score, with `EXECUTE` revoked from `PUBLIC` by default.
 - [tax-doc-classifier](https://github.com/kyotofin/tax-doc-classifier) - Classifies tax-document pages into IRS forms and page kinds with one Jev request per page, driven by a JSON file of form descriptions.
 - [doc-router](https://github.com/misbahsy/doc-router) - Rust tool that asks Jev which PDF pages actually need OCR, extracting text pages locally and sending only the rest to your OCR provider.
+- [DocJev](https://github.com/jerryjliu/docjev) - Classifies and splits PDF, DOCX and PPTX with Jev and local OCR, asking one typed question per page and per boundary in a single request. Ships the manifest, per-call records and error analysis behind its benchmark.
 
 ## Search & Knowledge Graphs
 
