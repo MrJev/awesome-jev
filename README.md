@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**233 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**239 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -267,6 +267,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [evoke](https://github.com/evoke-build/evoke) - Turns a sentence into a call of a small program you installed from Git, run only when the confidence gate allows. A CLI, a package manager for those recipes, and a TypeScript SDK over the same core; your overlay may tighten a reflex's effect but never loosen it.
 - [slop-grader](https://github.com/lukstei/slop-grader) - Grades prose against twenty-one named writing tics, asking every rule about every line, and writes its findings as a brief for a coding agent to act on.
 - [jgrep (kyu1204)](https://github.com/kyu1204/jgrep) - Semantic grep that packs sixteen chunks and sixteen questions per request, with grep's exit codes and a `--diff` mode for linting a change against a rule written in English.
+- [webctl](https://github.com/dorkitude/webctl) - Search CLI for agents: results from up to three backends are scored by Jev against your query and an explicit `--goal`, and only the relevant ones reach the agent's context. Its benchmark excludes an arm it could not observe.
 - [jev-cli (tumf)](https://github.com/tumf/jev-cli) - CLI and stdio MCP server for the three Jev primitives, with `--value` for shell scripts and structured stderr errors. `auth set` refuses a key as an argument, keeping it out of shell history.
 
 ## Browser & Computer Use
@@ -311,6 +312,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Apps & Browser Extensions
 
+- [Passage (Working Memory Jev)](https://github.com/AustinAWay/Working-Memory-Jev) - Localhost tool for educators that flags where instructional text may ask a reader to hold too many ideas at once. Its evaluation opens by naming the two tests its own model fails. Custom licence, not open source.
 - [unclutter](https://github.com/kitze/unclutter) - Browser extension that removes page clutter using Jev and reusable template rules.
 - [TypeSafe AdBlock](https://github.com/realZachi/typesafe-adblock) - Chrome extension that asks Jev whether each DOM element is an ad and removes the ones that are.
 - [Jev Moderation Bot](https://github.com/brainstormity/Jev-Moderation-Bot) - Discord bot that filters spam and scam links in real time and escalates repeat offenses.
@@ -350,6 +352,10 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Open Models & Reproductions
 
+- [JEV-CPU](https://github.com/leesk212/JEV-CPU) - A CPU port of SemIf that swaps only the model loader and reuses the scoring code unchanged, so you can read a decision out of a small model's option logits on a laptop with no GPU.
+- [Dev-0.4B](https://github.com/mpnikhil/dev-0.4b) - A 399M bidirectional encoder with one universal choice head, answering Choice, Noul and Score in a single forward pass. Every README figure reconciles to an evaluation JSON shipped in the repository.
+- [Dohnuts](https://github.com/PsiACE/dohnuts) - Small multimodal models for direct decisions on text, documents and images. Its model card publishes the benchmark it loses and states that its confidence field is not a measured probability of correctness. Weights are CC BY-NC-SA.
+- [Open Spark Jev](https://github.com/abhishek085/open-spark-jev) - A local decision model for NVIDIA DGX Spark, labelled from policy engines and solvers rather than an LLM judge. Its evaluation protocol records the time its own corpus leaked most of the test set into training.
 - [SemIf](https://github.com/TheoLeeCJ/SemIf) - Jev-style decisions from a frozen 4B model on a single RTX 3090, with a browser demo. Formerly OpenJev.
 - [Jevlike](https://github.com/vinnylarouge/jevlike) - Train a small model that scores a changing list of text options in one pass.
 - [NanoJev](https://github.com/TianyuCodings/NanoJev) - 0.6B parallel decision model with an end-to-end training pipeline.
