@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**212 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**213 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -347,6 +347,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [JevBERT](https://github.com/hawkymisc/typed-decision-bert) - A local server that speaks Jev's `/v1/systemone` shape from a BERT encoder, with a numbered account of every request it refuses that Jev might accept.
 - [DeepOpen](https://github.com/deepopen-com/deepopen) - A router and presets over Convai's Laya checkpoints, packaged as its own engine.
 - [OpenJevPro](https://github.com/zhangcy122/OpenJev) - Asks an Ollama or OpenAI-compatible model to write a likelihood score per candidate, then softmaxes them with a fixed temperature. PolyForm Noncommercial, not an open-source licence.
+- [solar-mini4-jev](https://github.com/hunkim/solar-mini4-jev) - Puts Upstage's Solar Mini4 behind Jev's `/v1/systemone` shape, bring your own Upstage key. Its benchmark grades against a third-party judge rather than a peer model's answers, and every published figure recomputes from the artifacts committed with it.
 - [openJev-verdict-2.0](https://github.com/Heman10x-NGU/openJev-verdict-2.0) - A 151M non-autoregressive decision model on ModernBERT with calibrated uncertainty and an in-browser WebGPU playground. Its LICENSE is not recognised as the Apache 2.0 its badge claims.
 - [OpenDecision](https://github.com/deepanwadhwa/OpenDecision) - Open-source semantic decision engine: state, a question in natural language, and answer criteria in; a structured decision out.
 - [Open Alternative to Jev](https://github.com/ikermoel/open-alternative-jev) - Typed, calibrated decisions from any open-weights model in one forward pass, as the Python package `open-alternative-jev`.
