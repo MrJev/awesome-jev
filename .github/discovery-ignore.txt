@@ -27,7 +27,6 @@ Mapika/decider
 mejiasd3v/pi-jev-router
 mizchi/jev-playground
 monteduro/killmyidea
-NandhaKishorM/laya
 olanotolu/jevbetter
 opaielsheikh/ai-elo-ranker
 r-ms/mini-jev

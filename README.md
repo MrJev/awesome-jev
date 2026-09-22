@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**246 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**247 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -357,6 +357,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Open Models & Reproductions
 
+- [Laya](https://github.com/NandhaKishorM/laya) - Non-autoregressive decision engine over 100+ languages: three checkpoints and a router that detects the script and dispatches per request. Its benchmarks end with a limits section naming the datasets it does not generalise to and the headline figure that came from a training split.
 - [JEV-CPU](https://github.com/leesk212/JEV-CPU) - A CPU port of SemIf that swaps only the model loader and reuses the scoring code unchanged, so you can read a decision out of a small model's option logits on a laptop with no GPU.
 - [Dev-0.4B](https://github.com/mpnikhil/dev-0.4b) - A 399M bidirectional encoder with one universal choice head, answering Choice, Noul and Score in a single forward pass. Every README figure reconciles to an evaluation JSON shipped in the repository.
 - [Dohnuts](https://github.com/PsiACE/dohnuts) - Small multimodal models for direct decisions on text, documents and images. Its model card publishes the benchmark it loses and states that its confidence field is not a measured probability of correctness. Weights are CC BY-NC-SA.
