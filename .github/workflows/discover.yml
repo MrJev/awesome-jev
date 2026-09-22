@@ -24,15 +24,19 @@ jobs:
 
       - name: Search GitHub
         id: search
+        env:
+          DISCOVERY_TITLE_FILE: title.txt
         run: |
           set +e
           python scripts/discover.py > report.md
           echo "status=$?" >> "$GITHUB_OUTPUT"
           cat report.md >> "$GITHUB_STEP_SUMMARY"
 
+      # The title carries the pending count and the run date, so `gh issue list` answers
+      # "did it run today, and how much is left" without opening anything.
       - name: Open or update the discovery issue
         if: steps.search.outputs.status == '1'
-        run: bash scripts/issue.sh open discovery "New Jev projects to review" report.md
+        run: bash scripts/issue.sh open discovery "$(cat title.txt)" report.md
 
       - name: Close the discovery issue when nothing is pending
         if: steps.search.outputs.status == '0'
