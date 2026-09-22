@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**214 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**215 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -228,6 +228,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Pi Jev Guard](https://github.com/zszz3/Pi-Jev-Guide) - Pi coding-agent plugin with rules configured by timing, plus risk checks, output redaction, and reminders on repeated failures. Chinese documentation.
 - [is-malicious](https://github.com/luantak/is-malicious) - Sends source, configuration, build, and CI files to Jev and points at the files and lines that look deceptive or data-stealing. Its README says a clean report is not proof a project is safe.
 - [jevscan-evm](https://github.com/devtooligan/jevscan-evm) - Produces a heat map of likely bugs in EVM code. The author's own warning: a proof of concept whose code they did not read.
+- [Jevmind](https://github.com/dealerdefi/Jevmind) - Nine skills over one brain: a shell-command gate, a diff triage, a router and more, each decision appended to a hash-chained ledger that names any record edited afterwards. Runs offline on local reflexes or against Jev.
 
 ## Model Routing
 
