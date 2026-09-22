@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # Keep one rolling issue per label: create or update it, or close it when resolved.
 #
+# One issue per label answers "what is pending now". It is updated in place rather than
+# reopened daily, so an item that sits unhandled for a week appears once, not seven times;
+# GitHub keeps every body edit, so the history is still there (GraphQL userContentEdits).
+#
 #   issue.sh open  LABEL TITLE BODY_FILE
 #   issue.sh close LABEL
 #
@@ -19,8 +23,17 @@ case "$mode" in
     title=$3
     body_file=$4
     if [[ -n "$existing" ]]; then
-      gh issue edit "$existing" --title "$title" --body-file "$body_file"
-      gh issue comment "$existing" --body "Updated by $run_url"
+      # Editing an issue does not notify anyone; commenting does. Comment only when the
+      # body actually changed, so a run that finds the same backlog stays silent while
+      # the title still records that it ran.
+      before=$(gh issue view "$existing" --json body --jq .body)
+      if [[ "$before" == "$(cat "$body_file")" ]]; then
+        gh issue edit "$existing" --title "$title"
+        echo "Issue #$existing unchanged; title refreshed, no comment."
+      else
+        gh issue edit "$existing" --title "$title" --body-file "$body_file"
+        gh issue comment "$existing" --body "Updated by $run_url"
+      fi
     else
       gh issue create --title "$title" --label "$label" --body-file "$body_file"
     fi

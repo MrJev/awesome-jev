@@ -1,7 +1,12 @@
 """Find new GitHub repositories that use Jev and are not yet in the README.
 
 Prints a Markdown report to stdout. Exits 1 when there are candidates to review,
-0 when there is nothing new.
+0 when there is nothing new. Writes a one-line issue title to $DISCOVERY_TITLE_FILE
+when that is set, so the issue title carries the pending count and the run date.
+
+The report is compared against the currently open discovery issue so it can say
+what changed. That is the only reason this script reads an issue: a rolling issue
+answers "what is pending now" but not "what is new since I last looked".
 
 Rejected candidates go in .github/discovery-ignore.txt (one owner/repo per line)
 so they are not suggested again.
@@ -16,6 +21,9 @@ import time
 from github import get, listed_repos
 
 IGNORE_FILE = os.path.join(os.path.dirname(__file__), "..", ".github", "discovery-ignore.txt")
+ISSUE_LABEL = "discovery"
+CANDIDATE_ROW = re.compile(r"^\| \[([\w.-]+/[\w.-]+)\]\(", re.M)
+MAX_NAMED_NEW = 15  # past this, the delta line names a count instead of every repo
 SINCE = "2026-09-01"  # Jev launched 2026-09-15; nothing older is relevant
 MIN_STARS = 10  # the inclusion bar in CONTRIBUTING.md; below this, a repo resurfaces automatically once it gains traction
 
@@ -68,6 +76,50 @@ def search(query):
         time.sleep(2)  # stay under the search rate limit (30 requests/minute)
 
 
+def previous_candidates():
+    """Repo names listed by the open discovery issue, or None when there is no list to compare.
+
+    Never raises: a delta is a convenience, and losing it must not cost us the report.
+    """
+    repo = os.environ.get("GITHUB_REPOSITORY", "MrJev/awesome-jev")
+    try:
+        issues = get(f"/repos/{repo}/issues", {"labels": ISSUE_LABEL, "state": "open", "per_page": 1})
+    except Exception:
+        return None
+    if not issues:
+        return None
+    return {name.lower() for name in CANDIDATE_ROW.findall(issues[0].get("body") or "")}
+
+
+def format_delta(current, previous):
+    """One line saying what changed, and which repos are new. Empty when there is no baseline."""
+    if previous is None:
+        return ""
+    new = [r for r in current if r["full_name"].lower() not in previous]
+    gone = len(previous - {r["full_name"].lower() for r in current})
+    if not new and not gone:
+        return "Unchanged since the previous run.\n"
+
+    line = (f"Since the previous run: **{len(new)} new**, **{gone} gone** "
+            f"(added to the list, ignored, or no longer matching).")
+    if not new:
+        return line + "\n"
+    if len(new) > MAX_NAMED_NEW:
+        return line + f" The {len(new)} new ones are marked **new** in the table below.\n"
+    named = " · ".join(f"[{r['full_name']}]({r['html_url']})" for r in new)
+    return f"{line}\n\nNew: {named}\n"
+
+
+def write_title(pending):
+    """The issue title carries the count and the date, so a list view answers 'did it run today'."""
+    path = os.environ.get("DISCOVERY_TITLE_FILE")
+    if not path:
+        return
+    day = time.strftime("%-d %b", time.gmtime())
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(f"New Jev projects to review \u2014 {pending} pending ({day})\n")
+
+
 def main():
     skip = {f"{o}/{r}".lower() for o, r, _ in listed_repos()} | load_ignore()
     skip.add(os.environ.get("GITHUB_REPOSITORY", "MrJev/awesome-jev").lower())
@@ -90,17 +142,24 @@ def main():
         print(f"No new Jev projects with {MIN_STARS}+ stars ({below} smaller ones skipped).")
         return 0
 
+    previous = previous_candidates()
+    write_title(len(ranked))
+
     print(f"Automated daily search found {len(ranked)} repositories with {MIN_STARS}+ stars that "
           f"mention Jev / TypeSafe and are not in the list yet ({below} with fewer stars are not shown).\n")
+    delta = format_delta(ranked, previous)
+    if delta:
+        print(delta)
     print("For each one: check that it actually calls Jev and has a usable README, then either "
           "add it to the README (write your own description) or add `owner/repo` to "
           "`.github/discovery-ignore.txt`. Checked items disappear on the next run.\n")
-    print("| Repository | Stars | Created | Description |")
-    print("|---|---:|---|---|")
+    print("| Repository | Stars | Created | New | Description |")
+    print("|---|---:|---|---|---|")
     for r in ranked:
         desc = (r.get("description") or "").replace("|", "\\|")[:140]
+        fresh = "new" if previous is not None and r["full_name"].lower() not in previous else ""
         print(f"| [{r['full_name']}]({r['html_url']}) | {r['stargazers_count']} "
-              f"| {r['created_at'][:10]} | {desc} |")
+              f"| {r['created_at'][:10]} | {fresh} | {desc} |")
     return 1
 
 
