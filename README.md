@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**217 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**218 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -216,6 +216,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [oxlint-plugin-jev](https://github.com/wobsoriano/oxlint-plugin-jev) - Oxlint rules written as plain-English questions about a function, call, JSX element or file, reported when the yes-probability clears your cutoff.
 - [Jev Agent Skill Router](https://github.com/GodsBoy/jev-agent-skill-router) - Routes a request to the agent skills it needs, with a confidence floor below which it loads nothing.
 - [yummy-pi-extensions](https://github.com/sugarforever/yummy-pi-extensions) - Extensions for the Pi coding agent, each released separately, including a Jev-based model router.
+- [JevLoop](https://github.com/zjunlp/JevLoop) - An agent loop whose seven forks are typed decisions rather than LLM calls, keeping the model for writing. Zero runtime dependencies, and the demo runs offline with no key and no install.
 
 ## Guardrails & Safety
 
