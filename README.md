@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**222 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**228 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -156,6 +156,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Libraries & Integrations
 
+- [typesafe.pro](https://github.com/chigwell/typesafe.pro) - The full server behind `api.typesafe.pro`, a free anonymous front door that speaks Jev's request shape and forwards to TypeSafe on the operator's own key. AGPL-3.0, so you can run it yourself.
 - [Advocaat](https://github.com/pithings/advocaat) - Small type-safe TypeScript client for asking Jev about your data, with an agent skill for designing questions.
 - [jev-harness](https://github.com/AntonioCoppe/jev-harness) - TypeScript library that wraps Jev answers in policies, confidence gates, shadow mode, and reusable recipes.
 - [zod-jev](https://github.com/jomatsu/zod-jev) - Adds Jev semantic checks to Zod 4 schemas. Zod validates the shape; Jev validates the meaning.
@@ -217,6 +218,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev Agent Skill Router](https://github.com/GodsBoy/jev-agent-skill-router) - Routes a request to the agent skills it needs, with a confidence floor below which it loads nothing.
 - [yummy-pi-extensions](https://github.com/sugarforever/yummy-pi-extensions) - Extensions for the Pi coding agent, each released separately, including a Jev-based model router.
 - [JevLoop](https://github.com/zjunlp/JevLoop) - An agent loop whose seven forks are typed decisions rather than LLM calls, keeping the model for writing. Zero runtime dependencies, and the demo runs offline with no key and no install.
+- [jev-test-filter](https://github.com/mizchi/jev-test-filter) - Reads a Git diff, scores every test for whether the change can alter its outcome, and prints the arguments your runner already understands. Every failure path runs the whole suite instead, including a diff that did not fit the state budget.
 
 ## Guardrails & Safety
 
@@ -262,6 +264,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) - Rust CLI and MCP server for SEO and GEO work, scraping DuckDuckGo instead of paying for a search API.
 - [JevGrep](https://github.com/nassim-arifette/jevgrep) - Semantic code search for agents, as a CLI or MCP server: ask what the code does and get source excerpts with paths and line numbers.
 - [evoke](https://github.com/evoke-build/evoke) - Turns a sentence into a call of a small program you installed from Git, run only when the confidence gate allows. A CLI, a package manager for those recipes, and a TypeScript SDK over the same core; your overlay may tighten a reflex's effect but never loosen it.
+- [slop-grader](https://github.com/lukstei/slop-grader) - Grades prose against twenty-one named writing tics, asking every rule about every line, and writes its findings as a brief for a coding agent to act on.
+- [jgrep (kyu1204)](https://github.com/kyu1204/jgrep) - Semantic grep that packs sixteen chunks and sixteen questions per request, with grep's exit codes and a `--diff` mode for linting a change against a rule written in English.
 
 ## Browser & Computer Use
 
@@ -292,6 +296,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [tax-doc-classifier](https://github.com/kyotofin/tax-doc-classifier) - Classifies tax-document pages into IRS forms and page kinds with one Jev request per page, driven by a JSON file of form descriptions.
 - [doc-router](https://github.com/misbahsy/doc-router) - Rust tool that asks Jev which PDF pages actually need OCR, extracting text pages locally and sending only the rest to your OCR provider.
 - [DocJev](https://github.com/jerryjliu/docjev) - Classifies and splits PDF, DOCX and PPTX with Jev and local OCR, asking one typed question per page and per boundary in a single request. Ships the manifest, per-call records and error analysis behind its benchmark.
+- [Jeview](https://github.com/andududu/jeview) - Local gateway and live map of every Jev call your code makes, in one dependency-free file. It holds the key itself: a caller's own bearer token is dropped rather than forwarded, and with no key set it will not proxy at all.
 
 ## Search & Knowledge Graphs
 
@@ -336,6 +341,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-rag-benchmark](https://github.com/erendikmenn/jev-rag-benchmark) - Reproducible experiments on whether reranking with Jev improves a small RAG system, on a locked Turkish dataset, with quality, latency and cost reported together.
 - [Jev vs. ML](https://github.com/QuicqDev/Jev-vs-ML) - Compares a typed decision model with classical classification pipelines across eight datasets, with a published protocol and an interactive report.
 - [jevals](https://github.com/openlayer-ai/jevals) - Agent evals and guardrails as typed questions instead of an LLM judge, packing every eval for a trace into one request. From Openlayer, with a mock backend so the whole library runs without a key.
+- [jev-calibrate](https://github.com/smkrv/jev-calibrate) - Checks a Jev question against your own labelled examples and grades it: act on it, only sort by it, or rewrite it. Refuses to grade a question whose classes have too few examples, however good the numbers look.
 
 ## Open Models & Reproductions
 
