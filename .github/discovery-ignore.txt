@@ -3,8 +3,6 @@
 
 # Other curated lists that are not in Related Lists. Anything under that
 # heading is already skipped by discovery, so it does not belong here.
-AbdelStark/awesome-typesafe
-AnotiaWang/awesome-jev
 
 # Reviewed 2026-09-18, not added
 benomahony/nouls
@@ -52,17 +50,10 @@ Ying-Kai-Liao/jev-browser
 zadescoxp/Jev-Trades
 zmtomorrow/TypeAR
 karanb192/awesome-claude-code-mods
-OmniJev/awesome-jev
-kraayenjon/awesome-jev
-valentynkit/awesome-jev-typesafe
 JackZeng/Jev_apps
 
 # Not added: automates a signed-in LinkedIn session to browse and collect profiles (LinkedIn's terms prohibit this)
 skeptrunedev/jev-recruiter
-
-# Other people's lists: see the Related Lists section instead
-everyai-com/jev-directory
-mizzlelover/jev-hub
 
 # No Jev integration: lists Jev among the agents it monitors, which it is not
 whyashthakker/beam-cli
@@ -77,14 +68,6 @@ kairunwen/Awesome-Robot-Use-Agent
 
 # No Jev integration: browser code adapted from jev-ultrafast, but it runs local LLMs
 APUS-AI-Lab/fast-browser-use
-
-# Other people's lists: see the Related Lists section instead
-heyjunpenn/awesome-jev
-walidboulanouar/awesome-jev-use-cases
-Promethe-us/awesome-jev
-anandi1989/awesome-jev-usecases
-aliaihub/awesome-jev-usecases
-everyinfra/jev-radar
 
 # Bulk account creation against typesafe.ai, and API-key harvesting with it.
 # Not listed and not reviewed: we do not run these, and listing them would

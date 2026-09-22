@@ -443,6 +443,17 @@ Other community lists of Jev projects, each with its own scope and bar:
 - [awesome-typesafe-jev](https://github.com/AbdelStark/awesome-typesafe-jev) - Source-backed field guide, pairing SDKs and demos with independent evaluations.
 - [BeatAPI/awesome-jev](https://github.com/BeatAPI/awesome-jev) - Catalogue with a stated star threshold, reviewed through pull requests, plus a live gallery.
 - [awesome-jev-live](https://github.com/wh000wh000/awesome-jev-live) - Index rebuilt automatically every few hours with no curation threshold, so it is far larger and unfiltered.
+- [AnotiaWang/awesome-jev](https://github.com/AnotiaWang/awesome-jev) - Applications, libraries, tools and research, in English and Chinese.
+- [heyjunpenn/awesome-jev](https://github.com/heyjunpenn/awesome-jev) - Large table of projects with stars, language and last-commit date, plus a searchable site.
+- [Promethe-us/awesome-jev](https://github.com/Promethe-us/awesome-jev) - Official material, community projects and research, with its sources tracked in a separate file. Bilingual.
+- [awesome-jev-use-cases](https://github.com/walidboulanouar/awesome-jev-use-cases) - Demos grouped by use case, with notes on writing criteria and setting thresholds.
+- [anandi1989/awesome-jev-usecases](https://github.com/anandi1989/awesome-jev-usecases) - Use cases with every headline figure tagged self-reported or independent.
+- [aliaihub/awesome-jev-usecases](https://github.com/aliaihub/awesome-jev-usecases) - Use cases paired with patterns and written guidance for building on them.
+- [Jev Directory](https://github.com/everyai-com/jev-directory) - Runnable evals and community builds, also served to agents as an MCP server and an `llms.txt` index.
+- [JEV HUB](https://github.com/mizzlelover/jev-hub) - Long posts and demo videos from X, each kept as a link to the original rather than rehosted. Chinese.
+- [Jev Radar](https://github.com/everyinfra/jev-radar) - A tracked casebook of the ecosystem, kept as a live monitor. Bilingual.
+- [kraayenjon/awesome-jev](https://github.com/kraayenjon/awesome-jev) - Use cases, projects, SDKs and learning resources in one curated list.
+- [awesome-jev-typesafe](https://github.com/valentynkit/awesome-jev-typesafe) - Organised by the coding agent you use, with a short primer before the entries.
 
 ## Contributing
 
