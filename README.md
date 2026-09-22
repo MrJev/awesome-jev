@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**228 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**233 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -174,6 +174,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Agent Integrations (MCP & Skills)
 
+- [TypeSafe skill router](https://github.com/DECRUX9812/typesafe-skill-router) - Hermes Agent plugin that names the one skill worth loading before the model call. Off by default, injects nothing when nothing fits, and does not spend its second request when the first gate is not cleared.
 - [typesafe-mcp](https://github.com/itsmostafa/typesafe-mcp) - MCP server that lets agents such as Claude Code, Claude Desktop, and Codex call Jev directly for Choice, Score, and Noul decisions.
 - [jev-mcp](https://github.com/jkudish/jev-mcp) - Proof-of-concept MCP server with ready-made tools for fact checking, prompt-injection detection, and semantic ranking.
 - [askjev](https://github.com/pZacca/askjev) - MCP server published on npm, with setup instructions for Claude Code, Claude Desktop, Cursor, and Codex.
@@ -266,6 +267,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [evoke](https://github.com/evoke-build/evoke) - Turns a sentence into a call of a small program you installed from Git, run only when the confidence gate allows. A CLI, a package manager for those recipes, and a TypeScript SDK over the same core; your overlay may tighten a reflex's effect but never loosen it.
 - [slop-grader](https://github.com/lukstei/slop-grader) - Grades prose against twenty-one named writing tics, asking every rule about every line, and writes its findings as a brief for a coding agent to act on.
 - [jgrep (kyu1204)](https://github.com/kyu1204/jgrep) - Semantic grep that packs sixteen chunks and sixteen questions per request, with grep's exit codes and a `--diff` mode for linting a change against a rule written in English.
+- [jev-cli (tumf)](https://github.com/tumf/jev-cli) - CLI and stdio MCP server for the three Jev primitives, with `--value` for shell scripts and structured stderr errors. `auth set` refuses a key as an argument, keeping it out of shell history.
 
 ## Browser & Computer Use
 
@@ -297,6 +299,9 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [doc-router](https://github.com/misbahsy/doc-router) - Rust tool that asks Jev which PDF pages actually need OCR, extracting text pages locally and sending only the rest to your OCR provider.
 - [DocJev](https://github.com/jerryjliu/docjev) - Classifies and splits PDF, DOCX and PPTX with Jev and local OCR, asking one typed question per page and per boundary in a single request. Ships the manifest, per-call records and error analysis behind its benchmark.
 - [Jeview](https://github.com/andududu/jeview) - Local gateway and live map of every Jev call your code makes, in one dependency-free file. It holds the key itself: a caller's own bearer token is dropped rather than forwarded, and with no key set it will not proxy at all.
+- [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - Packs many items into one Jev request for bulk classification. If any item in a pack comes back unanswered it raises and names the item rather than returning a partial result.
+- [jevframe](https://github.com/ktaletsk/jevframe) - A `.jev` accessor for pandas and Polars: the request is built from the columns you name and nothing else in the row, and a failed row raises naming the row instead of becoming a null.
+- [jev-curate](https://github.com/AkashPriyadarshii/jev-curate) - Rust pipeline that sifts JSONL and Parquet rows against reasoning rubrics, emitting records verbatim with a rejection log that names the question, the probability and the ceiling crossed.
 
 ## Search & Knowledge Graphs
 
