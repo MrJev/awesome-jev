@@ -467,6 +467,7 @@ Other community lists of Jev projects, each with its own scope and bar:
 - [Jev Radar](https://github.com/everyinfra/jev-radar) - A tracked casebook of the ecosystem, kept as a live monitor. Bilingual.
 - [kraayenjon/awesome-jev](https://github.com/kraayenjon/awesome-jev) - Use cases, projects, SDKs and learning resources in one curated list.
 - [awesome-jev-typesafe](https://github.com/valentynkit/awesome-jev-typesafe) - Organised by the coding agent you use, with a short primer before the entries.
+- [jev-in-the-wild](https://github.com/Jessie-QingYu/jev-in-the-wild) - Covers Reddit, Hacker News and YouTube as well as GitHub, and keeps a section for where Jev does not work. New entries must clear a traction bar.
 
 ## Contributing
 
