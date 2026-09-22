@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**213 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**214 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -328,6 +328,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [JevBench](https://github.com/fstandhartinger/jevbench) - Benchmark for typed decision models across several suites, with confidence cascades and committees reported separately.
 - [jev-rag-benchmark](https://github.com/erendikmenn/jev-rag-benchmark) - Reproducible experiments on whether reranking with Jev improves a small RAG system, on a locked Turkish dataset, with quality, latency and cost reported together.
 - [Jev vs. ML](https://github.com/QuicqDev/Jev-vs-ML) - Compares a typed decision model with classical classification pipelines across eight datasets, with a published protocol and an interactive report.
+- [jevals](https://github.com/openlayer-ai/jevals) - Agent evals and guardrails as typed questions instead of an LLM judge, packing every eval for a trace into one request. From Openlayer, with a mock backend so the whole library runs without a key.
 
 ## Open Models & Reproductions
 
