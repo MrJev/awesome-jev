@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**215 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**216 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -363,6 +363,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [OpenThai-SystemOne](https://github.com/iapp-technology/openthai-systemone) - Thai and English decision model with a slot-softmax head whose request and response shape mirrors the official API, so existing SDK code can point at it.
 - [PlayJev](https://github.com/OmniJev/PlayJev) - Multimodal decision model that plays browser games from raw pixels, with weights and a hosted demo.
 - [djev-run](https://github.com/taeold/djev-run) - Serves DiffusionGemma-Jev behind a compatible API on Cloud Run, with a small game demo on top.
+- [Rizzo Flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) - Local typed decisions from Spark-X2.5-4B over llama.cpp, serving both its own schema and Jev's `/v1/systemone`. Its `/v1/models` alias says in its description that it is not answered by Jev, and every published result names its dataset by hash.
 
 ## Games & Real-Time Demos
 
