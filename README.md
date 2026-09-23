@@ -343,7 +343,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev Explained](https://github.com/davila7/jev-explained) - Interactive playground that walks through a typed request and its probabilities, with your own key.
 - [jev-mail-classifier](https://github.com/parth-kp/jev-mail-classifier) - Config-driven inbox classifier that tags, moves, flags and notifies from typed answers.
 - [Jeved](https://github.com/mossyfield/ST-jeved) - SillyTavern extension that asks your own questions about each reply and, when a rule matches, adds a line to the prompt, rerolls, or runs a script.
-- [Refix](https://refix.ai/?utm_source=awesome-jev&utm_medium=github&utm_campaign=MrJev) - Growth: AI that helps your product grow faster on autopilot by running product experiments, SEO, content, and ads.
+- [Refix](https://refix.ai) - Growth: AI that helps your product grow faster on autopilot by running product experiments, SEO, content, and ads.
 
 ## Evaluation & Benchmarks
 
