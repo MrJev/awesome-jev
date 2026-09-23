@@ -92,3 +92,14 @@ TypeLLM/TypeLLM
 # skillbox calls Jev from src/server/recommendations.ts, but its own README
 # calls them "optional Jev recommendations" and 5 of 35 source files mention it.
 kitze/skillbox
+
+# Jev is present but not central: the project is about something else and the
+# decision layer is one optional provider inside it. Checked 2026-09-23.
+# deepreseach-learing is a DeepResearch agent whose evaluation step can be set to
+# Jev (DEEPRESEARCH_EVALUATION_USE=jev); 7 of its 84 Python files mention it.
+1612535983/deepreseach-learing
+
+# Teaching material rather than a project: slides and reading notes for a Chinese
+# video channel covering VLA, world models and, in one episode of eight, Jev. No
+# code calls the API and there is no licence. Checked 2026-09-23.
+skJack/-lip-
