@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**255 entries · every one checked to actually call Jev · last reviewed 2026-09-23**
+**254 entries · every one checked to actually call Jev · last reviewed 2026-09-23**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -175,7 +175,6 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Agent Integrations (MCP & Skills)
 
-- [choosekit-mcp](https://github.com/NotXf1le/choosekit/tree/master/packages/choosekit-mcp) - Exposes choosekit's typed choice as one read-only MCP tool, so a coding agent gets a distribution over your options instead of prose. Same three backends as the library.
 - [TypeSafe skill router](https://github.com/DECRUX9812/typesafe-skill-router) - Hermes Agent plugin that names the one skill worth loading before the model call. Off by default, injects nothing when nothing fits, and does not spend its second request when the first gate is not cleared.
 - [typesafe-mcp](https://github.com/itsmostafa/typesafe-mcp) - MCP server that lets agents such as Claude Code, Claude Desktop, and Codex call Jev directly for Choice, Score, and Noul decisions.
 - [jev-mcp](https://github.com/jkudish/jev-mcp) - Proof-of-concept MCP server with ready-made tools for fact checking, prompt-injection detection, and semantic ranking.
@@ -389,7 +388,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [openJev-verdict-2.0](https://github.com/Heman10x-NGU/openJev-verdict-2.0) - A 151M non-autoregressive decision model on ModernBERT with calibrated uncertainty and an in-browser WebGPU playground. Its LICENSE is not recognised as the Apache 2.0 its badge claims.
 - [OpenDecision](https://github.com/deepanwadhwa/OpenDecision) - Open-source semantic decision engine: state, a question in natural language, and answer criteria in; a structured decision out.
 - [Open Alternative to Jev](https://github.com/ikermoel/open-alternative-jev) - Typed, calibrated decisions from any open-weights model in one forward pass, as the Python package `open-alternative-jev`.
-- [choosekit](https://github.com/NotXf1le/choosekit) - Scores a finite set of choices against a model you already run and returns a typed decision with a probability distribution, from text or images. Backends for llama.cpp, Ollama and OpenRouter.
+- [choosekit](https://github.com/NotXf1le/choosekit) - Scores a finite set of choices against a model you already run and returns a typed decision with a probability distribution, from text or images. Backends for llama.cpp, Ollama and OpenRouter, and a `choosekit-mcp` package exposing the same choice as one read-only MCP tool.
 - [Jev Local](https://github.com/Argos1111/jev_local) - A local `/v1/systemone` server with two backends: an LFM model zero-shot, and a fine-tuned ModernBERT-Ja cross-encoder. Japanese documentation.
 - [LLM2Jev](https://github.com/Yinsongxu/LLM2Jev) - Adapts a local language model into a Jev-style decision engine, answering runtime-defined Choice, Score and Noul questions through SGLang.
 - [Laya for Node](https://github.com/receptron/laya) - Runs Laya, an open Jev-compatible System One model, from Node.js and TypeScript through ONNX Runtime.
