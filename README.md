@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**254 entries · every one checked to actually call Jev · last reviewed 2026-09-22**
+**254 entries · every one checked to actually call Jev · last reviewed 2026-09-23**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-09-22.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-09-23.
 
 | Project                        |  Stars | This week |
 | ------------------------------ | -----: | --------: |
-| browser-use/jev-ultrafast      | 16,212 |   +12,569 |
-| tamaratran/fast-jev-compaction |  6,029 |    +4,074 |
-| TianyuCodings/NanoJev          |  1,846 |    +1,710 |
-| jarrodwatts/jev-trader         |  1,878 |    +1,196 |
-| awlevin/typesafe-computer-use  |    763 |      +582 |
-| vinnylarouge/jevlike           |  1,170 |      +393 |
-| devagrawal09/jev-review        |    500 |      +291 |
-| droidrun/mobile-jev            |    328 |      +265 |
-| thruwire/foreman               |    469 |      +226 |
-| gargpratyush/jev-router        |    314 |      +216 |
+| browser-use/jev-ultrafast      | 18,259 |   +14,616 |
+| tamaratran/fast-jev-compaction |  6,354 |    +4,399 |
+| TianyuCodings/NanoJev          |  2,020 |    +1,884 |
+| jarrodwatts/jev-trader         |  2,084 |    +1,402 |
+| awlevin/typesafe-computer-use  |    847 |      +666 |
+| vinnylarouge/jevlike           |  1,241 |      +464 |
+| devagrawal09/jev-review        |    556 |      +347 |
+| droidrun/mobile-jev            |    356 |      +293 |
+| thruwire/foreman               |    518 |      +275 |
+| lahfir/agent-desktop           |  1,525 |      +263 |
 
-**New to this list this week:** `jaredpalmer/kev`, `bespokelabsai/nimble`, `githubnext/localjev`, `Sac-Y/Jev-cu`, `featherless-ai/simple-jev` and 121 more.
+**New to this list this week:** `NandhaKishorM/laya`, `jaredpalmer/kev`, `bespokelabsai/nimble`, `githubnext/localjev`, `kerpopule/hermes-jev-skills` and 168 more.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
