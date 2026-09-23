@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**254 entries · every one checked to actually call Jev · last reviewed 2026-09-23**
+**255 entries · every one checked to actually call Jev · last reviewed 2026-09-23**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -129,7 +129,7 @@ Pointing a tool at a *different* model is the question people are actually askin
 | [jev-seo](https://mrjev.com/projects/akashpriyadarshii-jev-seo/)                     | No — hardcoded constant, no override                                    | We patched the line, then reverted and diffed                                     |
 | [jevscan-evm](https://mrjev.com/projects/devtooligan-jevscan-evm/)                   | No — endpoint constant, no override                                     | Same                                                                              |
 
-For tools that need no Jev at all, the whole Open Models & Reproductions section below is that answer: those projects replace the model rather than the route. Two things to check before picking one. First, the weights' licence, not just the repository's — most are MIT or Apache-2.0 on the code, while the weights vary: OpenThai-SystemOne and PlayJev are Apache-2.0 on both with the base model credited, Von's published weights carry no licence tag at all, and NanoJev declares none on either the model or the dataset. Second, what shape it is: several are a library rather than an API, so choosekit reads probabilities straight out of your own llama.cpp but ships no HTTP server, while OpenThai-SystemOne and others speak `POST /v1/systemone`, which existing SDK code reaches with a base-URL change.
+For tools that need no Jev at all, the whole Open Models & Reproductions section below is that answer: those projects replace the model rather than the route. Two things to check before picking one. First, the weights' licence, not just the repository's — most are MIT or Apache-2.0 on the code, while the weights vary: OpenThai-SystemOne and PlayJev are Apache-2.0 on both with the base model credited, Von's published weights carry no licence tag at all, and NanoJev declares none on either the model or the dataset. Second, what shape it is: several are a library rather than an API, so choosekit reads probabilities out of a backend you already run and ships an MCP server rather than an HTTP one, while OpenThai-SystemOne and others speak `POST /v1/systemone`, which existing SDK code reaches with a base-URL change.
 
 ## Official Resources
 
@@ -175,6 +175,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Agent Integrations (MCP & Skills)
 
+- [choosekit-mcp](https://github.com/NotXf1le/choosekit/tree/master/packages/choosekit-mcp) - Exposes choosekit's typed choice as one read-only MCP tool, so a coding agent gets a distribution over your options instead of prose. Same three backends as the library.
 - [TypeSafe skill router](https://github.com/DECRUX9812/typesafe-skill-router) - Hermes Agent plugin that names the one skill worth loading before the model call. Off by default, injects nothing when nothing fits, and does not spend its second request when the first gate is not cleared.
 - [typesafe-mcp](https://github.com/itsmostafa/typesafe-mcp) - MCP server that lets agents such as Claude Code, Claude Desktop, and Codex call Jev directly for Choice, Score, and Noul decisions.
 - [jev-mcp](https://github.com/jkudish/jev-mcp) - Proof-of-concept MCP server with ready-made tools for fact checking, prompt-injection detection, and semantic ranking.
@@ -388,7 +389,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [openJev-verdict-2.0](https://github.com/Heman10x-NGU/openJev-verdict-2.0) - A 151M non-autoregressive decision model on ModernBERT with calibrated uncertainty and an in-browser WebGPU playground. Its LICENSE is not recognised as the Apache 2.0 its badge claims.
 - [OpenDecision](https://github.com/deepanwadhwa/OpenDecision) - Open-source semantic decision engine: state, a question in natural language, and answer criteria in; a structured decision out.
 - [Open Alternative to Jev](https://github.com/ikermoel/open-alternative-jev) - Typed, calibrated decisions from any open-weights model in one forward pass, as the Python package `open-alternative-jev`.
-- [choosekit](https://github.com/NotXf1le/choosekit) - Scores a finite set of choices with a model you already run in llama.cpp and returns a typed decision with a probability distribution.
+- [choosekit](https://github.com/NotXf1le/choosekit) - Scores a finite set of choices against a model you already run and returns a typed decision with a probability distribution, from text or images. Backends for llama.cpp, Ollama and OpenRouter.
 - [Jev Local](https://github.com/Argos1111/jev_local) - A local `/v1/systemone` server with two backends: an LFM model zero-shot, and a fine-tuned ModernBERT-Ja cross-encoder. Japanese documentation.
 - [LLM2Jev](https://github.com/Yinsongxu/LLM2Jev) - Adapts a local language model into a Jev-style decision engine, answering runtime-defined Choice, Score and Noul questions through SGLang.
 - [Laya for Node](https://github.com/receptron/laya) - Runs Laya, an open Jev-compatible System One model, from Node.js and TypeScript through ONNX Runtime.
