@@ -26,6 +26,12 @@ CANDIDATE_ROW = re.compile(r"^\| \[([\w.-]+/[\w.-]+)\]\(", re.M)
 MAX_NAMED_NEW = 15  # past this, the delta line names a count instead of every repo
 SINCE = "2026-09-01"  # Jev launched 2026-09-15; nothing older is relevant
 MIN_STARS = 10  # the inclusion bar in CONTRIBUTING.md; below this, a repo resurfaces automatically once it gains traction
+# How many candidates one day's triage takes off the top. The backlog is a queue, not a debt:
+# the rest keep their place and come back tomorrow, so the star bar stays where CONTRIBUTING
+# put it instead of being raised to make a day's list shorter. Raising MIN_STARS to shrink the
+# list would cost more than it saves: 37% of the projects listed here were under 15 stars when
+# they were added, and several of the best of them were under 14.
+DAILY_TRIAGE = 30
 
 QUERIES = [
     f"jev typesafe in:name,description,readme created:>={SINCE}",
@@ -150,16 +156,32 @@ def main():
     delta = format_delta(ranked, previous)
     if delta:
         print(delta)
-    print("For each one: check that it actually calls Jev and has a usable README, then either "
-          "add it to the README (write your own description) or add `owner/repo` to "
-          "`.github/discovery-ignore.txt`. Checked items disappear on the next run.\n")
-    print("| Repository | Stars | Created | New | Description |")
-    print("|---|---:|---|---|---|")
-    for r in ranked:
+    print("For each one: check that it actually calls Jev in code, not just in the README, and "
+          "that it explains how to run it. Then give it one of four dispositions, all of which "
+          "count as handled:\n")
+    print("- **List it** — add to `README.md` with a description of your own.")
+    print("- **Related Lists** — someone else's directory of Jev projects goes under that "
+          "heading; discovery skips everything the README links.")
+    print("- **Ignore** — structurally not ours (makes no Jev call, needs an account we will "
+          "not open, needs hardware we do not have): `owner/repo` in "
+          "`.github/discovery-ignore.txt`, under a comment saying why.")
+    print("- **Not yet** — a real project below the bar today. Reply, and *do not* ignore it, "
+          "so it comes back when it crosses ten stars.\n")
+    print(f"Listing is not reviewing. Adding an entry is the cheap half and can run ahead of the "
+          f"hands-on review, which has its own queue (`scripts/review-queue.mjs` in mrjev.com).\n")
+    if len(ranked) > DAILY_TRIAGE:
+        print(f"Rows below the line are tomorrow's. One day's triage is the top {DAILY_TRIAGE}; "
+              f"the rest keep their place.\n")
+    print("| Repository | Stars | Created | Language | New | Description |")
+    print("|---|---:|---|---|---|---|")
+    for index, r in enumerate(ranked):
+        if index == DAILY_TRIAGE:
+            print(f"| **— top {DAILY_TRIAGE} ends here —** | | | | | "
+                  f"*{len(ranked) - DAILY_TRIAGE} below the line* |")
         desc = (r.get("description") or "").replace("|", "\\|")[:140]
         fresh = "new" if previous is not None and r["full_name"].lower() not in previous else ""
         print(f"| [{r['full_name']}]({r['html_url']}) | {r['stargazers_count']} "
-              f"| {r['created_at'][:10]} | {fresh} | {desc} |")
+              f"| {r['created_at'][:10]} | {r.get('language') or ''} | {fresh} | {desc} |")
     return 1
 
 
