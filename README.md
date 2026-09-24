@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-09-23.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-09-24.
 
 | Project                        |  Stars | This week |
 | ------------------------------ | -----: | --------: |
-| browser-use/jev-ultrafast      | 18,259 |   +14,616 |
-| tamaratran/fast-jev-compaction |  6,354 |    +4,399 |
-| TianyuCodings/NanoJev          |  2,020 |    +1,884 |
-| jarrodwatts/jev-trader         |  2,084 |    +1,402 |
-| awlevin/typesafe-computer-use  |    847 |      +666 |
-| vinnylarouge/jevlike           |  1,241 |      +464 |
-| devagrawal09/jev-review        |    556 |      +347 |
-| droidrun/mobile-jev            |    356 |      +293 |
-| thruwire/foreman               |    518 |      +275 |
-| lahfir/agent-desktop           |  1,525 |      +263 |
+| browser-use/jev-ultrafast      | 19,207 |   +15,564 |
+| tamaratran/fast-jev-compaction |  6,604 |    +4,649 |
+| TianyuCodings/NanoJev          |  2,133 |    +1,997 |
+| jarrodwatts/jev-trader         |  2,203 |    +1,521 |
+| awlevin/typesafe-computer-use  |    929 |      +748 |
+| vinnylarouge/jevlike           |  1,274 |      +497 |
+| devagrawal09/jev-review        |    582 |      +373 |
+| lahfir/agent-desktop           |  1,603 |      +341 |
+| droidrun/mobile-jev            |    376 |      +313 |
+| thruwire/foreman               |    536 |      +293 |
 
-**New to this list this week:** `NandhaKishorM/laya`, `jaredpalmer/kev`, `bespokelabsai/nimble`, `githubnext/localjev`, `kerpopule/hermes-jev-skills` and 168 more.
+**New to this list this week:** `NandhaKishorM/laya`, `jaredpalmer/kev`, `TheoLeeCJ/SemIf-OpenJev`, `bespokelabsai/nimble`, `githubnext/localjev` and 222 more.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
