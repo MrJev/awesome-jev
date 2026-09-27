@@ -3,6 +3,7 @@
 import json
 import os
 import re
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -29,13 +30,24 @@ def get(path, params=None):
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     if token:
         req.add_header("Authorization", f"Bearer {token}")
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.load(resp)
-    except urllib.error.HTTPError as e:
-        if e.code == 404:
-            return None
-        raise
+    # 502/503/504 from api.github.com are transient and do happen: one on 2026-09-27 ended the
+    # discovery run mid-search. Retry those a few times before giving up; everything else raises.
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.load(resp)
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                return None
+            if e.code in (502, 503, 504) and attempt < 3:
+                time.sleep(2 ** attempt)
+                continue
+            raise
+        except urllib.error.URLError:
+            if attempt < 3:
+                time.sleep(2 ** attempt)
+                continue
+            raise
 
 
 # Repos under this heading are other people's lists, not entries: they are not

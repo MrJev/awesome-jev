@@ -186,4 +186,11 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    # 0 = nothing pending, 1 = a backlog to triage, 3 = the run itself failed. Before this, an
+    # uncaught exception also exited 1, so a transient API 502 read as "there is a backlog" and the
+    # workflow went on to update the issue with an empty title (2026-09-27).
+    try:
+        sys.exit(main())
+    except Exception as exc:  # noqa: BLE001 - the exit code is the point
+        print(f"discover failed: {type(exc).__name__}: {exc}", file=sys.stderr)
+        raise SystemExit(3)

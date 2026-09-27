@@ -22,6 +22,13 @@ case "$mode" in
   open)
     title=$3
     body_file=$4
+    # A blank title is a failed producer, not an update: GitHub rejects it with
+    # "Title can't be blank" after the fact, which is a confusing way to learn that the step
+    # before this one died. Refuse here instead.
+    if [[ -z "${title// }" ]]; then
+      echo "refusing to update issue: empty title (the step that writes it did not finish)" >&2
+      exit 1
+    fi
     if [[ -n "$existing" ]]; then
       # Editing an issue does not notify anyone; commenting does. Comment only when the
       # body actually changed, so a run that finds the same backlog stays silent while
