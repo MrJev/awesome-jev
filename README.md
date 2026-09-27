@@ -502,6 +502,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [this-that-model](https://github.com/FLock-io/this-that-model) - A 1.9B typed-decision model with an arXiv paper behind it: one forward pass, no decoding loop, and a `/v1/systemone` endpoint.
 - [tinyjev](https://github.com/ankit-aglawe/tinyjev) - A small decision model for a laptop that answers the three primitives and is built around knowing when to ask a person.
 - [Kev](https://github.com/arjun988/Kev) - Open System One engine for typed choice, score and noul answers with calibration.
+- [jevos](https://github.com/feder-cr/jev) - Jev-compatible `/v1/systemone` server for yes/no (Noul) questions on a 1B model cut to 17 layers, GGUF via llama.cpp, CPU-only and fully offline; TypeSafe's SDK works unchanged.
 
 ## Games & Real-Time Demos
 
