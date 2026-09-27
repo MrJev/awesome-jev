@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**366 entries · every one checked to actually call Jev · last reviewed 2026-09-27**
+**367 entries · every one checked to actually call Jev · last reviewed 2026-09-27**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -502,6 +502,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [this-that-model](https://github.com/FLock-io/this-that-model) - A 1.9B typed-decision model with an arXiv paper behind it: one forward pass, no decoding loop, and a `/v1/systemone` endpoint.
 - [tinyjev](https://github.com/ankit-aglawe/tinyjev) - A small decision model for a laptop that answers the three primitives and is built around knowing when to ask a person.
 - [Kev](https://github.com/arjun988/Kev) - Open System One engine for typed choice, score and noul answers with calibration.
+- [jevos](https://github.com/feder-cr/jev) - Serves `/v1/systemone` and `/v1/models` for yes/no questions only — other types are refused — from a GGUF model through llama.cpp on CPU, offline once the file is downloaded.
 
 ## Games & Real-Time Demos
 
