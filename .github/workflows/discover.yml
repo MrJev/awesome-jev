@@ -44,4 +44,7 @@ jobs:
 
       - name: Fail on script errors
         if: steps.search.outputs.status != '0' && steps.search.outputs.status != '1'
-        run: exit 1
+        run: |
+          echo "discover.py exited ${{ steps.search.outputs.status }}; the issue was left untouched." >&2
+          tail -20 report.md >&2 || true
+          exit 1
