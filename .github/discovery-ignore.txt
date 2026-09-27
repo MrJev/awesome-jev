@@ -111,3 +111,9 @@ angel291592/Intent-Router
 # Hardware: a 3D-printed litter-picking rover. Its Jev pickup demo runs on the author's own
 # site against recorded MuJoCo physics; the code here is teleop, gamepad and drive control.
 metrox-eth/moss
+
+# 2026-09-27 triage correction
+# Migrated off Jev. The live path calls Groq (lib/groq.mjs, lib/patch-titles.mjs); the only Jev
+# references left are archived review metadata on 23 of 293 editions and a validator that keeps
+# those historical fields when a Groq-only revision lands. There is no Jev call in the repository.
+byalex33/changelog.earth
