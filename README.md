@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**367 entries · every one checked to actually call Jev · last reviewed 2026-09-27**
+**366 entries · every one checked to actually call Jev · last reviewed 2026-09-27**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -374,7 +374,6 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 ## Apps & Browser Extensions
 
 - [Jev × WebMCP](https://github.com/sdras/jev-webmcp-extension) - Chrome extension that discovers the WebMCP tools a page exposes and has Jev choose which one a sentence means, then fills in its arguments.
-- [changelog.earth](https://github.com/byalex33/changelog.earth) - Treats the planet as software under maintenance: real reporting sorted into new species, balance changes and unresolved bugs, with typed decisions doing the sorting.
 - [JevIntent](https://github.com/Nisaka520/JevIntent) - WeChat plugin that reads intent, tone and reply posture from a long-pressed message and shows the verdict locally. Sends nothing and changes no chat history. Chinese.
 - [jev-哑巴微信](https://github.com/wuxie888/jev-yaba-wechat) - macOS helper beside the WeChat window: an LLM drafts several possible replies and Jev scores them, leaving you to press send. Chinese.
 - [Jev demos](https://github.com/mayank953/Jev) - Seven side-by-side demos that run with no keys and label themselves simulated. Each visitor's key gets its own budget by fingerprint, and any key is redacted out of upstream errors.
