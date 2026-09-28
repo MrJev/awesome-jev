@@ -117,3 +117,10 @@ metrox-eth/moss
 # references left are archived review metadata on 23 of 293 editions and a validator that keeps
 # those historical fields when a Groq-only revision lands. There is no Jev call in the repository.
 byalex33/changelog.earth
+
+# 2026-09-28 triage
+# Model-agnostic skill for designing decision systems. Its own marketplace entry says
+# "Independent of TypeSafe" and names Jev as the default hosted exemplar; the only Jev-specific
+# code is a provenance gate that reads the TypeSafe customer agreement's training clause.
+# Nothing in the repository calls Jev.
+24601/Augustus
