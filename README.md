@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**366 entries · every one checked to actually call Jev · last reviewed 2026-09-28**
+**364 entries · every one checked to actually call Jev · last reviewed 2026-09-28**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -191,7 +191,6 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 ## Agent Integrations (MCP & Skills)
 
 - [TypeSafe skill router](https://github.com/DECRUX9812/typesafe-skill-router) - Hermes Agent plugin that names the one skill worth loading before the model call. Off by default, injects nothing when nothing fits, and does not spend its second request when the first gate is not cleared.
-- [typesafe-mcp](https://github.com/itsmostafa/typesafe-mcp) - MCP server that lets agents such as Claude Code, Claude Desktop, and Codex call Jev directly for Choice, Score, and Noul decisions.
 - [jev-mcp](https://github.com/jkudish/jev-mcp) - Proof-of-concept MCP server with ready-made tools for fact checking, prompt-injection detection, and semantic ranking.
 - [askjev](https://github.com/pZacca/askjev) - MCP server published on npm, with setup instructions for Claude Code, Claude Desktop, Cursor, and Codex.
 - [jev-eval-mcp](https://github.com/BYK/jev-mcp) - Eval-first MCP server that focuses on knowing whether Jev's answers can be trusted for your task.
@@ -215,13 +214,12 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-judge-mcp](https://github.com/PyModel/jev-judge-mcp) - MCP server that gives a coding agent eleven judgment tools backed by Jev, for the checks whose answers can be enumerated.
 - [jevcore](https://github.com/PerryLink/jevcore) - Typed decisions for DeepSeek Harness and any other MCP host, also usable as a plain Node library.
 - [system1-agents](https://github.com/ThinkFlowLab/system1-agents) - Prebuilt agents whose decisions come from a System One model, Jev or an open one, covering browser use, computer use, robotics and games, with a scaffold for building your own.
-- [Jev-native agent design](https://github.com/6Mikao9/jev-agent-design-with-topk-logits-choices) - Research runtime for an agent whose every step is a typed decision rather than generated text, with a paged option space and a replaceable decision-model boundary. Chinese.
 - [System One Connector](https://github.com/itsmostafa/system-one-connector) - MCP connector that gives Claude Code, Claude Desktop, Codex, Hermes and pi an `evaluate` tool, pointed at Jev or at an open System One model you host.
 - [quicksilver](https://github.com/UditAkhourii/quicksilver) - Claude Code skill for the bulk judgement calls — which of these files, which of these log lines, which of these tickets — that otherwise get read one by one.
 - [dsh-jev-interceptor](https://github.com/AskTheWay/dsh-jev-interceptor) - Judges every tool call and recalled message inside DeepSeek Harness before it runs.
 - [Gatekeeper](https://github.com/AgriciDaniel/gatekeeper) - Decides which agent or skill should take a request before the agent picks for itself; tool-neutral rulebooks, installed today as a Claude Code hook.
 - [jev-harness](https://github.com/TypeSafeAI/jev-harness) - Research-stage proposal-review contract: an LLM proposes one action, four narrow questions are answered, and code produces evidence for a host to judge — it applies nothing itself. From the independent `TypeSafeAI` community organisation, which its README distinguishes from the official team.
-- [Decision-Native Agent Runtime](https://github.com/6Mikao9/jev-native-agent-with-extended-options) - Second iteration of the same author's decision-native runtime, extending the option space a bounded, non-generative model can operate over. Chinese.
+- [Decision-Native Agent Runtime](https://github.com/6Mikao9/jev-native-agent-with-extended-options) - Research runtime for an agent whose every step is a typed decision rather than generated text, with a paged option space and a replaceable decision-model boundary. Chinese.
 
 ## Coding Agents & Developer Tools
 
@@ -237,7 +235,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev Review MCP](https://github.com/NiazMorshed2007/jev-review) - Local-first MCP server for continuous software-quality review by coding agents.
 - [Stanley Code](https://github.com/devagrawal09/stanley-code) - Bounded Jev workflows for coding agents (formerly jev-code).
 - [SkillRanker](https://github.com/Dicklesworthstone/skillranker) - Rust CLI that ranks which agent skills fit the next step from live session context, with Claude Code hooks.
-- [JevLint](https://github.com/huntedman/JevLint) - Checks code against conventions written in plain English, in a write-check-fix loop with your coding agent.
+- [JevLint](https://github.com/iamtoomas/JevLint) - Checks code against conventions written in plain English, in a write-check-fix loop with your coding agent.
 - [compact-adviser](https://github.com/kunchenguid/compact-adviser) - Agent plugin that asks Jev whether the session is at a safe point to `/compact`, and can run it automatically on Pi and Claude Code.
 - [jev-pruner](https://github.com/tamaratran/jev-pruner) - Claude Code plugin that uses Jev to trim long Bash output before it reaches the model, leaving errors, source code, and structured output untouched.
 - [perch](https://github.com/lakeday-org/perch) - Semantic linter that reads each method together with its callers and callees before asking about it. Rules are sentences in a YAML file.
@@ -281,7 +279,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 ## Model Routing
 
 - [Astra-Ares](https://github.com/miuuyy/Astra-Ares) - Adjusts a Codex task's reasoning effort mid-run by asking Jev how hard the next step looks. Runs a patched Codex CLI and says it is a reference implementation rather than an app.
-- [Agent Orchestration SDK](https://github.com/masonlee39/Multi-Agent) - Orchestration engine for multi-agent work with durable mailboxes and warm sessions, routing each task with a typed decision instead of a manager LLM.
+- [Agent Orchestration SDK](https://github.com/masonlee39/orchvia) - Orchestration engine for multi-agent work with durable mailboxes and warm sessions, routing each task with a typed decision instead of a manager LLM.
 - [jev-router](https://github.com/gargpratyush/jev-router) - Per-turn model routing for Claude Code and Codex. Simple work goes to the fast tier and difficult work to the strong tier.
 - [tiershift](https://github.com/iamvatsalpatel/tiershift) - Sends each LLM request to the cheapest model tier that can handle it and escalates on evidence.
 - [safer-with-jev](https://github.com/andrelandgraf/safer-with-jev) - Neon Function proxy for the Neon AI Gateway. Jev classifies each request and routes it to the right downstream model.
