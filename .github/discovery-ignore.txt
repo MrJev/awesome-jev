@@ -124,3 +124,10 @@ byalex33/changelog.earth
 # code is a provenance gate that reads the TypeSafe customer agreement's training clause.
 # Nothing in the repository calls Jev.
 24601/Augustus
+
+# 2026-09-29 triage
+# Redirect, not a project: luobosibing2/deepseek-harness-jev is the old name of
+# luobosibing2/dsh-jev-plugin, which the list carries. Identical trees, identical creation
+# timestamp, and the API resolves the old name to the new one. Ignored so discovery stops
+# offering the same repository twice.
+luobosibing2/deepseek-harness-jev
