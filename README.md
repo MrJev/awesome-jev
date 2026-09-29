@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**391 entries · every one checked to actually call Jev · last reviewed 2026-09-28**
+**391 entries · every one checked to actually call Jev · last reviewed 2026-09-29**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-09-28.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-09-29.
 
 | Project                        |  Stars | This week |
 | ------------------------------ | -----: | --------: |
-| browser-use/jev-ultrafast      | 20,870 |    +8,372 |
-| jaredpalmer/kev                |  7,448 |    +6,301 |
-| tamaratran/fast-jev-compaction |  7,037 |    +1,695 |
-| jarrodwatts/jev-trader         |  2,615 |    +1,041 |
-| TianyuCodings/NanoJev          |  2,360 |      +855 |
-| bespokelabsai/nimble           |  1,873 |      +668 |
-| kerpopule/hermes-jev-skills    |    875 |      +590 |
-| wfzyx/von                      |    730 |      +492 |
-| awlevin/typesafe-computer-use  |  1,036 |      +384 |
-| lahfir/agent-desktop           |  1,687 |      +340 |
+| jaredpalmer/kev                |  7,681 |    +5,085 |
+| browser-use/jev-ultrafast      | 21,196 |    +4,984 |
+| tamaratran/fast-jev-compaction |  7,150 |    +1,121 |
+| jarrodwatts/jev-trader         |  2,663 |      +785 |
+| TianyuCodings/NanoJev          |  2,406 |      +560 |
+| taeold/djev-run                |    567 |      +535 |
+| kerpopule/hermes-jev-skills    |    895 |      +495 |
+| bespokelabsai/nimble           |  1,895 |      +387 |
+| wfzyx/von                      |    758 |      +387 |
+| receptron/laya                 |    571 |      +378 |
 
-**New to this list this week:** `NandhaKishorM/laya`, `TheoLeeCJ/SemIf-OpenJev`, `Contrastive-LM/CLM`, `feder-cr/jev`, `deepopen-com/deepopen` and 202 more.
+**New to this list this week:** `NandhaKishorM/laya`, `TheoLeeCJ/SemIf-OpenJev`, `Contrastive-LM/CLM`, `dzhng/jevgrep`, `feder-cr/jev` and 182 more.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
