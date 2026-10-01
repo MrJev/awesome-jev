@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**419 entries · every one checked to actually call Jev · last reviewed 2026-09-30**
+**419 entries · every one checked to actually call Jev · last reviewed 2026-10-01**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-09-30.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-01.
 
 | Project                        |  Stars | This week |
 | ------------------------------ | -----: | --------: |
-| NandhaKishorM/laya             | 28,721 |   +11,489 |
-| jaredpalmer/kev                |  7,924 |    +3,407 |
-| browser-use/jev-ultrafast      | 21,430 |    +3,171 |
-| deepopen-com/deepopen          |  1,623 |    +1,389 |
-| nokia-applied-research/AnyJev  |    965 |      +883 |
-| tamaratran/fast-jev-compaction |  7,209 |      +855 |
-| Mapika/decider                 |    942 |      +624 |
-| jarrodwatts/jev-trader         |  2,689 |      +605 |
-| taeold/djev-run                |    574 |      +442 |
-| TianyuCodings/NanoJev          |  2,440 |      +420 |
+| NandhaKishorM/laya             | 29,327 |    +8,433 |
+| Contrastive-LM/CLM             |  2,625 |    +2,547 |
+| browser-use/jev-ultrafast      | 21,588 |    +2,381 |
+| jaredpalmer/kev                |  8,079 |    +1,932 |
+| deepopen-com/deepopen          |  1,622 |      +889 |
+| tamaratran/fast-jev-compaction |  7,262 |      +658 |
+| Mapika/decider                 |    995 |      +655 |
+| nokia-applied-research/AnyJev  |    992 |      +590 |
+| Liuziyu77/Valen                |    585 |      +554 |
+| jarrodwatts/jev-trader         |  2,710 |      +507 |
 
-**New to this list this week:** `TheoLeeCJ/SemIf-OpenJev`, `Contrastive-LM/CLM`, `dzhng/jevgrep`, `feder-cr/jev`, `firelex/jeff` and 162 more.
+**New to this list this week:** `dzhng/jevgrep`, `firelex/jeff`, `feder-cr/jev`, `ollaya-dev/ollaya`, `Alex314618-create/JevRev` and 110 more.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
