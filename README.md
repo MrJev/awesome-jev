@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**419 entries · every one checked to actually call Jev · last reviewed 2026-10-01**
+**446 entries · every one checked to actually call Jev · last reviewed 2026-10-01**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -161,6 +161,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [AnyDecisionModel](https://github.com/mattt/AnyDecisionModel) - Swift package with one typed-decision protocol over two backends: Jev's `/v1/systemone`, or a small model running locally on Apple silicon through MLX.
 - [laya-php](https://github.com/marcreichel/laya-php) - Laravel-ready PHP client for Laya, the open System One model, so a typed decision is a PHP enum rather than a parsed sentence. Self-hosted, no Jev key.
 - [jev4k](https://github.com/pambrose/jev4k) - Kotlin Multiplatform DSL and client, published to Maven Central.
+- [jev (Go client)](https://github.com/stefafafan/jev) - Provider-neutral Unix client: a question in, a typed answer out, for shells and scripts. `go install`.
 
 ## Libraries & Integrations
 
@@ -196,6 +197,11 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [J++](https://github.com/Towow-ai/jpp) - Experimental language in which a question is a value and methods compose them, with a Python foundation and a Rust runtime, both speaking `/v1/systemone`. Every demo replays a recorded run and says what is unsettled. Chinese and English.
 - [Ten Levels of Jev](https://github.com/disler/ten-levels-of-jev) - Thirty worked uses arranged in ten levels, from one `if` statement to an agent that reaches for Jev itself, with a video walkthrough.
 - [TypeSafe Playground](https://github.com/TypeSafeAI/typesafe-playground) - Community playground with 110 use cases, A/B input comparison, editable prompts, and games built on typed answers. From the independent `TypeSafeAI` community organisation, not the official team.
+- [JEV_sees](https://github.com/CharlesFeng0314/JEV_sees) - Gives Jev eyes: turns an image, a video stream or an RGB-D camera into the structured state a typed question can be asked about, for risk and triage judgments over what a camera sees.
+- [Jevstiller](https://github.com/tomerglick57/Jevstiller) - Sits in front of a repeated classification call, trains a local model on Jev's own answers and their distributions, checks the two agree within a budget you set, and then answers most requests itself.
+- [DuoMind](https://github.com/j1s4nn/duomind) - OpenAI-compatible local server that pairs a small llama.cpp model for generation with a decision model for the closed questions, so generation stays on your machine.
+- [DSPy System One patterns](https://github.com/cmpnd-ai/dspy-system-one-agent-patterns) - Six files, one coding agent, one pattern each, on a single rule: the signature states the question, Jev returns the probability, and plain Python owns the policy.
+- [system-one-foundation-models](https://github.com/peterfriese/system-one-foundation-models) - Swift 6 bridge that puts Jev behind Apple's Foundation Models framework, with ticket- and mail-triage example apps.
 
 ## Agent Integrations (MCP & Skills)
 
@@ -237,6 +243,10 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-anything](https://github.com/grandamenium/jev-anything) - Agent skill for designing, building, testing and tuning a bounded decision layer, with a client scaffold it writes for you.
 - [ReelQL](https://github.com/tomascupr/reelql) - Claude skill and API that turns a video link into one typed JSON document: chapters, scenes, key moments, on-screen text and transcript.
 - [Harness Router](https://github.com/Protocol-Lattice/harness-router) - Routes an agent's tool calls, as a hook on every call or a skill you invoke, with MCTS for multi-step decisions.
+- [pi-heed](https://github.com/Nyarlathoteppppp/pi-heed) - Checks every side-effecting tool call the pi agent is about to make against what you actually asked for, before it runs.
+- [dsh-jev-tools](https://github.com/HorusJiang/dsh-jev-tools) - DeepSeek Harness plugin that judges tool output before it enters the context, screens fetched pages for injected instructions, and gates completion claims. Chinese.
+- [ego-jev](https://github.com/ZephyrDeng/ego-jev) - Agent skill that decides each DOM step from the page's candidate elements rather than spending an LLM turn on it.
+- [jev-harness (Soilet)](https://github.com/ismaelsoilet/jev-harness) - Five semantic gates in front of a frontier agent, for trivial errors and doom loops, with a dependency-free local deterministic mode. English and Portuguese. One of three projects on this list called jev-harness.
 
 ## Coding Agents & Developer Tools
 
@@ -275,6 +285,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jevmem](https://github.com/Avinash-jetwani/jevmem) - Automatic project memory for Claude Code, Cursor and Codex, with typed decisions choosing what is worth remembering.
 - [Jev Code Reviewer](https://github.com/egma-ai/jev-code-reviewer) - Reviews your own agent's pull requests on your machine and posts nothing to GitHub, prioritising where a human should look rather than restating the diff.
 - [KISS](https://github.com/racetozero/kiss) - Rust terminal coding agent with 44 providers that asks Jev for its own decisions; `kiss-coding` holds the client.
+- [jev-spec](https://github.com/nozomi-koborinai/jev-spec) - Checks each commit's code against the Markdown specs beside it and fails when they have drifted apart.
+- [Software Factory](https://github.com/stratonext/software-factory) - Local pipeline that puts a typed judge between stages, including a secret gate, published on PyPI.
 
 ## Guardrails & Safety
 
@@ -313,6 +325,9 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jevonian](https://github.com/xinyao27/jevonian) - Sits between a coding agent and its providers, picks a model for each turn against quota and cache economics, and records the decision locally.
 - [Switchboard](https://github.com/ruban-24/switchboard) - Model and reasoning-effort routing for Claude Code and Codex, model-agnostic and self-hosted.
 - [auto-model-router](https://github.com/fstandhartinger/auto-model-router) - Picks a model per turn across any number of OpenAI-compatible providers against cost, cache and quota, with a Claude Code shim.
+- [Jevia](https://github.com/assistant-ui/jevia) - Local-first, outcome-based router for coding harnesses: it picks a capability tier per task, applies your safety policy, and learns from recorded execution history.
+- [claude-workspace](https://github.com/hajdu-patrik/claude-workspace) - Routes each request across Claude, Codex and other agents, and queues a prompt sent while an earlier one is still running instead of overwriting it.
+- [pi-jev-model-router](https://github.com/da-vinci-noob/pi-jev-model-router) - Reads each pi prompt with four typed questions before the turn starts and picks a model tier, with a budget and an automatic fallback.
 
 ## Command-Line Tools
 
@@ -376,6 +391,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [playjev](https://github.com/filedcom/playjev) - Natural-language browser automation for Playwright, in the shape of Stagehand. Not the same project as the PlayJev decision model below.
 - [jev-browser](https://github.com/tontoko/jev-browser) - One core behind a typed SDK, a persistent CLI and an MCP server: native Playwright operations and assertions need no key, and only the natural-language paths call Jev. Japanese.
 - [laya-browser-agent](https://github.com/ChenneyZhuang/laya-browser-agent) - Browser agent whose next action is decided by Laya on your own machine, with no cloud and no API key. Japanese.
+- [jev-ui-test](https://github.com/buer2233/jev-ui-test) - UI test framework where cases are written as sentences and each step is scored against the page's candidate elements rather than generated, run by pytest with Allure reports. Chinese.
+- [jev-sim-use](https://github.com/Ryu0118/jev-sim-use) - Drives an iOS Simulator or Android device without spending a frontier reasoning turn on every tap.
 
 ## Data & Observability
 
@@ -454,6 +471,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jadense in Zotero](https://github.com/jadense-ai/jadense-in-zotero) - Zotero reading assistant that classifies your library with typed questions. Chinese.
 - [OmniStudio](https://github.com/kunpengtalk/OmniStudio) - Local-first desktop workbench for llama.cpp, vLLM and SGLang that also serves `/v1/systemone` through its own gateway, with the contract written down field by field. Chinese.
 - [emotion-system](https://github.com/bvsden/emotion-system) - Reads an AI companion's emotion out of what it wrote itself rather than assigning one, through OpenRouter. Chinese.
+- [osso](https://github.com/Fars29/osso) - Chrome extension that strikes the filler out of a page and leaves the substance.
+- [Touxian](https://github.com/sssssjw11/touxian) - Desktop and Android attention workbench: reads your notifications, checks what they rest on, and tracks the deadline rather than the fact that you saw them. Chinese.
 
 ## Evaluation & Benchmarks
 
@@ -554,6 +573,14 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [open-jev-fast](https://github.com/lyuyiqi/open-jev-fast) - Faster inference backend for Open-Jev-27B: fused CUDA kernels, a prefix tree and CUDA graphs. Needs an Open-Jev install and its weights.
 - [RSI-Jev](https://github.com/Shanghua-Gao/RSI-Jev) - Typed-decision checkpoints produced by a self-improving loop of agents that register predictions before spending GPU time, published with the code that produced them.
 - [privatemode-decisions](https://github.com/edgelesssys/privatemode-decisions) - Gets a choice and a probability per option out of any OpenAI-compatible model in one forward pass, for Edgeless Systems' confidential-computing API or any endpoint you set.
+- [Jeeves](https://github.com/PostHog/jeeves) - A Jev-style classifier that reasons before it decides: Qwen3.5-9B with a LoRA and a pointer head, trained with SFT and CISPO, plus a diffusion drafter. From PostHog.
+- [Lichen](https://github.com/Mushroom-Systems/lichen) - Drop-in replacement serving `/v1/systemone` from open weights on your own hardware, returning the same choice, noul and score shapes.
+- [JevAny](https://github.com/SimpleJev/JevAny) - Infrastructure for training, evaluating and deploying decision models across language and multimodal backbones. English and Chinese.
+- [opendecider](https://github.com/manjunathshiva/opendecider) - Calibrated decision models from 400M to 80B on CPU or NVIDIA, with weights on Hugging Face and a Colab notebook.
+- [StartLux-Decision](https://github.com/StartLuxLabs/StartLux-Decision) - Typed decision models from 0.8B to 27B, each answer carrying a probability per option, with a chess duel demo.
+- [laya-rust](https://github.com/aovestdipaperino/laya-rust) - Pure-Rust inference for Laya on candle: ModernBERT-large with its RL decision head, no Python at serving time.
+- [dohnuts.cpp](https://github.com/DreamBlooms/dohnuts.cpp) - Native C++ inference for Dohnuts on the released Qwen3.5-0.8B base, so the same decisions run on a CPU.
+- [usejev](https://github.com/ali-master/usejev) - Runs Laya under Bun with native ONNX inference behind a TypeSafe-compatible API, so the official SDK reaches it with a `baseURL`. Ships an English and Persian playground.
 
 ## Games & Real-Time Demos
 
@@ -638,6 +665,7 @@ Other community lists of Jev projects, each with its own scope and bar:
 - [Ai-trainee/awesome-jev](https://github.com/Ai-trainee/awesome-jev) - Case library of posts and projects, packaged as a skill an agent loads to suggest how Jev might fit the work in front of it. Chinese.
 - [ckaraca/awesome-jev](https://github.com/ckaraca/awesome-jev) - Directory of tools, integrations and experiments, sorted by stars within each section.
 - [Li-Evan/awesome-jev](https://github.com/Li-Evan/awesome-jev) - Searchable gallery of 3,400+ projects, demos and write-ups gathered from GitHub, X, Reddit and elsewhere, organised by scenario. English and Chinese.
+- [daftAI2026/awesome-jev](https://github.com/daftAI2026/awesome-jev) - Ecosystem directory with a nightly radar workflow that watches for new projects, and a companion site.
 
 ## Contributing
 
