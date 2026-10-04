@@ -137,3 +137,12 @@ luobosibing2/deepseek-harness-jev
 # as one LLM-versus-Jev comparison in the class-2 and class-3 notebooks, alongside Cloudflare D1,
 # Databricks and Genie, and running the demos needs accounts for all three. Spanish.
 h1sort/ai4data-class
+
+# 2026-10-04 triage
+# Same project as the listed Abhinavexists/lev, published again under the author's employer: the
+# same person commits to both (the newer under an interfaze.ai address), the trees match apart from
+# docs, and the weights moved to interfaze-ai/lev. Listing both would show one project twice.
+InterfazeAI/lev
+# Adaptive-learning framework; Jev appears once, as a model alias in the AI helper, and not in the
+# README. Not a Jev project.
+mgarlabx/edukors_graph
