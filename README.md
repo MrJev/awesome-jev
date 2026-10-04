@@ -287,6 +287,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [KISS](https://github.com/racetozero/kiss) - Rust terminal coding agent with 44 providers that asks Jev for its own decisions; `kiss-coding` holds the client.
 - [jev-spec](https://github.com/nozomi-koborinai/jev-spec) - Checks each commit's code against the Markdown specs beside it and fails when they have drifted apart.
 - [Software Factory](https://github.com/stratonext/software-factory) - Local pipeline that puts a typed judge between stages, including a secret gate, published on PyPI.
+- [Supercov](https://github.com/supercorp-ai/supercov) - Coverage, security and code quality for coding agents. Jev answers twelve quality and twelve security questions about each source file, and the CLI ranks the files so the agent knows what to fix first.
 
 ## Guardrails & Safety
 
