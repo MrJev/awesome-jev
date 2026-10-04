@@ -56,20 +56,20 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-03.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-04.
 
 | Project                        |  Stars | This week |
 | ------------------------------ | -----: | --------: |
-| NandhaKishorM/laya             | 30,243 |    +5,462 |
-| browser-use/jev-ultrafast      | 21,824 |    +1,539 |
-| Contrastive-LM/CLM             |  2,738 |    +1,446 |
-| jaredpalmer/kev                |  8,333 |    +1,284 |
-| deepopen-com/deepopen          |  2,053 |    +1,032 |
-| ollaya-dev/ollaya              |  1,128 |      +933 |
-| Mapika/decider                 |  1,043 |      +613 |
-| tamaratran/fast-jev-compaction |  7,336 |      +461 |
-| Liuziyu77/Valen                |    571 |      +384 |
-| TheoLeeCJ/SemIf-OpenJev        |  4,661 |      +330 |
+| NandhaKishorM/laya             | 30,513 |    +4,566 |
+| browser-use/jev-ultrafast      | 21,918 |    +1,327 |
+| Contrastive-LM/CLM             |  2,765 |    +1,146 |
+| jaredpalmer/kev                |  8,376 |    +1,133 |
+| deepopen-com/deepopen          |  2,060 |    +1,022 |
+| ollaya-dev/ollaya              |  1,164 |      +704 |
+| Mapika/decider                 |  1,050 |      +510 |
+| tamaratran/fast-jev-compaction |  7,362 |      +391 |
+| realZachi/pg-jev               |    690 |      +323 |
+| Liuziyu77/Valen                |    592 |      +319 |
 
 **New to this list this week:** `dzhng/jevgrep`, `firelex/jeff`, `feder-cr/jev`, `Alex314618-create/JevRev`, `PostHog/jeeves` and 106 more.
 
