@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**473 entries · every one checked to actually call Jev · last reviewed 2026-10-05**
+**471 entries · every one checked to actually call Jev · last reviewed 2026-10-05**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -151,7 +151,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [typesafe_sdk](https://github.com/nshkrdotcom/typesafe_sdk) - Elixir SDK for the System One API.
 - [typesafe-sdk-java](https://github.com/kgonia/typesafe-sdk-java) - Zero-dependency Java client (Java 21+).
 - [typesafe-go](https://github.com/Shubham510/typesafe-go) - Go client.
-- [kunobi-jev](https://github.com/kunobi-ninja/kunobi-jev) - Rust client, published on crates.io.
+- [kunobi-decision](https://github.com/kunobi-ninja/kunobi-decision) - Rust client, published on crates.io.
 - [typesafeai-dotnet-sdk](https://github.com/saibimajdi/typesafeai-dotnet-sdk) - .NET SDK.
 - [TypeSafe Swift SDK](https://github.com/krzyzanowskim/TypeSafe) - SwiftPM client whose behaviour follows the official JavaScript SDK.
 - [swift-typesafe](https://github.com/ainame/swift-typesafe) - Unofficial Swift SDK following the Python SDK's API, for Apple platforms and Linux.
@@ -311,7 +311,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jevscan-evm](https://github.com/devtooligan/jevscan-evm) - Produces a heat map of likely bugs in EVM code. The author's own warning: a proof of concept whose code they did not read.
 - [Jevmind](https://github.com/dealerdefi/Jevmind) - Nine skills over one brain: a shell-command gate, a diff triage, a router and more, each decision appended to a hash-chained ledger that names any record edited afterwards. Runs offline on local reflexes or against Jev.
 - [Canny](https://github.com/qkal/Canny) - Stop hook for Claude Code and Codex CLI that refuses a "done" while no check has passed since the last edit. Jev can only relax that refusal and never cause one, and it still blocks with no API key at all.
-- [dsh-jev](https://github.com/buberlo/dsh-jev) - Decision layer for DeepSeek Harness whose failure policy rejects the value `allow` at configuration time, from plain JavaScript as well as TypeScript. Its verify script installs the built tarballs into a fresh consumer before testing them.
+- [dsh-jev](https://github.com/buberlo/dsh-jev) *(archived)* - Decision layer for DeepSeek Harness whose failure policy rejects the value `allow` at configuration time, from plain JavaScript as well as TypeScript. Its verify script installs the built tarballs into a fresh consumer before testing them.
 - [jev-edge](https://github.com/kiwi0719/jev-edge) - Admission control at the traffic edge: an OpenResty module, with Lua and JavaScript packages, that screens requests for prompt injection before they reach the app.
 - [Super Jev](https://github.com/Kevthetech143/super-jev) - Puts one judge between an agent and your data: it finds the file, checks the claim, and permits or refuses the action.
 - [jev-safety-gateway](https://github.com/dark-hxx/jev-safety-gateway) - Go reverse proxy that sits between nginx and a model backend, judges each request's user input, blocks the harmful ones and passes the rest through untouched. Chinese.
@@ -349,7 +349,6 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [commit-miner](https://github.com/devanshbatham/commit-miner) - Classifies Git commits into bug fixes, security fixes with CWEs, and change types.
 - [TypeSafe AI Playground](https://github.com/markjaquith/typesafe-ai-playground) - Rust CLI of Jev experiments, including PHI detection, code-comment review, live tone analysis, and occupation and industry classification.
 - [jev-commit](https://github.com/valentynkit/jev-commit) - Pre-commit hook where one Jev call checks whether the commit message matches the staged diff, flags debug leftovers and unmentioned work, and blocks only when it finds a credential.
-- [semgrep (uehaj)](https://github.com/uehaj/jev-semgrep) - Grep by meaning: Jev scores each line against a description in any language, with AND, OR, and NOT. A single dependency-free Node file.
 - [jeff (Alurith)](https://github.com/Alurith/jeff) - Read-only Go CLI that checks files against rules such as unclear responsibility or weak error handling with Jev, locally or in CI.
 - [jegrep](https://github.com/can1357/jegrep) - Semantic grep with no embeddings, index, or daemon: it searches the live tree on every run and matches concepts rather than strings.
 - [jgrep](https://github.com/keltokhy/jgrep) - Like grep, but the pattern is a description: it filters piped output as well as files and prints a probability per line.
@@ -366,7 +365,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jevgrep (dzhng)](https://github.com/dzhng/jevgrep) - Finds code by what it does rather than what it matches: a CLI for coding agents that asks which files and which regions are relevant to a description. Unrelated to the JevGrep above, which has the same name.
 - [grev](https://github.com/aurorainfra/grev) - Unix filters that ask a question instead of matching a pattern, so a pipe can select its lines by meaning.
 - [JevRev](https://github.com/Alex314618-create/JevRev) - Puts an LLM and Jev in one workflow, with sift, loop and long modes, a TUI, and a CLI that can be pointed at any `/v1/systemone` host. English and Chinese.
-- [sys1grep](https://github.com/uehaj/sys1grep) - Greps by meaning rather than pattern, scoring every line against a description and combining meanings with AND, OR and NOT. Japanese and English.
+- [sys1grep](https://github.com/uehaj/sys1grep) - Greps by meaning rather than pattern, scoring every line against a description and combining meanings with AND, OR and NOT; a single dependency-free Node file. Japanese and English. Formerly jev-semgrep.
 - [jeq](https://github.com/cristianoliveira/jeq) - Typed questions in a shell pipeline, for scripts and agents that want an answer without the boilerplate.
 
 ## Browser & Computer Use
@@ -424,7 +423,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Reflex](https://github.com/datadog-labs/reflex) - Rust library for control loops over observability data: metrics and forecasts become typed state, a model recommends an action, and it is committed only if the guards and invariants you declared hold. Not the same project as the open model of the same name.
 - [Jevflake](https://github.com/KranzL/Jevflake) - A dbt package and Terraform module that let Snowflake ask a typed question about a row, so the answer comes back as a column you can filter, join and test.
 - [jevernetes](https://github.com/sunil-sadasivan/jevernetes) - Reads Kubernetes logs, decides which lines matter and what to investigate next, and hands off to an agent. Rust, with an offline mode.
-- [jevsd-pg](https://github.com/Sheltercosmo/jevsd-pg) - A self-developing SQL database with semantic operators and natural-language queries backed by Jev.
+- [jev4pg](https://github.com/Sheltercosmo/jev4pg) - A self-developing SQL database with semantic operators and natural-language queries backed by Jev.
 
 ## Search & Knowledge Graphs
 
@@ -570,7 +569,6 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [JevEmbed](https://github.com/HITsz-TMG/JevEmbed) - Choice, score and noul decisions read out of an embedding model of your choosing, with a Python API, a CLI and an optional HTTP server.
 - [arbiter](https://github.com/0xBakeer/arbiter) - Serves typed-decision models, Laya or your own, behind a Jev-compatible API on an NVIDIA GPU or a Mac.
 - [ollaya](https://github.com/ollaya-dev/ollaya) - Pulls and serves open decision models locally the way Ollama serves language models.
-- [JevAny](https://github.com/weitianxin/JevAny) - A calibrated decision layer trained on a 27B backbone, published as two LoRA checkpoints, one general and one trained with a calibration reward.
 - [Lev](https://github.com/jlt-commons/lev) - System One decision engine in Clojure on Jolt, answering typed questions over a state with calibrated probabilities.
 - [Reflex](https://github.com/lateos-ai/reflex) - GGUF-native Rust and CUDA engine built for cold-start latency, with a `system1` command that scores your candidates from a local model.
 - [Nemotron Diffusion Decision Lab](https://github.com/pst2154/Nemotron_Jev) - Browser lab for asking typed questions of a dense diffusion model and inspecting the distributions, with a disclaimer that it is neither Jev nor a TypeSafe service.
@@ -593,7 +591,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [privatemode-decisions](https://github.com/edgelesssys/privatemode-decisions) - Gets a choice and a probability per option out of any OpenAI-compatible model in one forward pass, for Edgeless Systems' confidential-computing API or any endpoint you set.
 - [Jeeves](https://github.com/PostHog/jeeves) - A Jev-style classifier that reasons before it decides: Qwen3.5-9B with a LoRA and a pointer head, trained with SFT and CISPO, plus a diffusion drafter. From PostHog.
 - [Lichen](https://github.com/Mushroom-Systems/lichen) - Drop-in replacement serving `/v1/systemone` from open weights on your own hardware, returning the same choice, noul and score shapes.
-- [JevAny](https://github.com/SimpleJev/JevAny) - Infrastructure for training, evaluating and deploying decision models across language and multimodal backbones. English and Chinese.
+- [JevAny](https://github.com/SimpleJev/JevAny) - Infrastructure for training, evaluating and deploying decision models across language and multimodal backbones, with calibrated LoRA checkpoints on a 27B backbone. English and Chinese.
 - [opendecider](https://github.com/manjunathshiva/opendecider) - Calibrated decision models from 400M to 80B on CPU or NVIDIA, with weights on Hugging Face and a Colab notebook.
 - [StartLux-Decision](https://github.com/StartLuxLabs/StartLux-Decision) - Typed decision models from 0.8B to 27B, each answer carrying a probability per option, with a chess duel demo.
 - [laya-rust](https://github.com/aovestdipaperino/laya-rust) - Pure-Rust inference for Laya on candle: ModernBERT-large with its RL decision head, no Python at serving time.
