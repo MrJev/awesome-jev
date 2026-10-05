@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**471 entries · every one checked to actually call Jev · last reviewed 2026-10-05**
+**487 entries · every one checked to actually call Jev · last reviewed 2026-10-05**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -202,6 +202,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [DuoMind](https://github.com/j1s4nn/duomind) - OpenAI-compatible local server that pairs a small llama.cpp model for generation with a decision model for the closed questions, so generation stays on your machine.
 - [DSPy System One patterns](https://github.com/cmpnd-ai/dspy-system-one-agent-patterns) - Six files, one coding agent, one pattern each, on a single rule: the signature states the question, Jev returns the probability, and plain Python owns the policy.
 - [system-one-foundation-models](https://github.com/peterfriese/system-one-foundation-models) - Swift 6 bridge that puts Jev behind Apple's Foundation Models framework, with ticket- and mail-triage example apps.
+- [agentrun](https://github.com/Parcha-ai/agentrun) - A workflow DSL for agents with a Jev package for the steps that are decisions rather than generation.
+- [jevelry](https://github.com/backant-io/jevelry) - Puts Jev behind ordinary decisions across a codebase and keeps a record of each one it makes.
 
 ## Agent Integrations (MCP & Skills)
 
@@ -296,6 +298,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [dotpals](https://github.com/Rikinshah787/dotpals) - A desktop pal that watches Claude Code, Codex or any agent and says in plain words which files changed, which commands ran and what failed. Runs locally.
 - [jev-compaction-plus](https://github.com/cth9191/jev-compaction-plus) - Claude Code compaction that keeps what is still needed word for word and moves the rest to a draft, derived from fast-jev-compaction.
 - [fast-jev-compaction for OpenCode](https://github.com/overbit/fast-jev-compaction-opencode) - The fast-jev-compaction approach ported to OpenCode: stale tool history is pruned rather than rewritten by an LLM.
+- [code-quality](https://github.com/smixs/code-quality) - Deterministic quality gate for Claude Code, Codex and pi: Git hooks that block test tampering and secrets, with an optional Jev review that adds findings to the report.
+- [Gobstopper](https://github.com/hraness/gobstopper) - A local proxy that compacts long Claude Code and Codex sessions as they run, with Jev as one of the scorers that decide what stays; nothing is sent until you choose one.
 
 ## Guardrails & Safety
 
@@ -315,6 +319,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-edge](https://github.com/kiwi0719/jev-edge) - Admission control at the traffic edge: an OpenResty module, with Lua and JavaScript packages, that screens requests for prompt injection before they reach the app.
 - [Super Jev](https://github.com/Kevthetech143/super-jev) - Puts one judge between an agent and your data: it finds the file, checks the claim, and permits or refuses the action.
 - [jev-safety-gateway](https://github.com/dark-hxx/jev-safety-gateway) - Go reverse proxy that sits between nginx and a model backend, judges each request's user input, blocks the harmful ones and passes the rest through untouched. Chinese.
+- [sensored](https://github.com/atomicpages/sensored) - Streaming PII redaction for TypeScript with regex and NER detectors, and an opt-in step where Jev confirms a detection before it is redacted.
 
 ## Model Routing
 
@@ -404,6 +409,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [arc-cua](https://github.com/shhivv/arc-cua) - Lets a planner hand bounded desktop subtasks to a decision model that runs the UI loop, with a lean macOS driver usable on its own.
 - [jevwright](https://github.com/Ice-Hazymoon/jevwright) - Browser tests for business flows written as the steps a user takes: the model finds each control once, and the recording replays without it.
 - [jev-agent-browser](https://github.com/forvela/jev-agent-browser) - Bounded browser tasks for a parent agent: Jev picks the next typed action, agent-browser runs it, and ambiguity or a stuck state comes back as a structured handoff.
+- [zero-use-computer](https://github.com/mhrsdev/zero-use-computer) - Computer use over MCP that reads what a screen reader reads and acts on real controls, with an optional decision model - Jev or any compatible server - for the small choices.
 
 ## Data & Observability
 
@@ -433,6 +439,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev.nvim](https://github.com/valentynkit/jev.nvim) - Neovim plugin that splits the buffer into functions with Treesitter, has Jev score each one against a plain-language question, and lists the answers in the quickfix window ranked by probability.
 - [laya-jev-GraphRAG](https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG) - Agentic GraphRAG over Neo4j with a swappable decision model, either the Jev API or a local Laya checkpoint.
 - [jev-doc-search](https://github.com/VectifyAI/jev-doc-search) - Long-document search that walks a PageIndex tree and asks Jev which branches to open.
+- [jev-graph-search](https://github.com/Emlembow/jev-graph-search) - Jev-assisted retrieval over local Markdown, Obsidian vaults and Logseq, keeping the evidence it used inspectable.
 
 ## Apps & Browser Extensions
 
@@ -490,6 +497,9 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [spinlens](https://github.com/Aolibibi/spinlens) - Scans a Bilibili video's comments for rhetorical moves rather than arguments - false balance, labelling, muddying - and quotes the evidence for each of eight labels. Chinese.
 - [ldraw-nova](https://github.com/anteloc/ldraw-nova) - Agent tooling for building LEGO models, where Jev judges part and model descriptions during search.
 - [jevbox](https://github.com/extend-hq/jevbox) - Permission-aware document library: browse document trees and parsed output, search the hierarchy with Jev, and ask source-grounded questions.
+- [Jevboard](https://github.com/AsheeHuang/Jevboard) - Proof of concept for ranking Bopomofo input-method candidates with Jev.
+- [quietly](https://github.com/joeydash/quietly) - Chrome extension that drafts replies on WhatsApp Web and Gmail and quiets the YouTube feed; the YouTube sorting is a yes/no question per video, on Jev by default.
+- [xscout-jev](https://github.com/ethan-ab/xscout-jev) - Watches X for news that matters to you, judged by Jev, and alerts you in Slack.
 
 ## Evaluation & Benchmarks
 
@@ -509,6 +519,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Eval Genius](https://github.com/alexgreensh/eval-genius) - Skill that tells a coding agent when a question needs an eval rather than a vibe, with an opt-in lane that routes the closed-label residue to a decision model and scripts for the cost and confidence arithmetic.
 - [jeval](https://github.com/rlaope/jeval) - Measures how well a classifier's confidence matches reality and turns the cost of a mistake into the threshold where a human should take over.
 - [Typed Evals](https://github.com/TrustifAI/typed_evals) - Python toolkit that puts evaluation of LLM, RAG and agent output as typed questions, with optional calibration against human labels.
+- [judge-audit](https://github.com/kunko-ai-labs/judge-audit) - Pre-registered calibration audits of AI judges, comparing Jev's native probabilities with LLMs' verbalised confidence and vote shares, caveats stated beside every result.
+- [JevBench (metamorphic)](https://github.com/JevBench/jevbench) - Tests whether a decision model's probabilities fit together, using 50 laws of probability and choice and no gold labels. Unrelated to the JevBench above.
 
 ## Open Models & Reproductions
 
@@ -603,6 +615,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [gutsy](https://github.com/kouhxp/gutsy) - Local decision model behind the Jev request shape: no generation, no network calls, no per-call cost.
 - [Qev](https://github.com/QiqianFu/Qev) - Qwen fine-tuned into decision models at 2B, 4B and 9B, with the training data and evaluation code. English and Chinese.
 - [Jev-Style](https://github.com/lawrence3699/jev-style) - Small Qwen3.5 decision models at 0.5 and 1.3 GB in 4-bit, with a systemone-compatible local server, agent skills and a Claude Code guard.
+- [Vev](https://github.com/Xiaooolong/vev) - Jev-style decision models that also take images, with open weights on Qwen3.5 for your own GPU.
 
 ## Games & Real-Time Demos
 
@@ -646,6 +659,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Warren Duffer](https://github.com/arimanyus/warrenduffer) - Intraday bot for two Indian brokers where Jev ranks Nifty-50 names in two stages; it places real MIS orders and has no paper-trading mode. Not financial advice.
 - [beebots](https://github.com/imikerussell/beebots) - Three trading bots race on OKX perpetual futures with every decision typed and a risk layer in plain code; paper trading is the default. Not financial advice.
 - [Jeeva](https://github.com/SaratAngajalaoffl/jeeva) - Mid-frequency trading framework for Hyperliquid perpetuals whose decision makers are typed questions, in a TypeScript API and a Rust engine.
+- [jev-bot](https://github.com/bl888m/jev-bot) - Market decision bot for stocks, crypto and memes: state in, buy, sell, hold or avoid out, paper trading by default.
+- [trade-jev](https://github.com/justinhe16/trade-jev) - Backtests Jev as a buy, sell or hold trader on NQ level-10 order-book data.
 
 ## Articles & Analysis
 
@@ -655,6 +670,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [TypeSafe AI debuts model for machines that plays Doom](https://www.theregister.com/ai-and-ml/2026/09/16/typesafe-ai-debuts-model-for-machines-that-plays-doom/5296711) - Launch coverage from The Register.
 - [Jev Cookbook (Chinese)](https://github.com/datawhalechina/jev-cookbook) - Datawhale's Chinese course built on the official documentation: the three primitives, the official recipes, evaluation and local fine-tuning.
 - [fastcampus-jev](https://github.com/teddylee777/fastcampus-jev) - Thirteen notebooks and a sample app on attaching Jev to DeepAgents for tool choice, guardrails and gates on risky operations. Korean.
+- [workshop-jev](https://github.com/caio-moliveira/workshop-jev) - Workshop building a LangGraph sales agent where each decision can be made by Jev or by a frontier LLM, given the same inputs. Portuguese.
 
 ## Related Lists
 
@@ -675,7 +691,6 @@ Other community lists of Jev projects, each with its own scope and bar:
 - [awesome-typesafe-jev](https://github.com/AbdelStark/awesome-typesafe-jev) - Source-backed field guide, pairing SDKs and demos with independent evaluations.
 - [BeatAPI/awesome-jev](https://github.com/BeatAPI/awesome-jev) - Catalogue with a stated star threshold, reviewed through pull requests, plus a live gallery.
 - [awesome-jev-live](https://github.com/wh000wh000/awesome-jev-live) - Index rebuilt automatically every few hours with no curation threshold, so it is far larger and unfiltered.
-- [AnotiaWang/awesome-jev](https://github.com/AnotiaWang/awesome-jev) - Applications, libraries, tools and research, in English and Chinese.
 - [heyjunpenn/awesome-jev](https://github.com/heyjunpenn/awesome-jev) - Large table of projects with stars, language and last-commit date, plus a searchable site.
 - [Promethe-us/awesome-jev](https://github.com/Promethe-us/awesome-jev) - Official material, community projects and research, with its sources tracked in a separate file. Bilingual.
 - [awesome-jev-use-cases](https://github.com/walidboulanouar/awesome-jev-use-cases) - Demos grouped by use case, with notes on writing criteria and setting thresholds.
@@ -692,6 +707,7 @@ Other community lists of Jev projects, each with its own scope and bar:
 - [Li-Evan/awesome-jev](https://github.com/Li-Evan/awesome-jev) - Searchable gallery of 3,400+ projects, demos and write-ups gathered from GitHub, X, Reddit and elsewhere, organised by scenario. English and Chinese.
 - [daftAI2026/awesome-jev](https://github.com/daftAI2026/awesome-jev) - Ecosystem directory with a nightly radar workflow that watches for new projects, and a companion site.
 - [AnotiaWang/awesome-decision-models](https://github.com/AnotiaWang/awesome-decision-models) - Directory of decision models across vendors - hosted APIs, open weights, runtimes, SDKs and research - rather than of Jev projects alone.
+- [2456868764/jevguide](https://github.com/2456868764/jevguide) - Showcases from X organised by category, with media previews and links to the source.
 
 ## Contributing
 
