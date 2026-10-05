@@ -146,3 +146,11 @@ InterfazeAI/lev
 # Adaptive-learning framework; Jev appears once, as a model alias in the AI helper, and not in the
 # README. Not a Jev project.
 mgarlabx/edukors_graph
+
+# 2026-10-05 triage
+# AI news aggregator; Jev is an optional decision step that is off by default (jev_enabled =
+# False) and its README does not mention it. Not a Jev project.
+ZJM189/Daily_News
+# Examples of general AI models in 3D modelling and robotics, mostly GPT; Jev appears in passing.
+# Not a Jev directory.
+Frank-ZY-Dou/awesome-ai-3d-modeling-robotics
