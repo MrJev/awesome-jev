@@ -524,6 +524,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 ## Open Models & Reproductions
 
+- [WaterSheep](https://github.com/SamratDuttaOfficial/WaterSheep) - An open-weight model that answers Choice, Score and Noul questions, plus multi-label ones, with a probability for every option. Serves a local `POST /v1/systemone` endpoint; its README says TypeSafe's Python SDK works against it by changing the base URL. Also runs in the browser through ONNX.
 - [AgentJev](https://github.com/malevrigns/agent-jev) - A 0.6B decision model on a Qwen3 backbone with weights on Hugging Face: state in, a distribution over your options out, nothing decoded.
 - [OpenJev-Vision](https://github.com/IamBusy/OpenJev-Vision) - Encodes an image once and answers several typed questions from the shared distribution. Ships synthetic scenes, trained readouts, a dataset and reproducible evaluations.
 - [NotJev](https://github.com/9pings/notjev) - Serves the Jev request shape from any OpenAI-compatible endpoint by presenting options as single letters and reading the letter mass out of `logprobs`.
