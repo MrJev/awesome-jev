@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**487 entries · every one checked to actually call Jev · last reviewed 2026-10-05**
+**488 entries · every one checked to actually call Jev · last reviewed 2026-10-06**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-05.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-06.
 
 | Project                        |  Stars | This week |
 | ------------------------------ | -----: | --------: |
-| NandhaKishorM/laya             | 30,729 |    +3,874 |
-| browser-use/jev-ultrafast      | 22,005 |    +1,135 |
-| deepopen-com/deepopen          |  2,059 |    +1,015 |
-| jaredpalmer/kev                |  8,442 |      +994 |
-| Contrastive-LM/CLM             |  2,823 |      +855 |
-| realZachi/pg-jev               |    858 |      +486 |
-| ollaya-dev/ollaya              |  1,191 |      +480 |
-| tamaratran/fast-jev-compaction |  7,385 |      +348 |
-| wy-coliney/jev-browser-use     |    881 |      +274 |
-| Liuziyu77/Valen                |    613 |      +267 |
+| NandhaKishorM/laya             | 30,999 |    +3,173 |
+| deepopen-com/deepopen          |  2,053 |    +1,009 |
+| browser-use/jev-ultrafast      | 22,115 |      +919 |
+| jaredpalmer/kev                |  8,522 |      +841 |
+| dzhng/jevgrep                  |  2,314 |      +836 |
+| realZachi/pg-jev               |    952 |      +575 |
+| Contrastive-LM/CLM             |  2,857 |      +548 |
+| ollaya-dev/ollaya              |  1,207 |      +313 |
+| tamaratran/fast-jev-compaction |  7,425 |      +275 |
+| wy-coliney/jev-browser-use     |    919 |      +261 |
 
-**New to this list this week:** `dzhng/jevgrep`, `firelex/jeff`, `Alex314618-create/JevRev`, `extend-hq/jevbox`, `PostHog/jeeves` and 105 more.
+**New to this list this week:** `firelex/jeff`, `extend-hq/jevbox`, `PostHog/jeeves`, `Zefan-Cai/Open-Jev`, `bridge-mind/bridgeclip` and 94 more.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
