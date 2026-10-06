@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**488 entries · every one checked to actually call Jev · last reviewed 2026-10-06**
+**499 entries · every one checked to actually call Jev · last reviewed 2026-10-06**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -252,6 +252,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-permission-gate](https://github.com/madisonrickert/jev-permission-gate) - Claude Code mod that answers auto mode's tool-call question with eight yes/no questions in one request, behind a shell-aware blocklist whose flags Jev can deny but never wave through.
 - [dsh-engram](https://github.com/kenz1117/dsh-engram) - DeepSeek Harness memory plugin built on the memory-palace layout - fixed locations as the index, routes that only grow - with cue-only spaced recall. Chinese.
 - [jev-for-all](https://github.com/emirbartu/jev-for-all) - Connects Jev to the harnesses agents already code in, from OpenCode to Hermes, so they can ask which skill to load, which tools a step needs, and where to go next in a browser.
+- [jev-skill-router](https://github.com/shimo4228/jev-skill-router) - Claude Code hook that asks Jev which skill fits each prompt, in shadow or inject mode, published with the log of the week its author ran it and why they removed it. English and Japanese.
 
 ## Coding Agents & Developer Tools
 
@@ -300,6 +301,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [fast-jev-compaction for OpenCode](https://github.com/overbit/fast-jev-compaction-opencode) - The fast-jev-compaction approach ported to OpenCode: stale tool history is pruned rather than rewritten by an LLM.
 - [code-quality](https://github.com/smixs/code-quality) - Deterministic quality gate for Claude Code, Codex and pi: Git hooks that block test tampering and secrets, with an optional Jev review that adds findings to the report.
 - [Gobstopper](https://github.com/hraness/gobstopper) - A local proxy that compacts long Claude Code and Codex sessions as they run, with Jev as one of the scorers that decide what stays; nothing is sent until you choose one.
+- [Clean Code Review](https://github.com/frostney/clean-code-review) - Reviews every code file in a pull request against a question set drawn from *Clean Code*: Jev answers, Luna writes the review. Runs on eve with Jev through Vercel's AI Gateway; a hosted version is live.
+- [Deeds](https://github.com/danielmiessler/Deeds) - CLI and Claude Code plugin that reads each commit's diff and counts capabilities gained, fixes and upkeep, ignoring commit messages. Needs only a Jev key; only diffs and file paths are sent.
 
 ## Guardrails & Safety
 
@@ -342,6 +345,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jevia](https://github.com/assistant-ui/jevia) - Local-first, outcome-based router for coding harnesses: it picks a capability tier per task, applies your safety policy, and learns from recorded execution history.
 - [TriRouter](https://github.com/hajdu-patrik/trirouter) - Routes each request across Claude, Codex and other agents, and queues a prompt sent while an earlier one is still running instead of overwriting it.
 - [pi-jev-model-router](https://github.com/da-vinci-noob/pi-jev-model-router) - Reads each pi prompt with four typed questions before the turn starts and picks a model tier, with a budget and an automatic fallback.
+- [jev-router](https://github.com/dirien/jev-router) - Local pass-through proxy for Claude Code and the Codex CLI that asks Jev which model tier each human turn needs and only moves up within a session, so prompt caches survive. No runtime dependencies.
 
 ## Command-Line Tools
 
@@ -410,6 +414,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jevwright](https://github.com/Ice-Hazymoon/jevwright) - Browser tests for business flows written as the steps a user takes: the model finds each control once, and the recording replays without it.
 - [jev-agent-browser](https://github.com/forvela/jev-agent-browser) - Bounded browser tasks for a parent agent: Jev picks the next typed action, agent-browser runs it, and ambiguity or a stuck state comes back as a structured handoff.
 - [zero-use-computer](https://github.com/mhrsdev/zero-use-computer) - Computer use over MCP that reads what a screen reader reads and acts on real controls, with an optional decision model - Jev or any compatible server - for the small choices.
+- [IronBee Express](https://github.com/ironbee-ai/ironbee-express) - Browser agent for checking that a web app really did what the page says: each step is one Jev choice over the page's controls, a text model is optional, and a recorded run replays with no step decisions. Elastic-2.0.
+- [Mobile Agent](https://github.com/KYRIE66nb/mobile-agent) - On-device Android agent that reads and taps any app through accessibility and vision; its allow / confirm / block safety gate can be handed to Jev or a self-hosted Laya over `/v1/systemone`, off by default. In Chinese.
 
 ## Data & Observability
 
@@ -430,6 +436,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jevflake](https://github.com/KranzL/Jevflake) - A dbt package and Terraform module that let Snowflake ask a typed question about a row, so the answer comes back as a column you can filter, join and test.
 - [jevernetes](https://github.com/sunil-sadasivan/jevernetes) - Reads Kubernetes logs, decides which lines matter and what to investigate next, and hands off to an agent. Rust, with an offline mode.
 - [jev4pg](https://github.com/Sheltercosmo/jev4pg) - A self-developing SQL database with semantic operators and natural-language queries backed by Jev.
+- [Jevaro](https://github.com/columnar-tech/jevaro) - Python batching proxy that asks the same Jev questions about many states and streams the answers back as Apache Arrow, one row per state and one column per question, with Python and JavaScript readers.
 
 ## Search & Knowledge Graphs
 
@@ -500,6 +507,9 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jevboard](https://github.com/AsheeHuang/Jevboard) - Proof of concept for ranking Bopomofo input-method candidates with Jev.
 - [quietly](https://github.com/joeydash/quietly) - Chrome extension that drafts replies on WhatsApp Web and Gmail and quiets the YouTube feed; the YouTube sorting is a yes/no question per video, on Jev by default.
 - [xscout-jev](https://github.com/ethan-ab/xscout-jev) - Watches X for news that matters to you, judged by Jev, and alerts you in Slack.
+- [OpenMuse](https://github.com/CopilotKit/openmuse) - CopilotKit's self-hosted personal agent with its own browser, terminal and files; Jev decides whether a reply becomes a clarification panel, a comparison of options or plain prose, and overrides the agent only when confident. Alpha.
+- [Varina (Aha-Engine)](https://github.com/deillusion/Aha-Engine) - Multi-seat exploration engine for game mechanics and rule systems that diverges, fact-checks and repeats; Jev decides whether an answer deserves deeper exploration and whether a new idea is already on the board. Business Source License, in Chinese.
+- [JevGuide](https://github.com/Nisaka520/JevGuide) - Android accessibility app from the JevIntent author that reads a WeChat chat, has Jev judge it and score how the relationship is going, and has a chat model draft three replies. Sends no messages and modifies nothing. In Chinese.
 
 ## Evaluation & Benchmarks
 
@@ -617,6 +627,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Qev](https://github.com/QiqianFu/Qev) - Qwen fine-tuned into decision models at 2B, 4B and 9B, with the training data and evaluation code. English and Chinese.
 - [Jev-Style](https://github.com/lawrence3699/jev-style) - Small Qwen3.5 decision models at 0.5 and 1.3 GB in 4-bit, with a systemone-compatible local server, agent skills and a Claude Code guard.
 - [Vev](https://github.com/Xiaooolong/vev) - Jev-style decision models that also take images, with open weights on Qwen3.5 for your own GPU.
+- [jiwo](https://github.com/jiwidi/jiwo) - Small open decision models fine-tuned from Qwen3.5 (0.8B and 4B, Apache-2.0) with a server that speaks Jev's `POST /v1/systemone` format: one forward pass, a probability per option.
 
 ## Games & Real-Time Demos
 
