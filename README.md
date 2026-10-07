@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**499 entries · every one checked to actually call Jev · last reviewed 2026-10-07**
+**510 entries · every one checked to actually call Jev · last reviewed 2026-10-07**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -253,6 +253,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [dsh-engram](https://github.com/kenz1117/dsh-engram) - DeepSeek Harness memory plugin built on the memory-palace layout - fixed locations as the index, routes that only grow - with cue-only spaced recall. Chinese.
 - [jev-for-all](https://github.com/emirbartu/jev-for-all) - Connects Jev to the harnesses agents already code in, from OpenCode to Hermes, so they can ask which skill to load, which tools a step needs, and where to go next in a browser.
 - [jev-skill-router](https://github.com/shimo4228/jev-skill-router) - Claude Code hook that asks Jev which skill fits each prompt, in shadow or inject mode, published with the log of the week its author ran it and why they removed it. English and Japanese.
+- [paseo-slp-plugin](https://github.com/duongvm57/paseo-slp-plugin) - Supervisor, Lead and Peer roles for a team of Paseo coding agents, with opt-in Jev routing that records a verifiable receipt in shadow mode and binds it when armed. English and Vietnamese.
 
 ## Coding Agents & Developer Tools
 
@@ -303,6 +304,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Gobstopper](https://github.com/hraness/gobstopper) - A local proxy that compacts long Claude Code and Codex sessions as they run, with Jev as one of the scorers that decide what stays; nothing is sent until you choose one.
 - [Clean Code Review](https://github.com/frostney/clean-code-review) - Reviews every code file in a pull request against a question set drawn from *Clean Code*: Jev answers, Luna writes the review. Runs on eve with Jev through Vercel's AI Gateway; a hosted version is live.
 - [Deeds](https://github.com/danielmiessler/Deeds) - CLI and Claude Code plugin that reads each commit's diff and counts capabilities gained, fixes and upkeep, ignoring commit messages. Needs only a Jev key; only diffs and file paths are sent.
+- [jev-lint](https://github.com/ckorhonen/jev-lint) - Fuzzy linter for coding agents: a hook checks each file the agent writes against your team's rules in `.jev-lint/` with Jev and reports violations while the agent is still working.
+- [jevmory](https://github.com/romiluz13/jevmory) - Memory for coding agents where every fact is a verbatim quote, graded by Jev into keep, stale, wrong or unsupported, with local SQLite receipts and `jevmory audit` for existing memory files.
 
 ## Guardrails & Safety
 
@@ -437,6 +440,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jevernetes](https://github.com/sunil-sadasivan/jevernetes) - Reads Kubernetes logs, decides which lines matter and what to investigate next, and hands off to an agent. Rust, with an offline mode.
 - [jev4pg](https://github.com/Sheltercosmo/jev4pg) - A self-developing SQL database with semantic operators and natural-language queries backed by Jev.
 - [Jevaro](https://github.com/columnar-tech/jevaro) - Python batching proxy that asks the same Jev questions about many states and streams the answers back as Apache Arrow, one row per state and one column per question, with Python and JavaScript readers.
+- [Jevline](https://github.com/tsale/jevline) - Starts from one confirmed-malicious process, account or host in a telemetry export and asks Jev, round by round, which linked activity belongs to the same incident; returns a timeline and evidence table for analyst review. Experimental.
 
 ## Search & Knowledge Graphs
 
@@ -510,6 +514,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [OpenMuse](https://github.com/CopilotKit/openmuse) - CopilotKit's self-hosted personal agent with its own browser, terminal and files; Jev decides whether a reply becomes a clarification panel, a comparison of options or plain prose, and overrides the agent only when confident. Alpha.
 - [Varina (Aha-Engine)](https://github.com/deillusion/Aha-Engine) - Multi-seat exploration engine for game mechanics and rule systems that diverges, fact-checks and repeats; Jev decides whether an answer deserves deeper exploration and whether a new idea is already on the board. Business Source License, in Chinese.
 - [JevGuide](https://github.com/Nisaka520/JevGuide) - Android accessibility app from the JevIntent author that reads a WeChat chat, has Jev judge it and score how the relationship is going, and has a chat model draft three replies. Sends no messages and modifies nothing. In Chinese.
+- [MultiTool Office Next](https://github.com/d8349565/MultiTool-Office-Next) - Windows file manager and office workbench with local search, OCR, translation and to-dos; Jev helps pick extracted contract fields, with amounts and long numbers filtered out first. Optional, in Chinese.
 
 ## Evaluation & Benchmarks
 
@@ -517,7 +522,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jevcal](https://github.com/abhixhek/jevcal) - Picks the confidence threshold that meets your accuracy target on your own data, and fails CI when a model update breaks it.
 - [Janus](https://github.com/FirasSX914/Janus) - Measures Jev's calibration and confidence-based routing on Banking77 and Web of Science.
 - [jev-benchmarks](https://github.com/AbdelStark/jev-benchmarks) - Probability-aware evaluation: calibration, and how much work can be automated at a fixed error budget.
-- [typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark) - Compares LLM structured output with Jev on latency, cost, and judgment quality.
+- [inference-benchmarks](https://github.com/iammrduncan/inference-benchmarks) - Compares LLM structured output with Jev on latency, cost, and judgment quality.
 - [Jev Capability Atlas](https://github.com/Zaious/jev-capability-atlas) - A bilingual map of where Jev holds up and where it breaks, built from recorded API calls rather than a leaderboard. Its LICENSE is not a recognised open-source license.
 - [jev-align](https://github.com/sutro-sh/jev-align) - CLI from Sutro that finds the examples a Jev function is least sure about, asks you to label them, and uses GEPA to improve the question.
 - [JevBench](https://github.com/fstandhartinger/jevbench) - Benchmark for typed decision models across several suites, with confidence cascades and committees reported separately.
@@ -531,6 +536,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Typed Evals](https://github.com/TrustifAI/typed_evals) - Python toolkit that puts evaluation of LLM, RAG and agent output as typed questions, with optional calibration against human labels.
 - [judge-audit](https://github.com/kunko-ai-labs/judge-audit) - Pre-registered calibration audits of AI judges, comparing Jev's native probabilities with LLMs' verbalised confidence and vote shares, caveats stated beside every result.
 - [JevBench (metamorphic)](https://github.com/JevBench/jevbench) - Tests whether a decision model's probabilities fit together, using 50 laws of probability and choice and no gold labels. Unrelated to the JevBench above.
+- [Decision Index](https://github.com/apolinario/decision-index) - Reproduction kit for a public leaderboard of typed decision engines: runs the public text suite against any `/v1/systemone` endpoint, locally or as one Hugging Face Job. Not affiliated with TypeSafe.
 
 ## Open Models & Reproductions
 
@@ -628,6 +634,10 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev-Style](https://github.com/lawrence3699/jev-style) - Small Qwen3.5 decision models at 0.5 and 1.3 GB in 4-bit, with a systemone-compatible local server, agent skills and a Claude Code guard.
 - [Vev](https://github.com/Xiaooolong/vev) - Jev-style decision models that also take images, with open weights on Qwen3.5 for your own GPU.
 - [jiwo](https://github.com/jiwidi/jiwo) - Small open decision models fine-tuned from Qwen3.5 (0.8B and 4B, Apache-2.0) with a server that speaks Jev's `POST /v1/systemone` format: one forward pass, a probability per option.
+- [Bud Decision Studio](https://github.com/BudEcosystem/Bud-Decision-Studio) - Desktop app and local server for open Jev-style decision models on macOS, Windows and Linux: pick a model, ask typed questions, read every answer as a chart, or call it over a `/v1/systemone`-compatible API. No licence file yet.
+- [OpenJev](https://github.com/alanhuangyoo/OpenJev) - Open decision models (1.7B to 8B) trained by distillation for general decisions and browser-agent steps, served behind the `POST /v1/systemone` shape, with training code and results. Apache-2.0.
+- [Drex DLM](https://github.com/nace-ai/drex-dlm) - Nace.AI's decision model on NVIDIA's Efficient-DLM-8B diffusion backbone: typed questions about a document, a probability for every option, with a local server. Weights under CC-BY-NC-4.0.
+- [Ollajev](https://github.com/nvkudva/ollajev) - Pulls System One decision models from Hugging Face and serves them, Ollama style, behind TypeSafe's routes and shapes, so the stock SDK works by changing `TYPESAFE_BASE_URL`.
 
 ## Games & Real-Time Demos
 
@@ -673,6 +683,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jeeva](https://github.com/SaratAngajalaoffl/jeeva) - Mid-frequency trading framework for Hyperliquid perpetuals whose decision makers are typed questions, in a TypeScript API and a Rust engine.
 - [jev-bot](https://github.com/bl888m/jev-bot) - Market decision bot for stocks, crypto and memes: state in, buy, sell, hold or avoid out, paper trading by default.
 - [trade-jev](https://github.com/justinhe16/trade-jev) - Backtests Jev as a buy, sell or hold trader on NQ level-10 order-book data.
+- [x402check](https://github.com/caiovicentino/jev-risk-check-provider) - Pre-payment risk-check provider for x402 agents and wallets: sanctions lists, phishing feeds and transaction simulation, plus Jev questions over what the agent acted on to catch injected instructions. Signed verdicts.
 
 ## Articles & Analysis
 
