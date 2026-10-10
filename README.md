@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**510 entries · every one checked to actually call Jev · last reviewed 2026-10-09**
+**506 entries · every one checked to actually call Jev · last reviewed 2026-10-10**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -225,7 +225,6 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev Studio](https://github.com/utk2103/jev-studio) - One pip install for experimenting: MCP tools for Choice, Noul and Score, prompt libraries and a slash command per cookbook recipe.
 - [jevvy](https://github.com/PanAchy/jevvy) - Plugins for coding agents, starting with one that auto-approves shell permission requests it judges harmless and passes everything uncertain to the normal flow.
 - [JCR (Jev Capability Resolver)](https://github.com/NiazMorshed2007/jcr) - One tool that searches a nested capability tree and hands the agent only the documented commands and context a task needs.
-- [jev-superpowers](https://github.com/AkashPriyadarshii/jev-superpowers) - Skills framework for coding agents with typed gates on package choices and task completion.
 - [jev-use](https://github.com/shitianfang/jev-use) - Claude Code, Codex and pi plugin that hands the agent steps needing no written output to Jev and leaves the prose to the LLM.
 - [hermes-jev-approvals](https://github.com/anpicasso/hermes-jev-approvals) - Approvals provider for Hermes Agent: it judges shell commands and refuses every other task, registering no hooks.
 - [jev-judge-mcp](https://github.com/PyModel/jev-judge-mcp) - MCP server that gives a coding agent eleven judgment tools backed by Jev, for the checks whose answers can be enumerated.
@@ -366,7 +365,6 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jgrep](https://github.com/keltokhy/jgrep) - Like grep, but the pattern is a description: it filters piped output as well as files and prints a probability per line.
 - [jev-cli](https://github.com/Nasrallah-AL/jev-cli) - Typed judgments from the command line, published to npm as `jevctl`.
 - [Sniff Test](https://github.com/DanRWilloughby/snifftest) - Prose linter for AI writing tells: countable regex rules run locally, and one judgment question covers the rest.
-- [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) - Rust CLI and MCP server for SEO and GEO work, scraping DuckDuckGo instead of paying for a search API.
 - [JevGrep (Arifette)](https://github.com/nassim-arifette/jevgrep) - Semantic code search for agents, as a CLI or MCP server: ask what the code does and get source excerpts with paths and line numbers.
 - [evoke](https://github.com/evoke-build/evoke) - Turns a sentence into a call of a small program you installed from Git, run only when the confidence gate allows. A CLI, a package manager for those recipes, and a TypeScript SDK over the same core; your overlay may tighten a reflex's effect but never loosen it.
 - [slop-grader](https://github.com/lukstei/slop-grader) - Grades prose against twenty-one named writing tics, asking every rule about every line, and writes its findings as a brief for a coding agent to act on.
@@ -433,7 +431,6 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jeview](https://github.com/andududu/jeview) - Local gateway and live map of every Jev call your code makes, in one dependency-free file. It holds the key itself: a caller's own bearer token is dropped rather than forwarded, and with no key set it will not proxy at all.
 - [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - Packs many items into one Jev request for bulk classification. If any item in a pack comes back unanswered it raises and names the item rather than returning a partial result.
 - [jevframe](https://github.com/ktaletsk/jevframe) - A `.jev` accessor for pandas and Polars: the request is built from the columns you name and nothing else in the row, and a failed row raises naming the row instead of becoming a null.
-- [jev-curate](https://github.com/AkashPriyadarshii/jev-curate) - Rust pipeline that sifts JSONL and Parquet rows against reasoning rubrics, emitting records verbatim with a rejection log that names the question, the probability and the ceiling crossed.
 - [JEV DataOps](https://github.com/RenaGao/jev-dataops) - Traceable pipeline for training data: upload, screen with Jev, evaluate, fine-tune your own model, then evaluate the result, through a browser workbench or a CLI.
 - [Reflex](https://github.com/datadog-labs/reflex) - Rust library for control loops over observability data: metrics and forecasts become typed state, a model recommends an action, and it is committed only if the guards and invariants you declared hold. Not the same project as the open model of the same name.
 - [Jevflake](https://github.com/KranzL/Jevflake) - A dbt package and Terraform module that let Snowflake ask a typed question about a row, so the answer comes back as a column you can filter, join and test.
@@ -558,7 +555,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [SemIf](https://github.com/TheoLeeCJ/SemIf-OpenJev) - Jev-style decisions from a frozen 4B model on a single RTX 3090, with a browser demo. Formerly OpenJev.
 - [Jevlike](https://github.com/vinnylarouge/jevlike) - Train a small model that scores a changing list of text options in one pass.
 - [NanoJev](https://github.com/TianyuCodings/NanoJev) - 0.6B parallel decision model with an end-to-end training pipeline.
-- [openjev-sglang](https://github.com/ekzhang/openjev-sglang) - Jev-compatible API server running an open model on SGLang.
+- [openjev-sglang](https://github.com/ekzhang/openjev-sglang) *(archived)* - Jev-compatible API server running an open model on SGLang.
 - [jevmlx](https://github.com/bnsd55/jevmlx) - Jev-style typed decisions from local MLX models on Apple Silicon.
 - [kev](https://github.com/jaredpalmer/kev) - Jev-style decision models from 0.5B to 8B, built as LoRA adapters on Qwen and served behind a Jev-compatible `/v1/systemone` API.
 - [LocalJev](https://github.com/githubnext/localjev) - Local Jev-compatible `/v1/systemone` server for Bun that asks DiffusionGemma for probabilities, from GitHub Next.
@@ -613,7 +610,6 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Open Medical Jev](https://github.com/FeiLiuEM/open-medical-jev) - Two frozen off-the-shelf models answer a yes/no judgment per option, and their agreement becomes a confidence, an auto-release gate and a guaranteed candidate set. Nothing is trained. Its figures are measured against Jev 1.13.0 on national medical exams and are author-reported. Chinese and English.
 - [imajev](https://github.com/mohit67890/imajev) - Small open models at 2B, 4B and 9B that read the photos, records and text a business already has and answer in the options you set, with a probability on each and an explicit "can't tell" that sends the rest to a person.
 - [jeff (Firelex)](https://github.com/firelex/jeff) - Qwen3.5 and Gemma 4 fine-tunes for zero-shot classification that take Jev's request shape. The author reports about 22 ms per decision on an RTX PRO 6000 and 28 ms on an M4 Max under MLX.
-- [SelfJev](https://github.com/Jwuthri/SelfJev) - Self-hosted decision model with Jev's API surface, including a multi-select answer type, from forward passes with no generation. Needs an NVIDIA GPU.
 - [OneJev](https://github.com/OmniJev/OneJev) - Multimodal decision model answering typed questions about screenshots, photos, video and text in one forward pass. English, Chinese and Japanese.
 - [open-jev-fast](https://github.com/lyuyiqi/open-jev-fast) - Faster inference backend for Open-Jev-27B: fused CUDA kernels, a prefix tree and CUDA graphs. Needs an Open-Jev install and its weights.
 - [RSI-Jev](https://github.com/Shanghua-Gao/RSI-Jev) - Typed-decision checkpoints produced by a self-improving loop of agents that register predictions before spending GPU time, published with the code that produced them.
@@ -636,7 +632,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jiwo](https://github.com/jiwidi/jiwo) - Small open decision models fine-tuned from Qwen3.5 (0.8B and 4B, Apache-2.0) with a server that speaks Jev's `POST /v1/systemone` format: one forward pass, a probability per option.
 - [Bud Decision Studio](https://github.com/BudEcosystem/Bud-Decision-Studio) - Desktop app and local server for open Jev-style decision models on macOS, Windows and Linux: pick a model, ask typed questions, read every answer as a chart, or call it over a `/v1/systemone`-compatible API. No licence file yet.
 - [OpenJev](https://github.com/alanhuangyoo/OpenJev) - Open decision models (1.7B to 8B) trained by distillation for general decisions and browser-agent steps, served behind the `POST /v1/systemone` shape, with training code and results. Apache-2.0.
-- [Drex DLM](https://github.com/nace-ai/drex-dlm) - Nace.AI's decision model on NVIDIA's Efficient-DLM-8B diffusion backbone: typed questions about a document, a probability for every option, with a local server. Weights under CC-BY-NC-4.0.
+- [Drex decision models](https://github.com/nace-ai/drex-decision-models) - Nace.AI's open decision models, Drex v1.5 on a 9B Qwen-based backbone and Drex DLM on NVIDIA's Efficient-DLM-8B diffusion backbone, each answering `POST /v1/systemone` from a Python server or forks of llama.cpp and Ollama. Formerly `drex-dlm`; Drex DLM weights under CC-BY-NC-4.0.
 - [Ollajev](https://github.com/nvkudva/ollajev) - Pulls System One decision models from Hugging Face and serves them, Ollama style, behind TypeSafe's routes and shapes, so the stock SDK works by changing `TYPESAFE_BASE_URL`.
 
 ## Games & Real-Time Demos
