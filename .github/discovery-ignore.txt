@@ -154,3 +154,7 @@ ZJM189/Daily_News
 # Examples of general AI models in 3D modelling and robotics, mostly GPT; Jev appears in passing.
 # Not a Jev directory.
 Frank-ZY-Dou/awesome-ai-3d-modeling-robotics
+
+# An index of Claude Code mods and plugins in general; Jev projects appear among them.
+# Not a Jev directory.
+wh000wh000/awesome-claude-mods
