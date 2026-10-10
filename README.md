@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-09.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-10.
 
 | Project                        |  Stars | This week |
 | ------------------------------ | -----: | --------: |
-| NandhaKishorM/laya             | 31,773 |    +1,874 |
-| browser-use/jev-ultrafast      | 22,413 |      +698 |
-| realZachi/pg-jev               |  1,067 |      +677 |
-| jaredpalmer/kev                |  8,754 |      +542 |
-| dzhng/jevgrep                  |  2,475 |      +471 |
-| StartLuxLabs/StartLux-Decision |    312 |      +293 |
-| datawhalechina/jev-cookbook    |    299 |      +252 |
-| wy-coliney/jev-browser-use     |  1,019 |      +249 |
-| Contrastive-LM/CLM             |  2,936 |      +241 |
-| tamaratran/fast-jev-compaction |  7,532 |      +218 |
+| NandhaKishorM/laya             | 32,009 |    +1,766 |
+| realZachi/pg-jev               |  1,089 |      +697 |
+| browser-use/jev-ultrafast      | 22,483 |      +659 |
+| jaredpalmer/kev                |  8,843 |      +510 |
+| dzhng/jevgrep                  |  2,523 |      +451 |
+| StartLuxLabs/StartLux-Decision |    348 |      +284 |
+| wy-coliney/jev-browser-use     |  1,039 |      +229 |
+| tamaratran/fast-jev-compaction |  7,556 |      +220 |
+| Contrastive-LM/CLM             |  2,948 |      +210 |
+| datawhalechina/jev-cookbook    |    321 |      +210 |
 
-**New to this list this week:** `CopilotKit/openmuse`, `extend-hq/jevbox`, `deillusion/Aha-Engine`, `Zefan-Cai/Open-Jev`, `anteloc/ldraw-nova` and 63 more.
+**New to this list this week:** `CopilotKit/openmuse`, `extend-hq/jevbox`, `deillusion/Aha-Engine`, `Zefan-Cai/Open-Jev`, `anteloc/ldraw-nova` and 83 more.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
