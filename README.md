@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**526 entries · every one checked to actually call Jev · last reviewed 2026-10-10**
+**526 entries · every one checked to actually call Jev · last reviewed 2026-10-11**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-10.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-11.
 
 | Project                        |  Stars | This week |
 | ------------------------------ | -----: | --------: |
-| NandhaKishorM/laya             | 32,009 |    +1,766 |
-| realZachi/pg-jev               |  1,089 |      +697 |
-| browser-use/jev-ultrafast      | 22,483 |      +659 |
-| jaredpalmer/kev                |  8,843 |      +510 |
-| dzhng/jevgrep                  |  2,523 |      +451 |
-| StartLuxLabs/StartLux-Decision |    348 |      +284 |
-| wy-coliney/jev-browser-use     |  1,039 |      +229 |
-| tamaratran/fast-jev-compaction |  7,556 |      +220 |
-| Contrastive-LM/CLM             |  2,948 |      +210 |
-| datawhalechina/jev-cookbook    |    321 |      +210 |
+| NandhaKishorM/laya             | 32,181 |    +1,668 |
+| browser-use/jev-ultrafast      | 22,562 |      +644 |
+| jaredpalmer/kev                |  8,906 |      +530 |
+| realZachi/pg-jev               |  1,104 |      +414 |
+| extend-hq/jevbox               |    703 |      +398 |
+| dzhng/jevgrep                  |  2,553 |      +367 |
+| tamaratran/fast-jev-compaction |  7,574 |      +212 |
+| wy-coliney/jev-browser-use     |  1,059 |      +206 |
+| datawhalechina/jev-cookbook    |    335 |      +196 |
+| Contrastive-LM/CLM             |  2,959 |      +194 |
 
-**New to this list this week:** `CopilotKit/openmuse`, `extend-hq/jevbox`, `deillusion/Aha-Engine`, `Zefan-Cai/Open-Jev`, `anteloc/ldraw-nova` and 83 more.
+**New to this list this week:** `CopilotKit/openmuse`, `deillusion/Aha-Engine`, `StartLuxLabs/StartLux-Decision-v1`, `0814wdwd/solo_jev`, `OrgoAI/bops` and 57 more.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
