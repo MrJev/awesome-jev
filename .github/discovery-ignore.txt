@@ -158,3 +158,6 @@ Frank-ZY-Dou/awesome-ai-3d-modeling-robotics
 # An index of Claude Code mods and plugins in general; Jev projects appear among them.
 # Not a Jev directory.
 wh000wh000/awesome-claude-mods
+
+# A visual grounding model inspired by Jev; it neither calls Jev nor serves its API.
+xyzzzh/Jag
