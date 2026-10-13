@@ -161,3 +161,16 @@ wh000wh000/awesome-claude-mods
 
 # A visual grounding model inspired by Jev; it neither calls Jev nor serves its API.
 xyzzzh/Jag
+
+# 2026-10-13 triage
+# Jev is present but not central: an optional judge or helper inside a project about
+# something else. Checked in the code: mintocode's paragraph judge defaults to local Laya
+# and its hosted-Jev path is "not benchmarked yet"; simul-subtitle's Jev assist is off by
+# default; crawl-hive is a memecoin crawler platform with one Jev rating step; Jev is one
+# of eleven mods in claude-code-mods.
+Spearmintai/mintocode
+KorenKrita/simul-subtitle
+h100envy/crawl-hive
+ray-amjad/claude-code-mods
+# No source code: the issue tracker and changelog of a closed-source macOS app.
+InsaneArts/jolt
