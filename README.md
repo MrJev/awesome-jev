@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**558 entries · every one checked to actually call Jev · last reviewed 2026-10-15**
+**558 entries · every one checked to actually call Jev · last reviewed 2026-10-16**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-15.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-16.
 
 | Project                       |  Stars | This week |
 | ----------------------------- | -----: | --------: |
-| NandhaKishorM/laya            | 32,933 |    +1,444 |
-| CopilotKit/openmuse           |  5,030 |      +835 |
-| browser-use/jev-ultrafast     | 22,931 |      +635 |
-| jaredpalmer/kev               |  9,140 |      +472 |
-| dzhng/jevgrep                 |  2,678 |      +263 |
-| mode-io/vllm-jev              |    559 |      +222 |
-| nokia-applied-research/AnyJev |  1,270 |      +168 |
-| datawhalechina/jev-cookbook   |    401 |      +158 |
-| higress-group/HiRoute         |    182 |      +157 |
-| wy-coliney/jev-browser-use    |  1,143 |      +154 |
+| NandhaKishorM/laya            | 33,068 |    +1,295 |
+| CopilotKit/openmuse           |  5,107 |      +747 |
+| browser-use/jev-ultrafast     | 23,029 |      +616 |
+| jaredpalmer/kev               |  9,194 |      +440 |
+| dzhng/jevgrep                 |  2,724 |      +249 |
+| mode-io/vllm-jev              |    576 |      +208 |
+| higress-group/HiRoute         |    206 |      +177 |
+| nokia-applied-research/AnyJev |  1,284 |      +168 |
+| wy-coliney/jev-browser-use    |  1,171 |      +152 |
+| Parcha-ai/agentrun            |    239 |      +145 |
 
-**New to this list this week:** `deillusion/Varina`, `OrgoAI/bops`, `aindeev/agent-chrome-relay`, `crow-hq/llm-wiki-v2`, `0814wdwd/solo_jev` and 51 more.
+**New to this list this week:** `deillusion/Varina`, `0814wdwd/solo_jev`, `OrgoAI/bops`, `aindeev/agent-chrome-relay`, `crow-hq/llm-wiki-v2` and 51 more.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
