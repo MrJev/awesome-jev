@@ -174,3 +174,26 @@ h100envy/crawl-hive
 ray-amjad/claude-code-mods
 # No source code: the issue tracker and changelog of a closed-source macOS app.
 InsaneArts/jolt
+
+# 2026-10-18 triage
+# Jev is present but not central, checked in the code: Adaptive-rag's Jev intent node
+# replaces one step and DeepSeek is the default; AnimaVN's Jev annotation plugin is
+# optional and off by default; srl-search uses Jev only to label a side map of a personal
+# search service; os3-router asks Jev only as an optional watchdog second opinion; Jev is
+# one of about 28 free models in magpie-free-gateways; bantam-factory is a large local
+# coding harness whose optional Jev mode needs a 22 GB NVIDIA GPU.
+gbh1234/Adaptive-rag
+JayziLi/AnimaVN-public
+MaximeRivest/srl-search
+Nesbesss/os3-router
+lesnolie/magpie-free-gateways
+BANTAM-ADMIN/bantam-factory
+# Skills for building with Jev whose main skills make no Jev call (the README says so).
+tiffygk/jev-mode
+# An awesome list for the Bend language with one Jev entry. Not a Jev directory.
+777genius/awesome-bend
+# A modified jev-chat-windows (ignored above for the same reason: WeChat on Windows);
+# its default judge is the drafting LLM, not Jev.
+caizili999/jev-chat-windows
+# Archived and superseded by robertn702/reasoning-router, which is listed.
+robertn702/opencode-jev-router
