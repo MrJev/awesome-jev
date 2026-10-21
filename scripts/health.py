@@ -4,7 +4,9 @@ Prints a Markdown report to stdout. Exits 1 when something needs a maintainer's
 attention, 0 when everything is healthy.
 """
 
+import re
 import sys
+import urllib.request
 from datetime import datetime, timezone
 
 from github import get, listed_repos
@@ -15,6 +17,21 @@ ARCHIVE_DAYS = 90  # move to an "Archived" section
 # entry this small that has also stopped moving is an experiment, not a project.
 FAINT_STARS = 5
 FAINT_IDLE_DAYS = 30
+# ...unless MrJev.com has reviewed it: a review is worth keeping a link to.
+SITE = "https://mrjev.com/projects/"
+REVIEW_MARKERS = ("Hands-on review", "Checked, not fully reviewed", "Our review")
+
+
+def reviewed_on_site(owner, repo):
+    """True when the project's MrJev.com page carries a review or a note."""
+    slug = re.sub(r"[^a-z0-9-]+", "-", f"{owner}-{repo}".lower())
+    req = urllib.request.Request(SITE + slug + "/", headers={"User-Agent": "awesome-jev-health"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            page = r.read().decode("utf-8", "replace")
+    except Exception:
+        return False  # can't tell, so flag it as before
+    return any(m in page for m in REVIEW_MARKERS)
 
 
 def days_since(iso):
@@ -45,7 +62,8 @@ def check(owner, repo, branch):
 
     idle = days_since(last_push)
     stars = data["stargazers_count"]
-    if stars < FAINT_STARS and idle >= FAINT_IDLE_DAYS and not data["archived"]:
+    if (stars < FAINT_STARS and idle >= FAINT_IDLE_DAYS and not data["archived"]
+            and not reviewed_on_site(owner, repo)):
         problems.append(
             f"{stars} stars and no commits for {idle} days; below the {FAINT_STARS}-star floor "
             "for an inactive entry, so remove it unless it is the only client for its language"
