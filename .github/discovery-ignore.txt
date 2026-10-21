@@ -197,3 +197,19 @@ tiffygk/jev-mode
 caizili999/jev-chat-windows
 # Archived and superseded by robertn702/reasoning-router, which is listed.
 robertn702/opencode-jev-router
+
+# 2026-10-21 triage
+# Jev is present but not central.
+Sallyn0225/eidolon-sc
+picassio/pi-phone
+sorrycc/Tiller
+Sheltercosmo/Rilldex-RL-Studio
+wustep/my-bot-scripts
+baiibayu/srouter
+ww-w-ai/super-video-agent
+MichaelKinsy/pigpen
+richet/bounce-router
+# An awesome list for Grok Bot playbooks with one Jev entry. Not a Jev directory.
+sit-in/awesome-grokbot-playbooks
+# A general tokenizer with a Jev token-count estimate; no Jev call.
+vectorize-io/toktok
