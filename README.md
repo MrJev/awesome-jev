@@ -642,7 +642,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Rizzo Flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) - Local typed decisions from Spark-X2.5-4B over llama.cpp, serving both its own schema and Jev's `/v1/systemone`. Its `/v1/models` alias says in its description that it is not answered by Jev, and every published result names its dataset by hash.
 - [Contrastive Language Models](https://github.com/Contrastive-LM/CLM) - CLM-8B, a contrastively trained System One model served behind a TypeSafe-compatible API, with data, weights and a fine-tuning tutorial.
 - [JevK5](https://github.com/allebee/jevk5) - Open-weight decision model that serves the `/v1/systemone` request shape from your own GPU, with weights on Hugging Face.
-- [Valen](https://github.com/Liuziyu77/Valen) - Multimodal System One model, text and images and video in and decision probabilities out, with training and evaluation code and weights on Hugging Face.
+- [Valen](https://github.com/Valen-Team/Valen) - Multimodal System One model, text and images and video in and decision probabilities out, with training and evaluation code and weights on Hugging Face.
 - [laya-server](https://github.com/1Panel-dev/laya-server) - Self-hosted API and web interface for Laya's checkpoints, speaking `/v1/systemone` behind its own API keys.
 - [sys1](https://github.com/alvarobartt/sys1) - System One compatible API in Rust for open decision models such as Laya.
 - [Glance](https://github.com/yoheinakajima/glance) - Asks a frozen open vision-language model typed questions about an image and reads the answer out of one forward pass, with a calibration harness around the readout.
@@ -720,7 +720,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jevchat](https://github.com/kyle-pena-nlp/jevchat) - Turns a decision model into a chat model by asking which symbol comes next, then sampling from the returned distribution.
 - [JEV-Star](https://github.com/sc2musa/Jev_Star) - Real-time StarCraft II macro control in five configurations plus unit micromanagement, with a paper and recorded games.
 - [Jev Plays Pokémon Red](https://github.com/christianmat/jev-pokemon) - A decision model plays the game with no scripts and no cheats, through the AI Gateway. You supply your own legally obtained copy.
-- [wc3env](https://github.com/pwang724/wc3env) - Gym-style environment for real Warcraft III: deterministic stepping, fog-filtered observations and native commands, for driving decision models against a game.
+- [wc3env](https://github.com/offpolicyinc/wc3env) - Gym-style environment for real Warcraft III: deterministic stepping, fog-filtered observations and native commands, for driving decision models against a game.
 - [Jevspresso](https://github.com/statelyai/jevspresso) - A simulated espresso bar where Jev makes every barista decision inside an XState machine; break the equipment and watch it cope.
 - [Jev Town](https://github.com/NevaMind-AI/JevTown) - AI town simulation where Jev picks each agent's next move from the engine's legal options and an LLM handles dialogue and memory. MVP; the Jev demo is on the `feat/jev-demo-solarium` branch until it merges.
 - [clash-jev](https://github.com/bytelabs-oss/clash-jev) - Clash Royale bot with no trained policy: it reads the game from an Android phone's screen over adb, and Jev picks each card and placement. Needs a real device.
