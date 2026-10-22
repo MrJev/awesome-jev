@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**581 entries · every one checked to actually call Jev · last reviewed 2026-10-21**
+**597 entries · every one checked to actually call Jev · last reviewed 2026-10-22**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-21.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-22.
 
-| Project                       |  Stars | This week |
-| ----------------------------- | -----: | --------: |
-| NandhaKishorM/laya            | 33,767 |      +978 |
-| 0814wdwd/solo_jev             |    753 |      +517 |
-| browser-use/jev-ultrafast     | 23,359 |      +511 |
-| CopilotKit/openmuse           |  5,383 |      +457 |
-| jaredpalmer/kev               |  9,394 |      +308 |
-| nokia-applied-research/AnyJev |  1,460 |      +204 |
-| mode-io/vllm-jev              |    688 |      +163 |
-| wy-coliney/jev-browser-use    |  1,330 |      +162 |
-| dzhng/jevgrep                 |  2,832 |      +160 |
-| higress-group/HiRoute         |    296 |      +139 |
+| Project                        |  Stars | This week |
+| ------------------------------ | -----: | --------: |
+| NandhaKishorM/laya             | 33,916 |      +983 |
+| StartLuxLabs/StartLux-Decision |  1,148 |      +738 |
+| browser-use/jev-ultrafast      | 23,441 |      +510 |
+| CopilotKit/openmuse            |  5,435 |      +405 |
+| jaredpalmer/kev                |  9,433 |      +293 |
+| nokia-applied-research/AnyJev  |  1,469 |      +199 |
+| dzhng/jevgrep                  |  2,840 |      +162 |
+| higress-group/HiRoute          |    305 |      +123 |
+| anteloc/ldraw-nova             |    461 |      +105 |
+| tamaratran/fast-jev-compaction |  7,735 |      +104 |
 
-**New to this list this week:** `Valen-Team/Valen`, `TianyuCodings/JevHarness`, `MCG-NJU/VideoJev`, `LiQiiiii/Jeva`, `neatlogs/neatroots` and 22 more.
+**New to this list this week:** `jev-chat/jev-chat-jarvis`, `Valen-Team/Valen`, `jev-chat/jev-chat-windows`, `TianyuCodings/JevHarness`, `jev-chat/jev-chat-jarvis-mac` and 37 more.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
