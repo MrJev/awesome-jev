@@ -335,6 +335,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [adhere](https://github.com/darkmatter/adhere) - Linter for repository rules ordinary linters cannot express: each rule becomes System One questions about the files it covers, run from the CLI or in CI, with Jev as the default provider.
 - [JevFlow](https://github.com/Parth1811/JevFlow) - Claude Code plugin that has Claude plan work as phases with shell checks; when the agent tries to stop, it runs the checks and asks Jev whether the work is really done. A live viewer follows several agents on one plan.
 - [omp-jev-compaction](https://github.com/jerryfane/omp-jev-compaction) - The fast-jev-compaction approach as a plugin for the omp coding agent: Jev scores every tool call and result, stale ones shrink to a recoverable note, and the rest passes through verbatim.
+- [claude-referee](https://github.com/ismaildasci/claude-referee) - Unofficial Claude Code plugin and GitHub Action that sends checkable questions, such as whether a task is really done or which option fits your rules, to Jev and keeps a local log of every check.
 
 ## Guardrails & Safety
 
@@ -584,6 +585,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Citation Verifier](https://github.com/MarissaFamularo/citation-verifier) - Checks whether each cited paper supports the sentence citing it: Claude finds the quote, Jev judges support with a probability you can read as a reliability mark. Hosted version available.
 - [LiquidType](https://github.com/LuliYanng/LiquidType) - Liquid Glass style voice typing for macOS 26 with an optional Jev fast path that types clean short sentences immediately instead of waiting for LLM cleanup.
 - [patrol-jev](https://github.com/patrol-jev/patrol-jev) - Turns patrol photos into Korean patrol-log entries: an LLM reads each photo, Jev sorts it into one of four categories and checks whether consecutive shots show the same spot, and code writes the text and a .hwpx file. Korean.
+- [CallSitter](https://github.com/szerintedmi/callsitter) - Answers your phone with a voice agent while Jev classifies the growing transcript as scam, sales or a genuine caller, and a fixed call flow decides whether to stall, decline or take a message. Needs Telnyx and OpenAI realtime accounts.
 
 ## Evaluation & Benchmarks
 
@@ -731,6 +733,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Groot 1](https://github.com/leofmarciano/groot) - Open typed-decision model on mmBERT encoders with a long-state memory, served behind `POST /v1/systemone`, plus a pure Bend implementation of the forward pass.
 - [Super Decider](https://github.com/Singularity-Compute/super-decider) - Open-weights decision model fine-tuned from DiffusionGemma 26B-A4B that writes a short thought only when unsure, with a Docker runtime serving `POST /v1/systemone`. Self-hosting needs a 48 GB GPU; the vendor also sells a hosted API.
 - [Jebadiah](https://github.com/getainode/jebadiah) - Open System One decision model on Qwen backbones, publishing the trainer, data builders, evaluations and the record of every run, with weights on Hugging Face and a server that answers Jev's `/v1/systemone` shape.
+- [jev-from-scratch](https://github.com/I-You-Dream/jev-from-scratch) - Fine-tunes Qwen3.5-4B with QLoRA to answer Choice, Noul and Score questions from candidate likelihoods, with scripts for data, training, calibration and comparison. Chinese; no licence.
 
 ## Games & Real-Time Demos
 
@@ -835,6 +838,7 @@ Other community lists of Jev projects, each with its own scope and bar:
 - [Awesome Jev Papers](https://github.com/Oscar-dzy/Awesome-jev-papers) - Curated research literature on Jev and typed probabilistic decisions: preprints, technical reports and evaluations, excluding code repositories. CC0.
 - [awesome-system-one](https://github.com/andyrewlee/awesome-system-one) - System One decision models across vendors, Jev first, plus open implementations, agents, tools, SDKs and benchmarks, with a searchable site.
 - [VoltAgent/typesafe-jev-ecosystem](https://github.com/VoltAgent/typesafe-jev-ecosystem) - Directory of Jev integrations, compatible decision models, SDKs and agent tools that admits only projects with 50+ stars and a push in the last two weeks.
+- [meta-awesome-jev](https://github.com/stefanwebb/meta-awesome-jev) - Merges and de-duplicates about a hundred community Jev lists, showing for each entry how many of them cite it.
 
 ## Contributing
 

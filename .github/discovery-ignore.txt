@@ -220,3 +220,13 @@ yzd11/PawHelp
 lsp199308/Jev-Chat-for-WeChat
 # A derivative edition of the listed gargpratyush/jev-router.
 globalmpc/jev-router-effort
+
+# 2026-10-27 (second run) triage
+# Jev is present but not central.
+urusaqqrun/jarvis-voice
+codealong/codealong
+Tritium-Emergence/PangPang
+# Jev is one provider among many in a general LLM gateway.
+ai-process/ktms
+# An awesome list for GPT-6 Astra with one link to a Jev list. Not a Jev directory.
+Anil-matcha/awesome-gpt-6-astra
