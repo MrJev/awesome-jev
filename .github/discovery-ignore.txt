@@ -209,3 +209,14 @@ richet/bounce-router
 sit-in/awesome-grokbot-playbooks
 # A general tokenizer with a Jev token-count estimate; no Jev call.
 vectorize-io/toktok
+
+# 2026-10-27 triage
+# Jev is present but not central.
+jryang1997/MenuBarMijia
+jucelioalencar/linearmemory
+BaronCyrus/dsh-packycode-api
+yzd11/PawHelp
+# No source code: the README of a closed iOS jailbreak tweak for WeChat.
+lsp199308/Jev-Chat-for-WeChat
+# A derivative edition of the listed gargpratyush/jev-router.
+globalmpc/jev-router-effort
