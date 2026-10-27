@@ -353,7 +353,6 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jes](https://github.com/everafterlabs/jes) - Open-source guardrails for AI agents that check prompts, skills, retrieved content, tool calls and responses for prompt injection with a decision model such as Jev or Laya, with thresholds you set; LangChain integration and lessons. Apache-2.0.
 - [toolgate](https://github.com/RiskAverseTech/toolgate) - A calibrated tool-call firewall for agents, as a Claude Code mod or `PreToolUse` hook or as an MCP proxy in front of any MCP server: Jev checks each call for being off-task, breaking an explicit constraint or making a choice reserved for you.
 - [Jev IDS](https://github.com/jev-sec/jev-ids) - Intrusion detection that shows Jev one network flow and five labelled examples, benchmarked against LLM and classical baselines.
-- [Ring Zero](https://github.com/ringzerosec/jev-runtime-security) - Runtime security for AI agents with policy enforced in the kernel at the system call; Jev is an optional checks provider for risk and exposure decisions.
 - [guardrails-md](https://github.com/berget-ai/guardrails-md) - Gate for opencode, pi and Claude Code that scores every bash command for destruction, secret leaks and breaches of your `GUARDRAILS.md`, and blocks it above a threshold with a reason the agent can act on.
 
 ## Model Routing
@@ -372,7 +371,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [stuntd](https://github.com/bladedevoff/stuntd) - Local proxy that speaks the System One protocol, records the typed decisions an app already makes, and learns to answer them itself.
 - [BrighTO Router](https://github.com/thusinh1969/BrighTO_Router) - Self-hosted Rust gateway that fronts OpenAI-, Anthropic- and `/v1/systemone`-shaped backends behind one endpoint, with weighted model groups and usage recorded in PostgreSQL.
 - [Jevonian](https://github.com/xinyao27/jevonian) - Sits between a coding agent and its providers, picks a model for each turn against quota and cache economics, and records the decision locally.
-- [Switchboard](https://github.com/ruban-24/switchboard) - Model and reasoning-effort routing for Claude Code and Codex, model-agnostic and self-hosted.
+- [Switchboard](https://github.com/ruban-24/switchboard) *(archived)* - Model and reasoning-effort routing for Claude Code and Codex, model-agnostic and self-hosted.
 - [auto-model-router](https://github.com/fstandhartinger/auto-model-router) - Picks a model per turn across any number of OpenAI-compatible providers against cost, cache and quota, with a Claude Code shim.
 - [Jevia](https://github.com/assistant-ui/jevia) - Local-first, outcome-based router for coding harnesses: it picks a capability tier per task, applies your safety policy, and learns from recorded execution history.
 - [TriRouter](https://github.com/hajdu-patrik/trirouter) - Routes each request across Claude, Codex and other agents, and queues a prompt sent while an earlier one is still running instead of overwriting it.
@@ -480,7 +479,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jevaro](https://github.com/columnar-tech/jevaro) - Python batching proxy that asks the same Jev questions about many states and streams the answers back as Apache Arrow, one row per state and one column per question, with Python and JavaScript readers.
 - [Jevline](https://github.com/tsale/jevline) - Starts from one confirmed-malicious process, account or host in a telemetry export and asks Jev, round by round, which linked activity belongs to the same incident; returns a timeline and evidence table for analyst review. Experimental.
 - [SOLO](https://github.com/0814wdwd/solo_jev) - Reorders rows and fields so a prefix-caching backend reuses more work when a decision model judges every record in a large table; ships a vLLM backend for the open AutoTrust JEV-9B model and works with your own.
-- [jevotron](https://github.com/cmungall/jevotron) - CLI for field-level anomaly detection in tabular, structured and text files, SQLite and DuckDB, flagging the fields worth a second look with Jev. BSD-3-Clause.
+- [jevotron](https://github.com/ai4curation/jevotron) - CLI for field-level anomaly detection in tabular, structured and text files, SQLite and DuckDB, flagging the fields worth a second look with Jev. BSD-3-Clause.
 - [JEVDB](https://github.com/PDAIS/JEVDB) - DuckDB extension for semantic queries that batches row-level decisions on Jev in one stage, with an OpenAI-compatible LLM backend as the alternative and a Colab notebook.
 - [neatroots](https://github.com/neatlogs/neatroots) - Local-first viewer that records, checks and replays an agent's runs; its yes/no checks go to a Jev-compatible decision model, local Laya by default or Jev when you opt in.
 
@@ -805,7 +804,6 @@ Other community lists of Jev projects, each with its own scope and bar:
 - [awesome-jev-use-cases](https://github.com/walidboulanouar/awesome-jev-use-cases) - Demos grouped by use case, with notes on writing criteria and setting thresholds.
 - [anandi1989/awesome-jev-usecases](https://github.com/anandi1989/awesome-jev-usecases) - Use cases with every headline figure tagged self-reported or independent.
 - [aliaihub/awesome-jev-usecases](https://github.com/aliaihub/awesome-jev-usecases) - Use cases paired with patterns and written guidance for building on them.
-- [Jev Directory](https://github.com/everyai-com/jev-directory) - Runnable evals and community builds, also served to agents as an MCP server and an `llms.txt` index.
 - [JEV HUB](https://github.com/mizzlelover/jev-hub) - Long posts and demo videos from X, each kept as a link to the original rather than rehosted. Chinese.
 - [Jev Radar](https://github.com/everyinfra/jev-radar) - A tracked casebook of the ecosystem, kept as a live monitor. Bilingual.
 - [kraayenjon/awesome-jev](https://github.com/kraayenjon/awesome-jev) - Use cases, projects, SDKs and learning resources in one curated list.
