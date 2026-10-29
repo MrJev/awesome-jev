@@ -265,6 +265,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev Workflows](https://github.com/integrate-your-mind/jev-codex-plugin) - Codex and Claude Code plugin whose MCP tools and hooks ask Jev to choose tools or strategies, diagnose failed commands and check completion claims against evidence; automatic consultation is off until enabled.
 - [claude-x-jev](https://github.com/charlesdove977/claude-x-jev) - Claude Code skill and commands that hand sorting, checking, scoring and gating to Jev over OpenRouter, with presets for jobs such as email triage, plus an optional hook that, once switched on from shadow mode, lets Jev approve tool calls it is confident about.
 - [jevfetch](https://github.com/a2sys-ai/jevfetch) - Web-page reader for coding agents, as a skill and CLI in place of WebFetch: it splits a page into blocks, asks Jev which ones answer the question, and returns those blocks verbatim with their heading paths.
+- [Hermes Switchyard](https://github.com/bgrablin/hermes-switchyard) - Hermes Agent plugin that hands skill choice, reasoning effort, model recommendations and session re-ranking to Jev, through TypeSafe or OpenRouter.
 
 ## Coding Agents & Developer Tools
 
@@ -737,6 +738,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jebadiah](https://github.com/getainode/jebadiah) - Open System One decision model on Qwen backbones, publishing the trainer, data builders, evaluations and the record of every run, with weights on Hugging Face and a server that answers Jev's `/v1/systemone` shape.
 - [jev-from-scratch](https://github.com/I-You-Dream/jev-from-scratch) - Fine-tunes Qwen3.5-4B with QLoRA to answer Choice, Noul and Score questions from candidate likelihoods, with scripts for data, training, calibration and comparison. Chinese; no licence.
 - [basal-rs](https://github.com/itsoltech/basal-rs) - Rust inference engine and server, on CUDA, Metal and Intel Arc, for Remek Kinas's Bielik-based Basal decision models, serving the System One contract at `/v1/systemone` alongside Basal's own endpoint. Polish.
+- [Decisio](https://github.com/aminry/decisio) - Self-hosted server that answers typed questions with a probability for every option from one forward pass of a frozen Qwen or Gemma base, and can fit a correction to labelled examples of your own question.
 
 ## Games & Real-Time Demos
 

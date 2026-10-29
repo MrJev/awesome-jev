@@ -240,3 +240,17 @@ pvjbuilds/delegate-router
 Daniel-rmc/ManiLoop
 # Jev optional: judges task intake in a self-hosted Claude Code workspace
 Quartio-Studio/yulius
+
+# 2026-10-29 (second run) triage
+# Jev annotation plugin is optional and off by default (same project as the ignored JayziLi/AnimaVN-public)
+JayziLi/AnimaVN
+# Jev optional: switches session voices in a GPT Live voice companion for Claude Code
+CakeCrusher/full_duplex_code
+# Jev is one optional LLM provider among seven in a finance-agent benchmarking platform
+davidalmeida90/glassbench
+# Jev optional: a link judge in a local feed-capture tool that works with any model or none
+KevinChu1110/driftnet
+# Jev is one backend of an optional decision package in a neurosymbolic Prolog
+neurosymbolica/clausal-prolog
+# Jev optional: one of four possible classifiers in an optional stage of a Pi auto-mode guard
+deepu105/pi-automode-classifier
