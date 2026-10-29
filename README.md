@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**616 entries · every one checked to actually call Jev · last reviewed 2026-10-28**
+**620 entries · every one checked to actually call Jev · last reviewed 2026-10-29**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-28.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-10-29.
 
 | Project                        |  Stars | This week |
 | ------------------------------ | -----: | --------: |
-| deepopen-com/deepopen          |  3,084 |    +1,037 |
-| NandhaKishorM/laya             | 34,514 |      +747 |
-| StartLuxLabs/StartLux-Decision |  1,600 |      +558 |
-| browser-use/jev-ultrafast      | 23,798 |      +439 |
-| CopilotKit/openmuse            |  5,781 |      +398 |
-| jaredpalmer/kev                |  9,641 |      +247 |
-| Parcha-ai/agentrun             |    411 |      +157 |
-| dzhng/jevgrep                  |  2,985 |      +153 |
-| mode-io/vllm-jev               |    800 |      +112 |
-| YUTA-fywoo/jev-gui-delegate    |    151 |       +95 |
+| deepopen-com/deepopen          |  3,087 |    +1,040 |
+| NandhaKishorM/laya             | 34,596 |      +680 |
+| StartLuxLabs/StartLux-Decision |  1,612 |      +464 |
+| CopilotKit/openmuse            |  5,864 |      +429 |
+| browser-use/jev-ultrafast      | 23,855 |      +414 |
+| jaredpalmer/kev                |  9,675 |      +242 |
+| dzhng/jevgrep                  |  3,057 |      +217 |
+| jev-chat/jev-chat-jarvis       |  8,155 |      +177 |
+| YUTA-fywoo/jev-gui-delegate    |    160 |      +159 |
+| mode-io/vllm-jev               |    818 |      +155 |
 
-**New to this list this week:** `jev-chat/jev-chat-jarvis`, `jev-chat/jev-chat-windows`, `jev-chat/jev-chat-jarvis-mac`, `slavabars/decision-cascade`, `brainstormity/System-One-Computer-Use` and 32 more.
+**New to this list this week:** `charlesdove977/claude-x-jev`, `brainstormity/System-One-Computer-Use`, `jwuthri-cloud/SelfJev`, `a2sys-ai/jevfetch`, `chenmingtang830/jevgraph` and 21 more.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
