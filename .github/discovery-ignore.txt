@@ -230,3 +230,13 @@ Tritium-Emergence/PangPang
 ai-process/ktms
 # An awesome list for GPT-6 Astra with one link to a Jev list. Not a Jev directory.
 Anil-matcha/awesome-gpt-6-astra
+
+# 2026-10-29 triage
+# Jev is an optional reranker in an agent-memory tool; a local reranker is the default without a key
+jasonkneen/instinctual-memory
+# Jev optional: a file scout and release-note judge in a multi-model delegation skill
+pvjbuilds/delegate-router
+# Jev is one policy provider among several in a robot-evaluation framework
+Daniel-rmc/ManiLoop
+# Jev optional: judges task intake in a self-hosted Claude Code workspace
+Quartio-Studio/yulius
