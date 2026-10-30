@@ -254,3 +254,11 @@ KevinChu1110/driftnet
 neurosymbolica/clausal-prolog
 # Jev optional: one of four possible classifiers in an optional stage of a Pi auto-mode guard
 deepu105/pi-automode-classifier
+
+# 2026-10-30 triage
+# Jev optional: an opt-in agent-loop plugin, not installed by default, in a large general agent harness
+AgnesAI-Labs/agnes-harness
+# Jev optional: drives avatar expressions and gestures in a Pipecat voice-agent demo
+pipecat-ai/realtime-context-standard-demo
+# A derivative of the listed jev-chat/jev-chat-jarvis and goutoujunshi-jev-chat
+Jacky381897524/duihua-junshi
