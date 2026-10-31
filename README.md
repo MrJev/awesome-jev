@@ -435,7 +435,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) - macOS computer use without sending screenshots to a large model. The screen is read deterministically and Jev picks the next action.
 - [Jev Browser](https://github.com/jkudish/jev-browser) - Headless browser automation through an MCP server, CLI, or library. Jev picks one action per step.
 - [Mobile Jev](https://github.com/droidrun/mobile-jev) - Android phone automation from DroidRun on its Mobilerun device cloud, with Jev choosing every operation and target. The author reports reaching Uber's payment selection in about 21 seconds.
-- [agent-desktop](https://github.com/lahfir/agent-desktop) - macOS desktop automation over accessibility trees. Since v0.9.2, its jev-desktop scripts let Jev choose which control to operate and which action to take.
+- [agent-desktop](https://github.com/vercel-labs/agent-desktop) - macOS desktop automation over accessibility trees. Since v0.9.2, its jev-desktop scripts let Jev choose which control to operate and which action to take.
 - [Jev-cu](https://github.com/Sac-Y/Jev-cu) - Codex computer-use skill where Jev picks the next element and action from on-screen text, with a local policy gate for sensitive steps. README in Chinese.
 - [voice-browser](https://github.com/moritzkremb/jev-voice-browser) - Voice-controlled Chromium: on each partial transcript, one Jev request judges intent, target element, and whether the command is complete or destructive.
 - [JevScout](https://github.com/hqman/JevScout) - Coding-agent skill that drives Chrome over CDP to look for jobs on company sites, with Jev scoring pages and links.
