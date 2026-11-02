@@ -166,6 +166,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [scala-jev-sdk](https://github.com/ticofab/scala-jev-sdk) - Scala 3 client for `/v1/systemone` on sttp, with typed requests and answers and no effect system bundled. Apache-2.0.
 - [typesafe-sdk-java (Premo-Cloud)](https://github.com/Premo-Cloud/typesafe-sdk-java) - Java 17+ client with typed `Ask` declarations that read answers back as enums and records, plus a Spring Boot starter; Jackson is its only dependency.
 - [SwiftJev](https://github.com/SoundBlaster/SwiftJev) - Jev backend for the author's SwiftDecision framework: validates Noul, Choice and Score requests and responses on Apple platforms, with a configurable API root for compatible proxies.
+- [kojev](https://github.com/ItisNoMatter/kojev) - Kotlin Multiplatform client that takes questions defined as your own enums and sealed types and returns Jev's answers in those types rather than string keys.
 
 ## Libraries & Integrations
 
@@ -340,6 +341,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [claude-referee](https://github.com/ismaildasci/claude-referee) - Unofficial Claude Code plugin and GitHub Action that sends checkable questions, such as whether a task is really done or which option fits your rules, to Jev and keeps a local log of every check.
 - [Jevpact](https://github.com/transcendr/jevpact) - Codex desktop plugin and local service that asks Jev whether the current step has reached a usable conclusion, requests Codex's native compaction at that point, and resumes only the work that is still actionable. macOS development preview.
 - [Shed](https://github.com/IAmUnbounded/shed) - Message the coding agents on your Mac from your phone, with a local Laya model choosing which installed harness and model handles each new task. No TypeSafe account or key.
+- [judgelint](https://github.com/jpcamara/judgelint) - Linter for conventions written as plain-English bullets in a README: it asks a decision model, Jev by default in its guide, whether each file breaks each bullet and reports violations with line numbers and an exit code.
 
 ## Guardrails & Safety
 
@@ -472,6 +474,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [ego-decision-layer](https://github.com/jiangkoumo/ego-decision-layer) - Replaces the per-step LLM turn in the ego lite browser with one Jev call that picks both the action and the target element, while code observes, executes and fails closed. The installer takes over the official ego-browser skill entry unless you pass `--no-wire`.
 - [System One Computer Use](https://github.com/brainstormity/System-One-Computer-Use) - Prototype screenshot loop that asks Jev for the next click, keystroke, scroll or site to open and carries it out with pyautogui or on an Android phone over adb, with a local dashboard that records each run. It controls the real mouse and keyboard.
 - [Jev Mobile](https://github.com/xinwang-nwpu/jev-mobile) - Operates an Android phone from one sentence: Jev picks one action per step from the accessibility tree, executed over ADB, with a local or vision model available to take over. Chinese and English.
+- [jev-browse](https://github.com/danielnc/jev-browse) - Helpers for browser-harness that let Claude Code or Codex hand off a whole website sub-task in one call, with Jev deciding each step and returning the outcome or a typed reason it stopped. A port of jev-ultrafast.
+- [Jev Desktop (Windows)](https://github.com/jacks3tr/Jev-Desktop) - Lets an agent hand off a Windows desktop task through MCP or the command line: Jev observes windows, chooses controls and types supplied text, and the agent gets the result or a request for help. Alpha.
 
 ## Data & Observability
 
@@ -593,6 +597,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [patrol-jev](https://github.com/patrol-jev/patrol-jev) - Turns patrol photos into Korean patrol-log entries: an LLM reads each photo, Jev sorts it into one of four categories and checks whether consecutive shots show the same spot, and code writes the text and a .hwpx file. Korean.
 - [CallSitter](https://github.com/szerintedmi/callsitter) - Answers your phone with a voice agent while Jev classifies the growing transcript as scam, sales or a genuine caller, and a fixed call flow decides whether to stall, decline or take a message. Needs Telnyx and OpenAI realtime accounts.
 - [netizen](https://github.com/Seheta/netizen) - Simulates how Indonesian netizen personas would react to a post before it goes out, with Jev judging who stops scrolling, what they do and their stance, checked against real comments from past cases. Indonesian.
+- [Jev Subtitle Translator](https://github.com/GeekLinkDev/jev-subtitle-translator) - Translates SRT subtitles with an LLM of your choice through OpenRouter, keeping every cue and timestamp, then has Jev check each source and translation pair and flag lines for human review; it can also check an existing translation on its own.
 
 ## Evaluation & Benchmarks
 
@@ -745,6 +750,10 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [basal-rs](https://github.com/itsoltech/basal-rs) - Rust inference engine and server, on CUDA, Metal and Intel Arc, for Remek Kinas's Bielik-based Basal decision models, serving the System One contract at `/v1/systemone` alongside Basal's own endpoint. Polish.
 - [Decisio](https://github.com/aminry/decisio) - Self-hosted server that answers typed questions with a probability for every option from one forward pass of a frozen Qwen or Gemma base, and can fit a correction to labelled examples of your own question.
 - [CONNECT TYCOON](https://github.com/wonseokjung/connect-tycoon) - Gymnasium company simulator for training a decision model with imitation and then PPO, asking a person when unsure; every decision uses Jev's Choice request and answer shape, so Jev itself can be tested in it too. Korean.
+- [krasivo-jev](https://github.com/SergeyBazhmin/krasivo-jev) - Training data and models for a one-pass decision model: 100 Hugging Face datasets converted to one state, question, options and label format, Qwen3.5-2B LoRA models with a pointer head, held-out benchmarks, and a vLLM plugin with a client that returns SDK-shaped answers. No licence yet.
+- [AudioJev Inference](https://github.com/SihanLv/AudioJev-Inference) - Python library and HTTP service for AudioJev: give it an audio clip and several typed questions in one request, and get option probabilities, yes/no judgments or ordinal scores back. Needs an NVIDIA GPU with BF16.
+- [Fovea](https://github.com/Sivasuthan9/fovea) - Open 4B decision model for images, with an SDK and a local server that answers TypeSafe's System One API, so typed questions can be asked about a picture.
+- [EdgeJev](https://github.com/yzfly/edgejev) - Converts open Jev reproductions such as Laya, Kev and PlayJev to ONNX with INT8 quantisation and serves them offline on a CPU behind a local `/v1/systemone` endpoint, with no torch at runtime. Chinese.
 
 ## Games & Real-Time Demos
 
@@ -769,6 +778,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev Town](https://github.com/NevaMind-AI/JevTown) - AI town simulation where Jev picks each agent's next move from the engine's legal options and an LLM handles dialogue and memory. MVP; the Jev demo is on the `feat/jev-demo-solarium` branch until it merges.
 - [clash-jev](https://github.com/bytelabs-oss/clash-jev) - Clash Royale bot with no trained policy: it reads the game from an Android phone's screen over adb, and Jev picks each card and placement. Needs a real device.
 - [jevcraft](https://github.com/mrubens/jevcraft) - Mineflayer Minecraft bot in which code lists the options available at each moment and Jev picks one, with a write-up of what went wrong and how the menu was fixed.
+- [Jev Drive Lab](https://github.com/BrendanH18/jev_fsd) - Driving simulator on real Canadian streets built from OpenStreetMap, where Jev or another decision model drives and every choice can be rewound to see what it considered; a rule-based driver works without a key.
+- [jev-leftpad](https://github.com/f/jev-leftpad) - Left-pads a string by asking Jev to choose how many spaces are needed, from zero to ten. A joke package, and a short look at a single Choice call through the official SDK.
 
 ## Robotics & Embodied
 

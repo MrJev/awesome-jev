@@ -262,3 +262,21 @@ AgnesAI-Labs/agnes-harness
 pipecat-ai/realtime-context-standard-demo
 # A derivative of the listed jev-chat/jev-chat-jarvis and goutoujunshi-jev-chat
 Jacky381897524/duihua-junshi
+
+# 2026-11-02 triage
+# A derivative of the listed vinilana/jev-gateway (began as a fork; adds an optional read-only advisor)
+1arley/jev-advisor-gateway
+# Jev not central: llama.cpp on a jailbroken PS5 that can also serve open decision models on /v1/systemone
+cobanov/PS5LM
+# Jev not central: a selection and scoring step inside a Claude/Codex motion-graphics app
+delexw/motion-graphics-agent
+# Jev not central: a decision-model layer inside a general coding-agent harness
+guregodevo/memdoor
+# No Jev integration: a general Vietnamese agent-skills collection with a few Jev skill files and no Jev call
+huytran1120/vie-agentic-skills
+# Jev optional: re-orders rule-chosen skills in a Claude Code + Codex development harness
+KenSuh/open-agent-harness
+# Jev optional: an optional decision-model classifier in an editor/terminal pairing assistant
+makefunstuff/pairing-buddy
+# Jev optional: an alternative scorer to the default Claude scorer in an iTerm2 session queue
+nejko/claude-focus
