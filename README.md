@@ -711,7 +711,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [RSI-Jev](https://github.com/Shanghua-Gao/RSI-Jev) - Typed-decision checkpoints produced by a self-improving loop of agents that register predictions before spending GPU time, published with the code that produced them.
 - [privatemode-decisions](https://github.com/edgelesssys/privatemode-decisions) - Gets a choice and a probability per option out of any OpenAI-compatible model in one forward pass, for Edgeless Systems' confidential-computing API or any endpoint you set.
 - [Jeeves](https://github.com/PostHog/jeeves) - A Jev-style classifier that reasons before it decides: Qwen3.5-9B with a LoRA and a pointer head, trained with SFT and CISPO, plus a diffusion drafter. From PostHog.
-- [Lichen](https://github.com/Mushroom-Systems/lichen) - Drop-in replacement serving `/v1/systemone` from open weights on your own hardware, returning the same choice, noul and score shapes.
+- [Lichen](https://github.com/Mushroom-Systems/lichen-v1) - Drop-in replacement serving `/v1/systemone` from open weights on your own hardware, returning the same choice, noul and score shapes.
 - [JevAny](https://github.com/SimpleJev/JevAny) - Infrastructure for training, evaluating and deploying decision models across language and multimodal backbones, with calibrated LoRA checkpoints on a 27B backbone. English and Chinese.
 - [opendecider](https://github.com/manjunathshiva/opendecider) - Calibrated decision models from 400M to 80B on CPU or NVIDIA, with weights on Hugging Face and a Colab notebook.
 - [StartLux-Decision](https://github.com/StartLuxLabs/StartLux-Decision) - Typed decision models from 0.8B to 27B, each answer carrying a probability per option, with a chess duel demo.
