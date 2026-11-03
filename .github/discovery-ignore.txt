@@ -280,3 +280,13 @@ KenSuh/open-agent-harness
 makefunstuff/pairing-buddy
 # Jev optional: an alternative scorer to the default Claude scorer in an iTerm2 session queue
 nejko/claude-focus
+
+# 2026-11-03 triage
+# Jev optional: the Mac app uses a keyless pattern judge by default; Jev needs --judge jev (README also points to a different repo)
+SamGu-NRX/Caret
+# Jev not central: a /v1/systemone-compatible endpoint is one feature of a general LLM engineering platform for TUM's own cluster
+LogosOSS/Logos
+# Jev optional: a bring-your-own-key source-highlighting step in a personal digital-asset workspace. Chinese.
+Songwo/zhiyu
+# Jev not central: only the optional paper-compare feature in an OpenAI-based research workspace
+Sreehari05055/thesys-core

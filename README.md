@@ -140,7 +140,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [JavaScript SDK](https://github.com/typesafe-ai/typesafe-sdk-js) - Official JavaScript and TypeScript client (`npm install @typesafe-ai/sdk`).
 - [Cookbooks](https://docs.typesafe.ai/cookbooks/llm_guardrails) - Official recipes for guardrails, re-ranking, RAG passage classification, citation checks, and more.
 - [Patterns](https://docs.typesafe.ai/patterns) - Confidence-gated routing, speculative fan-out, composite scoring, and intent routing.
-- [Jev 1.13 jaggedness](https://docs.typesafe.ai/model-jaggedness/jev-1.13) - Where the current model is known to be weak.
+- [Model changelog](https://docs.typesafe.ai/changelog) - The principal changes in each Jev release.
+- [Model jaggedness](https://docs.typesafe.ai/model-jaggedness) - Where Jev is known to be weak, and what to do instead.
 - [Evals](https://evals.typesafe.ai) - TypeSafe's published evaluations.
 - [Jev on Vercel AI Gateway](https://vercel.com/ai-gateway/models/jev) - Access Jev through Vercel's AI Gateway.
 - [n8n-nodes-typesafe-ai](https://github.com/typesafe-ai/n8n-nodes-typesafe-ai) - Official n8n community node: Evaluate adds typed answers to each item, Route sends each item to an output by one answer, and it works as an AI Agent tool.
@@ -268,6 +269,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [claude-x-jev](https://github.com/charlesdove977/claude-x-jev) - Claude Code skill and commands that hand sorting, checking, scoring and gating to Jev over OpenRouter, with presets for jobs such as email triage, plus an optional hook that, once switched on from shadow mode, lets Jev approve tool calls it is confident about.
 - [jevfetch](https://github.com/a2sys-ai/jevfetch) - Web-page reader for coding agents, as a skill and CLI in place of WebFetch: it splits a page into blocks, asks Jev which ones answer the question, and returns those blocks verbatim with their heading paths.
 - [Hermes Switchyard](https://github.com/bgrablin/hermes-switchyard) - Hermes Agent plugin that hands skill choice, reasoning effort, model recommendations and session re-ranking to Jev, through TypeSafe or OpenRouter.
+- [TokenSlash](https://github.com/JessenReinhart/dsh-tokenslash) - DeepSeek Harness plugin that asks a System One decision model such as Jev which tool schemas and prompt sections a task needs, compacts tool output and routes subagents, with a way to unlock pruned tools. No licence yet.
 
 ## Coding Agents & Developer Tools
 
@@ -427,6 +429,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jeq](https://github.com/cristianoliveira/jeq) - Typed questions in a shell pipeline, for scripts and agents that want an answer without the boilerplate.
 - [NucleiSniper](https://github.com/MorDavid/NucleiSniper) - Runs every Nuclei template in order of relevance to a fingerprinted target, with Jev scoring which findings are likely to matter.
 - [tisco](https://github.com/ailiahq/tisco) - Terminal tool that transcribes a folder of video clips, has Jev judge the transcripts against a plain-language request, and previews every move or rename for approval before anything changes, with undo.
+- [Nouli](https://github.com/nouli-ai/nouli) - Terminal app, CLI and Rust library that keeps a ledger of decisions and the facts behind them, so later questions to Jev or another System One service can reuse earlier answers.
 
 ## Browser & Computer Use
 
@@ -509,7 +512,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Blink](https://github.com/ellipsis-dev/blink) - Semantic codebase search. At each directory level Jev ranks which files and folders are most likely relevant and sends more walkers there.
 - [neo4jev](https://github.com/jexp/neo4jev) - Navigates a Neo4j graph by having Jev score neighbouring relationships, then beam-searching for the most probable path.
 - [jev.nvim](https://github.com/valentynkit/jev.nvim) - Neovim plugin that splits the buffer into functions with Treesitter, has Jev score each one against a plain-language question, and lists the answers in the quickfix window ranked by probability.
-- [laya-jev-GraphRAG](https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG) - Agentic GraphRAG over Neo4j with a swappable decision model, either the Jev API or a local Laya checkpoint.
+- [ConsciousDB](https://github.com/bodepudimuneendra-netizen/ConsciousDB) - Agentic GraphRAG with a swappable decision model, either the Jev API or a local Laya checkpoint, for Neo4j and other graph databases.
 - [jev-doc-search](https://github.com/VectifyAI/jev-doc-search) - Long-document search that walks a PageIndex tree and asks Jev which branches to open.
 - [jev-graph-search](https://github.com/Emlembow/jev-graph-search) - Jev-assisted retrieval over local Markdown, Obsidian vaults and Logseq, keeping the evidence it used inspectable.
 - [Jev RAG](https://github.com/aifabrice/jev-rag) - Local knowledge search with seven selectable pipelines, BM25 plus Jev reranking by default, streaming cited answers over your own document folder.
@@ -754,6 +757,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [AudioJev Inference](https://github.com/SihanLv/AudioJev-Inference) - Python library and HTTP service for AudioJev: give it an audio clip and several typed questions in one request, and get option probabilities, yes/no judgments or ordinal scores back. Needs an NVIDIA GPU with BF16.
 - [Fovea](https://github.com/Sivasuthan9/fovea) - Open 4B decision model for images, with an SDK and a local server that answers TypeSafe's System One API, so typed questions can be asked about a picture.
 - [EdgeJev](https://github.com/yzfly/edgejev) - Converts open Jev reproductions such as Laya, Kev and PlayJev to ONNX with INT8 quantisation and serves them offline on a CPU behind a local `/v1/systemone` endpoint, with no torch at runtime. Chinese.
+- [Flide](https://github.com/OmniJev/Flide) - Inference server for Jev-style decision models that forks the shared state across questions and serves the `/v1/systemone` API, with plugins for several open decision-model families and a check that forked answers match unforked ones.
 
 ## Games & Real-Time Demos
 
