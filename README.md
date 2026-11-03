@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**642 entries · every one checked to actually call Jev · last reviewed 2026-11-02**
+**642 entries · every one checked to actually call Jev · last reviewed 2026-11-03**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-11-02.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-11-03.
 
 | Project                     |  Stars | This week |
 | --------------------------- | -----: | --------: |
-| NandhaKishorM/laya          | 34,860 |      +517 |
-| CopilotKit/openmuse         |  6,101 |      +478 |
-| browser-use/jev-ultrafast   | 24,065 |      +404 |
-| dzhng/jevgrep               |  3,145 |      +239 |
-| jaredpalmer/kev             |  9,761 |      +220 |
-| mode-io/vllm-jev            |    920 |      +161 |
-| deillusion/Varina           |    908 |      +134 |
-| jev-chat/jev-chat-jarvis    |  8,214 |      +102 |
-| kerpopule/hermes-jev-skills |  1,281 |       +98 |
-| jiwidi/jiwo                 |    297 |       +71 |
+| NandhaKishorM/laya          | 34,932 |      +498 |
+| CopilotKit/openmuse         |  6,137 |      +450 |
+| browser-use/jev-ultrafast   | 24,117 |      +398 |
+| dzhng/jevgrep               |  3,159 |      +247 |
+| jaredpalmer/kev             |  9,787 |      +194 |
+| mode-io/vllm-jev            |    938 |      +163 |
+| deillusion/Varina           |    939 |      +147 |
+| jev-chat/jev-chat-jarvis    |  8,225 |      +110 |
+| kerpopule/hermes-jev-skills |  1,286 |       +97 |
+| jiwidi/jiwo                 |    309 |       +77 |
 
-**New to this list this week:** `vercel-labs/agent-desktop`, `osolmaz/switch`, `charlesdove977/claude-x-jev`, `f/jev-leftpad`, `brainstormity/System-One-Computer-Use` and 44 more.
+**New to this list this week:** `vercel-labs/agent-desktop`, `osolmaz/switch`, `f/jev-leftpad`, `theNetworkChuck/jev-guide`, `bodepudimuneendra-netizen/ConsciousDB` and 27 more.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
