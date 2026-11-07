@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**646 entries · every one checked to actually call Jev · last reviewed 2026-11-06**
+**646 entries · every one checked to actually call Jev · last reviewed 2026-11-07**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-11-06.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-11-07.
 
 | Project                        |  Stars | This week |
 | ------------------------------ | -----: | --------: |
-| vercel-labs/agent-desktop      | 17,637 |   +15,805 |
-| NandhaKishorM/laya             | 35,082 |      +411 |
-| browser-use/jev-ultrafast      | 24,229 |      +314 |
-| CopilotKit/openmuse            |  6,256 |      +289 |
-| OrgoAI/bops                    |    493 |      +148 |
-| jaredpalmer/kev                |  9,854 |      +144 |
-| mode-io/vllm-jev               |    946 |      +108 |
-| deillusion/Varina              |    946 |      +104 |
-| jev-chat/jev-chat-jarvis       |  8,276 |       +97 |
-| tamaratran/fast-jev-compaction |  7,898 |       +97 |
+| vercel-labs/agent-desktop      | 18,419 |   +15,456 |
+| NandhaKishorM/laya             | 35,140 |      +410 |
+| browser-use/jev-ultrafast      | 24,249 |      +293 |
+| CopilotKit/openmuse            |  6,285 |      +271 |
+| OrgoAI/bops                    |    502 |      +156 |
+| jaredpalmer/kev                |  9,871 |      +143 |
+| jev-chat/jev-chat-jarvis       |  8,286 |       +94 |
+| tamaratran/fast-jev-compaction |  7,903 |       +94 |
+| dzhng/jevgrep                  |  3,193 |       +88 |
+| osolmaz/switch                 |    435 |       +83 |
 
-**New to this list this week:** `osolmaz/switch`, `f/jev-leftpad`, `Mushroom-Systems/lichen-v1`, `bodepudimuneendra-netizen/ConsciousDB`, `BijectiveLabs/bitra` and 20 more.
+**New to this list this week:** `f/jev-leftpad`, `Mushroom-Systems/lichen-v1`, `bodepudimuneendra-netizen/ConsciousDB`, `yzfly/edgejev`, `OmniJev/Flide` and 11 more.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
