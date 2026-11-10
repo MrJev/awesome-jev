@@ -193,7 +193,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [MetaCog](https://github.com/ItIsCuthNotCup/MetaCog) - Wraps a language model in a metacognition loop where a System One judge, Jev or the open Reflex model, picks which branch of reasoning continues.
 - [vibecheck](https://github.com/jlowin/vibecheck) - Drops a decision model into ordinary Python code, so a judgement call is a function call rather than a prompt.
 - [Discern](https://github.com/doeixd/discern) - Semantic control flow for Effect: patterns, policies and routable procedures built on typed decisions, where an uncertain answer is a branch you must handle.
-- [ALGAL](https://github.com/hraness/algal) - A language and VM for agent programs that wait for approval, resume after a crash and replay what they did, with typed decisions at the branch points.
+- [ALGAL](https://github.com/hraness/algal) *(archived)* - A language and VM for agent programs that wait for approval, resume after a crash and replay what they did, with typed decisions at the branch points.
 - [Truffler](https://github.com/kieranklaassen/truffler) - Intent search for Rails: the typed questions you declare about a record are asked when it is saved and the answers stored, so the query at read time is ordinary SQL.
 - [Gut](https://github.com/vinibrsl/gut) - Elixir DSL that picks an Elixir value for a subject and a question, with a Jev backend among the LLM ones. On Hex.
 - [jev-feels](https://github.com/Qew7/jev-feels) - Ruby and Rails: `email.feels?(:urgent)` as a named question on a field, with `decide` and `score` beside it and validations that use them.
@@ -317,7 +317,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-compaction-plus](https://github.com/cth9191/jev-compaction-plus) - Claude Code compaction that keeps what is still needed word for word and moves the rest to a draft, derived from fast-jev-compaction.
 - [fast-jev-compaction for OpenCode](https://github.com/overbit/fast-jev-compaction-opencode) - The fast-jev-compaction approach ported to OpenCode: stale tool history is pruned rather than rewritten by an LLM.
 - [code-quality](https://github.com/smixs/code-quality) - Deterministic quality gate for Claude Code, Codex and pi: Git hooks that block test tampering and secrets, with an optional Jev review that adds findings to the report.
-- [Gobstopper](https://github.com/hraness/gobstopper) - A local proxy that compacts long Claude Code and Codex sessions as they run, with Jev as one of the scorers that decide what stays; nothing is sent until you choose one.
+- [Gobstopper](https://github.com/hraness/gobstopper) *(archived)* - A local proxy that compacts long Claude Code and Codex sessions as they run, with Jev as one of the scorers that decide what stays; nothing is sent until you choose one.
 - [Clean Code Review](https://github.com/frostney/clean-code-review) - Reviews every code file in a pull request against a question set drawn from *Clean Code*: Jev answers, Luna writes the review. Runs on eve with Jev through Vercel's AI Gateway; a hosted version is live.
 - [Deeds](https://github.com/danielmiessler/Deeds) - CLI and Claude Code plugin that reads each commit's diff and counts capabilities gained, fixes and upkeep, ignoring commit messages. Needs only a Jev key; only diffs and file paths are sent.
 - [jev-lint](https://github.com/ckorhonen/jev-lint) - Fuzzy linter for coding agents: a hook checks each file the agent writes against your team's rules in `.jev-lint/` with Jev and reports violations while the agent is still working.
@@ -344,6 +344,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jevpact](https://github.com/transcendr/jevpact) - Codex desktop plugin and local service that asks Jev whether the current step has reached a usable conclusion, requests Codex's native compaction at that point, and resumes only the work that is still actionable. macOS development preview.
 - [Shed](https://github.com/IAmUnbounded/shed) - Message the coding agents on your Mac from your phone, with a local Laya model choosing which installed harness and model handles each new task. No TypeSafe account or key.
 - [judgelint](https://github.com/jpcamara/judgelint) - Linter for conventions written as plain-English bullets in a README: it asks a decision model, Jev by default in its guide, whether each file breaks each bullet and reports violations with line numbers and an exit code.
+- [jevlint (INDXDev)](https://github.com/INDXDev/jevlint) - Scores every file in a repository against principles you choose with a decision model, Jev by default, and ranks what to refactor first, with a prompt for Claude Code or Codex to fix it. Unrelated to the other jevlint entries.
 
 ## Guardrails & Safety
 
@@ -369,6 +370,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev IDS](https://github.com/jev-sec/jev-ids) - Intrusion detection that shows Jev one network flow and five labelled examples, benchmarked against LLM and classical baselines.
 - [guardrails-md](https://github.com/berget-ai/guardrails-md) - Gate for opencode, pi and Claude Code that scores every bash command for destruction, secret leaks and breaches of your `GUARDRAILS.md`, and blocks it above a threshold with a reason the agent can act on.
 - [jev-engineering](https://github.com/eugeniughelbur/jev-engineering) - Two coding-agent tools on Jev with benchmarks you can rerun: jev-gate judges each shell command an agent is about to run, and review-router, a GitHub Action, decides from a diff whether an AI reviewer must read the whole pull request.
+- [jev-enforce](https://github.com/erkamyaman/jev-enforce) - Claude Code plugin whose Stop and PostToolUse hooks ask Jev one question per rule in your CLAUDE.md or AGENTS.md and send broken rules back to Claude to fix in the same turn.
 
 ## Model Routing
 
@@ -430,6 +432,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [NucleiSniper](https://github.com/MorDavid/NucleiSniper) - Runs every Nuclei template in order of relevance to a fingerprinted target, with Jev scoring which findings are likely to matter.
 - [tisco](https://github.com/ailiahq/tisco) - Terminal tool that transcribes a folder of video clips, has Jev judge the transcripts against a plain-language request, and previews every move or rename for approval before anything changes, with undo.
 - [Nouli](https://github.com/nouli-ai/nouli) - Terminal app, CLI and Rust library that keeps a ledger of decisions and the facts behind them, so later questions to Jev or another System One service can reuse earlier answers.
+- [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) - Rust CLI and MCP server for SEO and answer-engine audits of local content and live sites, with Jev scoring pages under a per-run spend cap and a rules-only mode without a key.
 
 ## Browser & Computer Use
 
@@ -505,6 +508,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [JEVDB](https://github.com/PDAIS/JEVDB) - DuckDB extension for semantic queries that batches row-level decisions on Jev in one stage, with an OpenAI-compatible LLM backend as the alternative and a Colab notebook.
 - [neatroots](https://github.com/neatlogs/neatroots) - Local-first viewer that records, checks and replays an agent's runs; its yes/no checks go to a Jev-compatible decision model, local Laya by default or Jev when you opt in.
 - [duckdb-jev (prasanthj)](https://github.com/prasanthj/duckdb-jev) - Native C++ DuckDB extension that runs Noul predicates, Choice classification and Score rubrics on Jev from SQL, batching and streaming requests across rows with retries, caching and per-query budgets.
+- [jev-curate](https://github.com/AkashPriyadarshii/jev-curate) - Rust tool with Python bindings that streams Parquet and JSONL datasets through Jev rubric questions per row and keeps or drops each record verbatim, for curating synthetic and pretraining data.
 
 ## Search & Knowledge Graphs
 
@@ -630,6 +634,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-phishing-bench](https://github.com/anisselbd/jev-phishing-bench) - Reproducible benchmark that runs Jev and Claude Haiku 4.5 over the same 2,000 phishing emails and compares accuracy, calibration, stability across repeated passes, latency and cost, with every step scripted.
 - [jev-docs-benchmarks](https://github.com/akitaonrails/jev-docs-benchmarks) - Research notes and a benchmark comparing hosted Jev with other hosted and local decision models on following supplied rules, probability behaviour and operating cost, with frozen inputs and raw response archives. No licence.
 - [jev-healthcare-lab](https://github.com/JuneYaooo/jev-healthcare-lab) - Compares Jev with DeepSeek on healthcare judgement tasks, from triage urgency to contraindications and trial referral, with the task sets, scoring and raw results published. Exam cases, not clinical validation. Chinese and English.
+- [JevalKit](https://github.com/Valen-Team/JevalKit) - Evaluation toolkit that runs Jev-like decision models, open and hosted, on eight decision benchmarks through one interface, with prepared datasets and a Hugging Face leaderboard.
+- [Model vs Market](https://github.com/yorkeccak/model-vs-market) - Has Jev, Cloudflare Clef and OpenAI's decision API each price Polymarket and Kalshi questions from recent news without seeing the odds, and compares their answers with live market prices.
 
 ## Open Models & Reproductions
 
@@ -758,6 +764,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Fovea](https://github.com/Sivasuthan9/fovea) - Open 4B decision model for images, with an SDK and a local server that answers TypeSafe's System One API, so typed questions can be asked about a picture.
 - [EdgeJev](https://github.com/yzfly/edgejev) - Converts open Jev reproductions such as Laya, Kev and PlayJev to ONNX with INT8 quantisation and serves them offline on a CPU behind a local `/v1/systemone` endpoint, with no torch at runtime. Chinese.
 - [Flide](https://github.com/OmniJev/Flide) - Inference server for Jev-style decision models that forks the shared state across questions and serves the `/v1/systemone` API, with plugins for several open decision-model families and a check that forked answers match unforked ones.
+- [mlx-decision](https://github.com/armbues/mlx-decision) - Runs and fine-tunes open decision models on Apple Silicon with MLX, through a local Studio web app, Python, a CLI, MCP and a Jev-compatible HTTP server.
+- [System One from Scratch](https://github.com/VizuaraAI/system-one-from-scratch) - Workshop rebuild of the CLM-8B System One model, including the pre- and mid-training recipes recovered from the released checkpoints, with results and playable demos. Training needs a Modal account.
 
 ## Games & Real-Time Demos
 
@@ -870,6 +878,7 @@ Other community lists of Jev projects, each with its own scope and bar:
 - [VoltAgent/typesafe-jev-ecosystem](https://github.com/VoltAgent/typesafe-jev-ecosystem) - Directory of Jev integrations, compatible decision models, SDKs and agent tools that admits only projects with 50+ stars and a push in the last two weeks.
 - [meta-awesome-jev](https://github.com/stefanwebb/meta-awesome-jev) - Merges and de-duplicates about a hundred community Jev lists, showing for each entry how many of them cite it.
 - [OmniJev/awesome-jev-papers](https://github.com/OmniJev/awesome-jev-papers) - Research papers on Jev and the open models built in its shape, with a companion site.
+- [Jev in the Wild](https://github.com/Jessie-QingYu/jev-in-the-wild) - Machine-readable index of Jev projects, use cases and benchmarks, rebuilt daily, with a section for where Jev struggles.
 
 ## Contributing
 

@@ -290,3 +290,41 @@ LogosOSS/Logos
 Songwo/zhiyu
 # Jev not central: only the optional paper-compare feature in an OpenAI-based research workspace
 Sreehari05055/thesys-core
+
+# 2026-11-10 triage
+# Jev optional: the default judge is pplx-decider; Jev is one profile, in a codebase Q&A service
+DevLoops-ai/unified-brain
+# Jev optional: an opt-in add-on for work review and rule checks in a desktop coding-agent workspace
+aicodeking/pandacode
+# Jev optional: off-by-default seat-state detectors in a herdr coding-agent fleet runner
+andrebrov/drover
+# Jev optional: off by default for picking UI candidates in an Android control tool for Dim Agent
+arcships/android-use
+# Jev optional: one choice of wake-up judge (default off) in a self-hosted pi chat-channel bot
+Crokily/pi-durable-bot
+# Not added: mass auto-apply bot driving signed-in LinkedIn and job-site sessions (site terms prohibit this)
+feritzcan2/AutoJob
+# Jev optional: an optional dashboard feature of an agent sandbox and tracer
+Godcreatebugs/raytrace-cli
+# Jev optional: picks mode, tier and approvals only with a key; otherwise the session's Sonnet does. Korean
+HyunjunJeon/claude-workflow-mods
+# Jev optional: an off-by-default compaction experiment in a small DeepSeek harness. Chinese
+imxiaoxinovo1/tiny-dsh
+# Jev not central: one of six decision backends in a large agent control plane
+kvnloo/z0intelligence
+# Jev not central: a shadow duplicate-task audit inside a personal health system
+larrynovsky/larry-health-os
+# Jev not central: comment moderation on a neuron-steering recipe site
+lyramakesmusic/neuronary
+# Not added: bulk job-application bot that submits forms across ATS sites and can create employer accounts
+qbeka/jev-job-search
+# Not a decision model: keyword and trigram heuristics behind made-up /v1/systemone/* routes, despite the drop-in claim
+ronitgupta138/Local-Jev
+# Jev optional: an optional System One step in the intent cascade of a general Chinese Skill/MCP workbench
+SC-10749/Hotline
+# Not a Jev list: a personal index of one account's forks, a few of them Jev projects. Korean
+sodam-ai/SoDam_GitHub_Fork_List
+# Not a Jev list: a general map of 3,000+ AI agent tools with a few Jev entries
+tayyabimam1/awesome-ai-agent-stack
+# Not added: CAPTCHA and anti-bot solver (site terms prohibit this); Jev an optional OCR fallback
+VeyraAgent/cf-solver
