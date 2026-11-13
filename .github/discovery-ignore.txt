@@ -328,3 +328,31 @@ sodam-ai/SoDam_GitHub_Fork_List
 tayyabimam1/awesome-ai-agent-stack
 # Not added: CAPTCHA and anti-bot solver (site terms prohibit this); Jev an optional OCR fallback
 VeyraAgent/cf-solver
+# Jev not central: the alternative to the default Kairos model in a Bybit-testnet trading harness
+zadescoxp/calibrain-harness
+# Jev optional: picks NPC actions in a Fish Audio game-voice toolkit
+christos-antono/NPCTalk
+# Jev optional: fit scoring in a job-search agent that drives a signed-in LinkedIn session
+ethany14/Eregion-Job-Finding-Agent
+# Not a Jev project: a web-platform API explainer that cites Jev projects
+explainers-by-googlers/decisions-api
+# Jev not central: one plugin in a personal DeepSeek Harness setup
+astahmer/dshfiles
+# Migrated off Jev: computer use moved to Cua; Jev remains only in superseded design notes
+dontpanicv/mycroft
+# Jev is one provider among many in a general LLM gateway
+LintenAI/linten
+# Jev optional: one of several router backends in a general web-access standard for agents
+Nimbleway/webrouter
+# No Jev integration: a Claude Code status display that shows another mod's routing decisions
+nvr0x5/claude-deck
+# Jev optional: an off-by-default shadow classifier in a multi-agent coding workspace
+pairtask/pairtask
+# Jev not central: System One is one of three decider kinds in a general decision-systems framework
+solvi-ai/solvi
+# Jev not central: the judgment step in an NVIDIA-hackathon pharmacovigilance agent built on Nemotron. Korean
+Team-FlyGate/Project-FlyGate
+# Not a Jev list: a general open-source trading map with a short Jev section
+WallStreetPete/awesome-open-source-trading
+# Jev not central: one provider in an ABAP explorer for Eclipse and VS Code
+ysichov/VERTEX

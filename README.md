@@ -168,6 +168,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [typesafe-sdk-java (Premo-Cloud)](https://github.com/Premo-Cloud/typesafe-sdk-java) - Java 17+ client with typed `Ask` declarations that read answers back as enums and records, plus a Spring Boot starter; Jackson is its only dependency.
 - [SwiftJev](https://github.com/SoundBlaster/SwiftJev) - Jev backend for the author's SwiftDecision framework: validates Noul, Choice and Score requests and responses on Apple platforms, with a configurable API root for compatible proxies.
 - [kojev](https://github.com/ItisNoMatter/kojev) - Kotlin Multiplatform client that takes questions defined as your own enums and sealed types and returns Jev's answers in those types rather than string keys.
+- [system_one_client](https://github.com/schainks/system_one_client) - Elixir client for System One decision models across six providers, Jev by default, returning full probability distributions, with a test stub, retries and telemetry.
 
 ## Libraries & Integrations
 
@@ -214,6 +215,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [feelings](https://github.com/obie/feelings) - Probabilistic conditionals for Ruby, `Feelings(message).like?("genuinely urgent")`, answered by a decision model through ruby_decision_model, with descriptions and label sets in YAML.
 - [Jev Engineering cookbook](https://github.com/Jev-Engineering/cookbook) - Planned set of sixty notebook recipes for Choice, Noul and Score patterns, 33 published so far, each runnable offline on fixtures and labelled with the mode it ran in.
 - [switch](https://github.com/osolmaz/switch) - TypeScript framework for decision-model harnesses: your program offers a short list of next steps and the model picks one at a time until it can answer, with chess, wikirace and rubric-judge examples run on Jev.
+- [Jev-Interaction](https://github.com/native-bond-lab/Jev-Interaction) - Full-duplex voice agents built on a speech-to-text, LLM and TTS cascade, where each turn-taking moment (wait, yield, backchannel, carry on) is a plain-language question for Jev.
 
 ## Agent Integrations (MCP & Skills)
 
@@ -270,6 +272,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jevfetch](https://github.com/a2sys-ai/jevfetch) - Web-page reader for coding agents, as a skill and CLI in place of WebFetch: it splits a page into blocks, asks Jev which ones answer the question, and returns those blocks verbatim with their heading paths.
 - [Hermes Switchyard](https://github.com/bgrablin/hermes-switchyard) - Hermes Agent plugin that hands skill choice, reasoning effort, model recommendations and session re-ranking to Jev, through TypeSafe or OpenRouter.
 - [TokenSlash](https://github.com/JessenReinhart/dsh-tokenslash) - DeepSeek Harness plugin that asks a System One decision model such as Jev which tool schemas and prompt sections a task needs, compacts tool output and routes subagents, with a way to unlock pruned tools. No licence yet.
+- [Jev Internal Links](https://github.com/NicoSKOOL/jev-internal-links) - Claude Code skill that crawls your site, shortlists candidate pages locally, asks Jev which page each paragraph should link to, and produces a report for you to approve.
 
 ## Coding Agents & Developer Tools
 
@@ -399,7 +402,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-pilot](https://github.com/Akramovic1/jev-pilot) - Claude Code plugin that asks Jev before each turn for the reasoning effort, subagent model and skill to use, with a decision log, tuning suggestions and an animated pet that says what Jev decided.
 - [effortless](https://github.com/HeyCubit/effortless) - Claude Code mod that picks the reasoning effort for every prompt, shows prompt-cache and context state, and hands off or compacts in one click; Haiku by default, Jev with a TypeSafe key.
 - [jev-opus](https://github.com/WXK-AI/jev-opus) - Runs Claude Opus 5.5 with the effort level re-decided by Jev at every step, without breaking the prompt cache; CLI plus Claude Code integration.
-- [Jev Codex Harness](https://github.com/teo-nex/jew-codex-harness) - Installer and local router that adds a `jev/auto` model to Codex, with Jev picking the model and reasoning effort for each task. Public alpha, for fresh Codex profiles.
+- [Jev Codex Harness](https://github.com/teo-nex/jev-codex-harness) - Installer and local router that adds a `jev/auto` model to Codex, with Jev picking the model and reasoning effort for each task. Public alpha, for fresh Codex profiles.
 - [jev-router (dominicrico)](https://github.com/dominicrico/jev-router) - Claude Code plugin that asks Jev before each prompt, step and subagent which Claude model and reasoning effort to use, with an effort cap and a live status line. A self-hosted System One router can stand in for Jev.
 
 ## Command-Line Tools
@@ -527,6 +530,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Oko](https://github.com/bartlomein/oko) - Local code search for coding agents over MCP: candidates from keywords, symbols and file structure, then Jev picks the excerpts that answer the question. Selected snippets are sent to TypeSafe; `--no-jev` keeps keyword ranking only.
 - [JevGPT](https://github.com/sunyasheng/JevGPT) - Research code for a paper in which Jev inspects sources in parallel while a language model plans the research, with frozen configs, per-item records and a script that rebuilds the paper's tables.
 - [JevGraph](https://github.com/chenmingtang830/jevgraph) - Builds candidate knowledge graphs from PDF, DOCX, PPTX or text: entity pairs are found locally, Jev picks each relation from a fixed schema, and every edge keeps its source text span. Exports to CSV and Neo4j; calls Jev through Vercel AI Gateway.
+- [OntoSmith](https://github.com/Dongbumlee/ontosmith) - Builds a Neo4j knowledge graph under an ontology you approve first: models propose candidate facts and Jev judges each one against its evidence before anything is written, with search, an API, an app and MCP on top.
 
 ## Apps & Browser Extensions
 
@@ -558,7 +562,6 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-mail-classifier](https://github.com/parth-kp/jev-mail-classifier) - Config-driven inbox classifier that tags, moves, flags and notifies from typed answers.
 - [Jeved](https://github.com/mossyfield/ST-jeved) - SillyTavern extension that asks your own questions about each reply and, when a rule matches, adds a line to the prompt, rerolls, or runs a script.
 - [Shapeshift](https://github.com/anishfn/shapeshift) - One text box that turns what you type into the right small interface, an event card or a checklist or a bill split, with Jev choosing which; falls back to rules when no key is set.
-- [jev-suite](https://github.com/klauswg/jev-suite) - Four decision-quality apps on one kernel, each asking Jev a structured question about whether something was delivered as required, with deterministic code keeping the final say.
 - [Book of Answers](https://github.com/csskrtao/jev-to-answer) - An LLM lays out the options for an everyday dilemma and Jev picks one, with a page for keeping and re-reading past answers. Chinese.
 - [Yanwai](https://github.com/YIRC99/yanwai) - Android accessibility app that reads the visible WeChat conversation and shows emotion probabilities, possible subtext and a suggested reply beside a message. Chinese.
 - [QuantStudio](https://github.com/quantskills/QuantStudio) - Local research and trading workbench with a Jev module that watches positions and grades trade plans. Chinese. GPL-3.0.
@@ -605,6 +608,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [CallSitter](https://github.com/szerintedmi/callsitter) - Answers your phone with a voice agent while Jev classifies the growing transcript as scam, sales or a genuine caller, and a fixed call flow decides whether to stall, decline or take a message. Needs Telnyx and OpenAI realtime accounts.
 - [netizen](https://github.com/Seheta/netizen) - Simulates how Indonesian netizen personas would react to a post before it goes out, with Jev judging who stops scrolling, what they do and their stance, checked against real comments from past cases. Indonesian.
 - [Jev Subtitle Translator](https://github.com/GeekLinkDev/jev-subtitle-translator) - Translates SRT subtitles with an LLM of your choice through OpenRouter, keeping every cue and timestamp, then has Jev check each source and translation pair and flag lines for human review; it can also check an existing translation on its own.
+- [Practical Data](https://github.com/philrenaud/practical-data) - Chrome extension that shades the comparable columns of any web table, with a decision model choosing which columns to shade and which end is better while code does the parsing and colour. Free through the author's proxy, or with your own TypeSafe or Cloudflare key.
 
 ## Evaluation & Benchmarks
 
@@ -636,6 +640,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-healthcare-lab](https://github.com/JuneYaooo/jev-healthcare-lab) - Compares Jev with DeepSeek on healthcare judgement tasks, from triage urgency to contraindications and trial referral, with the task sets, scoring and raw results published. Exam cases, not clinical validation. Chinese and English.
 - [JevalKit](https://github.com/Valen-Team/JevalKit) - Evaluation toolkit that runs Jev-like decision models, open and hosted, on eight decision benchmarks through one interface, with prepared datasets and a Hugging Face leaderboard.
 - [Model vs Market](https://github.com/yorkeccak/model-vs-market) - Has Jev, Cloudflare Clef and OpenAI's decision API each price Polymarket and Kalshi questions from recent news without seeing the odds, and compares their answers with live market prices.
+- [S1MB](https://github.com/hotchpotch/S1MB) - Benchmark that runs Jev and open Jev-like decision models over 100+ English, Japanese and vision tasks through one evaluator, with a public leaderboard by question type.
 
 ## Open Models & Reproductions
 
@@ -820,7 +825,6 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-bot](https://github.com/bl888m/jev-bot) - Market decision bot for stocks, crypto and memes: state in, buy, sell, hold or avoid out, paper trading by default.
 - [trade-jev](https://github.com/justinhe16/trade-jev) - Backtests Jev as a buy, sell or hold trader on NQ level-10 order-book data.
 - [x402check](https://github.com/caiovicentino/jev-risk-check-provider) - Pre-payment risk-check provider for x402 agents and wallets: sanctions lists, phishing feeds and transaction simulation, plus Jev questions over what the agent acted on to catch injected instructions. Signed verdicts.
-- [jev-guard (klauswg)](https://github.com/klauswg/jev-guard) - Risk-triage gateway for exchange deposits and withdrawals: hard rules run first, Jev answers risk and pattern questions, and Java code makes the final call. Mock mode needs no key.
 - [JEV Trading Command Center](https://github.com/mars-tw/jev-trading-command-center) - Paper-trading research app where Jev answers several decision questions in one call and code keeps the final say, shown in an animated 3D command center with an offline demo. Simulated broker only.
 - [bitra](https://github.com/BijectiveLabs/bitra) - Trading agents with deterministic execution in which Jev is the judge: it turns dated headlines into typed events, screens text for injected instructions and checks the deciding agents' reasons before a trade. Places real orders through ccxt.
 
@@ -879,6 +883,7 @@ Other community lists of Jev projects, each with its own scope and bar:
 - [meta-awesome-jev](https://github.com/stefanwebb/meta-awesome-jev) - Merges and de-duplicates about a hundred community Jev lists, showing for each entry how many of them cite it.
 - [OmniJev/awesome-jev-papers](https://github.com/OmniJev/awesome-jev-papers) - Research papers on Jev and the open models built in its shape, with a companion site.
 - [Jev in the Wild](https://github.com/Jessie-QingYu/jev-in-the-wild) - Machine-readable index of Jev projects, use cases and benchmarks, rebuilt daily, with a section for where Jev struggles.
+- [Jev Survey](https://github.com/OmniAI-Lab-CUHKSZ/Jev_Survey) - Reading list of papers, models and benchmarks on Jev and typed decision models, gathered for a survey.
 
 ## Contributing
 
