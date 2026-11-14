@@ -356,3 +356,9 @@ Team-FlyGate/Project-FlyGate
 WallStreetPete/awesome-open-source-trading
 # Jev not central: one provider in an ABAP explorer for Eclipse and VS Code
 ysichov/VERTEX
+# Jev optional: an owner-enabled quick-action path in a Hermes-powered desktop
+mojomast/orbitdesktop
+# No code: a design document for an AI continuity layer
+PCS-PersonalContinuitySystem/PCS
+# Jev optional: one of many LM backends in a DSPy trace-analysis library
+Ziems/tracepress

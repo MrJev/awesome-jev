@@ -348,6 +348,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Shed](https://github.com/IAmUnbounded/shed) - Message the coding agents on your Mac from your phone, with a local Laya model choosing which installed harness and model handles each new task. No TypeSafe account or key.
 - [judgelint](https://github.com/jpcamara/judgelint) - Linter for conventions written as plain-English bullets in a README: it asks a decision model, Jev by default in its guide, whether each file breaks each bullet and reports violations with line numbers and an exit code.
 - [jevlint (INDXDev)](https://github.com/INDXDev/jevlint) - Scores every file in a repository against principles you choose with a decision model, Jev by default, and ranks what to refactor first, with a prompt for Claude Code or Codex to fix it. Unrelated to the other jevlint entries.
+- [dalgona](https://github.com/gosuda/dalgona) - Go coding agent (`dal`) and daemon harness (`dalgona`) whose `auto` approval mode asks Jev, by default through OpenRouter, about actions its static rules cannot settle, and declines them if the decider fails.
 
 ## Guardrails & Safety
 
@@ -592,7 +593,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jevboard](https://github.com/AsheeHuang/Jevboard) - Proof of concept for ranking Bopomofo input-method candidates with Jev.
 - [quietly](https://github.com/joeydash/quietly) - Chrome extension that drafts replies on WhatsApp Web and Gmail and quiets the YouTube feed; the YouTube sorting is a yes/no question per video, on Jev by default.
 - [xscout-jev](https://github.com/ethan-ab/xscout-jev) - Watches X for news that matters to you, judged by Jev, and alerts you in Slack.
-- [OpenMuse](https://github.com/CopilotKit/openmuse) - CopilotKit's self-hosted personal agent with its own browser, terminal and files; Jev decides whether a reply becomes a clarification panel, a comparison of options or plain prose, and overrides the agent only when confident. Alpha.
+- [OpenFuse](https://github.com/CopilotKit/openfuse) - CopilotKit's self-hosted personal agent with its own browser, terminal and files; Jev decides whether a reply becomes a clarification panel, a comparison of options or plain prose, and overrides the agent only when confident. Alpha.
 - [Varina](https://github.com/deillusion/Varina) - Multi-seat exploration engine for game mechanics and rule systems that diverges, fact-checks and repeats; Jev decides whether an answer deserves deeper exploration and whether a new idea is already on the board. Business Source License, in Chinese.
 - [JevGuide](https://github.com/Nisaka520/JevGuide) - Android accessibility app from the JevIntent author that reads a WeChat chat, has Jev judge it and score how the relationship is going, and has a chat model draft three replies. Sends no messages and modifies nothing. In Chinese.
 - [MultiTool Office Next](https://github.com/d8349565/MultiTool-Office-Next) - Windows file manager and office workbench with local search, OCR, translation and to-dos; Jev helps pick extracted contract fields, with amounts and long numbers filtered out first. Optional, in Chinese.
@@ -771,6 +772,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Flide](https://github.com/OmniJev/Flide) - Inference server for Jev-style decision models that forks the shared state across questions and serves the `/v1/systemone` API, with plugins for several open decision-model families and a check that forked answers match unforked ones.
 - [mlx-decision](https://github.com/armbues/mlx-decision) - Runs and fine-tunes open decision models on Apple Silicon with MLX, through a local Studio web app, Python, a CLI, MCP and a Jev-compatible HTTP server.
 - [System One from Scratch](https://github.com/VizuaraAI/system-one-from-scratch) - Workshop rebuild of the CLM-8B System One model, including the pre- and mid-training recipes recovered from the released checkpoints, with results and playable demos. Training needs a Modal account.
+- [SparkScore](https://github.com/Enntity/sparkscore) - Serves the open d3-ultra 27B decision model on one NVIDIA DGX Spark behind a `/v1/systemone` endpoint that accepts `jev-latest`, so a Jev client needs only a new base URL.
+- [Go System One](https://github.com/rcarmo/go-system-one) - Native Go runtime that answers Noul, Choice and Score questions with Gemma 4 12B on NVIDIA GPUs through hand-written PTX kernels, serving `/v1/systemone` and a playground.
 
 ## Games & Real-Time Demos
 
