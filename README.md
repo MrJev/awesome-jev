@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**661 entries · every one checked to actually call Jev · last reviewed 2026-11-14**
+**661 entries · every one checked to actually call Jev · last reviewed 2026-11-15**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,20 +56,20 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-11-14.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-11-15.
 
 | Project                        |  Stars | This week |
 | ------------------------------ | -----: | --------: |
-| vercel-labs/agent-desktop      | 23,531 |    +5,112 |
-| Parcha-ai/agentrun             |    926 |      +494 |
-| OmniJev/Flide                  |    496 |      +468 |
-| NandhaKishorM/laya             | 35,514 |      +374 |
-| browser-use/jev-ultrafast      | 24,489 |      +240 |
-| jaredpalmer/kev                |  9,980 |      +109 |
-| jev-chat/jev-chat-jarvis       |  8,375 |       +89 |
-| adventists-ai/duplexjev        |    137 |       +83 |
-| StartLuxLabs/StartLux-Decision |  1,744 |       +79 |
-| tamaratran/fast-jev-compaction |  7,971 |       +68 |
+| vercel-labs/agent-desktop      | 23,977 |    +4,754 |
+| Parcha-ai/agentrun             |  1,085 |      +652 |
+| OmniJev/Flide                  |    505 |      +476 |
+| NandhaKishorM/laya             | 35,552 |      +350 |
+| browser-use/jev-ultrafast      | 24,510 |      +244 |
+| jaredpalmer/kev                |  9,988 |      +101 |
+| jev-chat/jev-chat-jarvis       |  8,385 |       +91 |
+| adventists-ai/duplexjev        |    139 |       +83 |
+| StartLuxLabs/StartLux-Decision |  1,747 |       +69 |
+| OrgoAI/bops                    |    579 |       +64 |
 
 **New to this list this week:** `CopilotKit/openfuse`, `Dongbumlee/ontosmith`, `INDXDev/jevlint`, `philrenaud/practical-data`, `native-bond-lab/Jev-Interaction` and 12 more.
 
