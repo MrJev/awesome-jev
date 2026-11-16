@@ -362,3 +362,17 @@ mojomast/orbitdesktop
 PCS-PersonalContinuitySystem/PCS
 # Jev optional: one of many LM backends in a DSPy trace-analysis library
 Ziems/tracepress
+# Jev optional: an alternative labeler in a Claude-driven photo sorter; Claude is the default
+kairothq/claude-photo-sorter
+# No code: a Chinese translation of a third-party write-up of TypeSafe design notes
+yibie/jev-engineering-zh
+# Jev optional: the default decision model is pplx-decider; Jev is one compatible endpoint in a deals aggregator. Chinese
+yuqtai/deal-radar
+# Jev is one optional cloud provider among seven in a sound-effects library manager
+Freedragonlancer/AudioLib-Explorer
+# Jev not central: one suggestions "first look" call in an agent-session dashboard
+artguru-tech-team/factory-oss
+# Jev not central: a guardrail node in an n8n agent course lab. Portuguese
+beerandcodeteam/ai-engineer-lab-4
+# Jev optional and off by default in an offline ontology and SPARQL plugin for Obsidian
+DreamLab-AI/ontomark-obsidian
