@@ -285,7 +285,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev Codex Router](https://github.com/0xNatoshi/jev-codex-router) *(archived)* - Picks the model, reasoning depth, and speed mode for every Codex turn based on how hard Jev judges it to be. The author reports about 60% lower cost when replaying 237 real turns.
 - [Foreman](https://github.com/thruwire/foreman) - Puts Jev as a fast supervisor above slower coding agents such as Codex, starting from a ticket, spec, or bug report.
 - [Winnow](https://github.com/GhalebDweikat/winnow) - Context sieve for Claude Code. Jev judges each tool result (Read, Bash, Grep output) for relevance before it enters the context window.
-- [Jev Review](https://github.com/devagrawal09/jev-review) - Staged code-review workflow for JavaScript and TypeScript with a local dashboard. Jev screens correctness, security, reliability, compatibility, and test risk, then scores severity and suggests a reviewer, with no generative model involved.
+- [Jev Review](https://github.com/devagrawal09/jev-review) *(unmaintained)* - Staged code-review workflow for JavaScript and TypeScript with a local dashboard. Jev screens correctness, security, reliability, compatibility, and test risk, then scores severity and suggests a reviewer, with no generative model involved.
 - [Jev Review MCP](https://github.com/NiazMorshed2007/jev-review) - Local-first MCP server for continuous software-quality review by coding agents.
 - [Stanley Code](https://github.com/devagrawal09/stanley-code) - Bounded Jev workflows for coding agents (formerly jev-code).
 - [SkillRanker](https://github.com/Dicklesworthstone/skillranker) - Rust CLI that ranks which agent skills fit the next step from live session context, with Claude Code hooks.
@@ -298,7 +298,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [agent-dispatcher](https://github.com/nahid-sparktales/agent-dispatcher) - Routes a Claude Code or Codex task to one of 27 specialist roles and defines what evidence will count as done.
 - [Jot](https://github.com/runta-dev/jot) - A general-purpose agent loop where Jev picks the next move and Jot runs it. No license file at the time of writing.
 - [oxlint-plugin-jev](https://github.com/wobsoriano/oxlint-plugin-jev) - Oxlint rules written as plain-English questions about a function, call, JSX element or file, reported when the yes-probability clears your cutoff.
-- [Jev Agent Skill Router](https://github.com/GodsBoy/jev-agent-skill-router) - Routes a request to the agent skills it needs, with a confidence floor below which it loads nothing.
+- [Jev Agent Skill Router](https://github.com/GodsBoy/jev-agent-skill-router) *(unmaintained)* - Routes a request to the agent skills it needs, with a confidence floor below which it loads nothing.
 - [yummy-pi-extensions](https://github.com/sugarforever/yummy-pi-extensions) - Extensions for the Pi coding agent, each released separately, including a Jev-based model router.
 - [JevLoop](https://github.com/zjunlp/JevLoop) - An agent loop whose seven forks are typed decisions rather than LLM calls, keeping the model for writing. Zero runtime dependencies, and the demo runs offline with no key and no install.
 - [jev-test-filter](https://github.com/mizchi/jev-test-filter) - Reads a Git diff, scores every test for whether the change can alter its outcome, and prints the arguments your runner already understands. Every failure path runs the whole suite instead, including a diff that did not fit the state budget.
@@ -519,7 +519,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 ## Search & Knowledge Graphs
 
 - [Jev Search](https://github.com/superagents-lab/jev-search) - Search the web in plain language: Jev answers typed questions about your request, and the app uses those judgments to pick the query, the sources and the time range before ranking what comes back. Installable from the browser as an app.
-- [Blink](https://github.com/ellipsis-dev/blink) - Semantic codebase search. At each directory level Jev ranks which files and folders are most likely relevant and sends more walkers there.
+- [Blink](https://github.com/ellipsis-dev/blink) *(unmaintained)* - Semantic codebase search. At each directory level Jev ranks which files and folders are most likely relevant and sends more walkers there.
 - [neo4jev](https://github.com/jexp/neo4jev) - Navigates a Neo4j graph by having Jev score neighbouring relationships, then beam-searching for the most probable path.
 - [jev.nvim](https://github.com/valentynkit/jev.nvim) - Neovim plugin that splits the buffer into functions with Treesitter, has Jev score each one against a plain-language question, and lists the answers in the quickfix window ranked by probability.
 - [ConsciousDB](https://github.com/bodepudimuneendra-netizen/ConsciousDB) - Agentic GraphRAG with a swappable decision model, either the Jev API or a local Laya checkpoint, for Neo4j and other graph databases.
@@ -663,7 +663,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Dohnuts](https://github.com/PsiACE/dohnuts) - Small multimodal models for direct decisions on text, documents and images. Its model card publishes the benchmark it loses and states that its confidence field is not a measured probability of correctness. Weights are CC BY-NC-SA.
 - [Open Spark Jev](https://github.com/abhishek085/open-spark-jev) - A local decision model for NVIDIA DGX Spark, labelled from policy engines and solvers rather than an LLM judge. Its evaluation protocol records the time its own corpus leaked most of the test set into training.
 - [SemIf](https://github.com/TheoLeeCJ/SemIf-OpenJev) - Jev-style decisions from a frozen 4B model on a single RTX 3090, with a browser demo. Formerly OpenJev.
-- [Jevlike](https://github.com/vinnylarouge/jevlike) - Train a small model that scores a changing list of text options in one pass.
+- [Jevlike](https://github.com/vinnylarouge/jevlike) *(unmaintained)* - Train a small model that scores a changing list of text options in one pass.
 - [NanoJev](https://github.com/TianyuCodings/NanoJev) - 0.6B parallel decision model with an end-to-end training pipeline.
 - [openjev-sglang](https://github.com/ekzhang/openjev-sglang) *(archived)* - Jev-compatible API server running an open model on SGLang.
 - [jevmlx](https://github.com/bnsd55/jevmlx) - Jev-style typed decisions from local MLX models on Apple Silicon.
@@ -785,8 +785,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev experiments](https://github.com/dabit3/jev-experiments) - Latency-focused demos from Nader Dabit, each app in its own directory with its own README. No licence file at the time of writing.
 - [Jev Tetris](https://github.com/trungdq88/jev-tetris) - Two models play Tetris on a shared seeded piece sequence under the same clock; a piece that lands before the answer arrives locks where it fell. No licence file.
 - [1v1 Jev](https://github.com/emrickgarrett/OneVOneJev) - Three.js quickscope arena where Jev decides movement, aiming, ADS, firing, and jumping at roughly 9 Hz.
-- [TypeSafe Mario](https://github.com/fhshaik/typesafe-mario) - Jev picks NES controller inputs for Super Mario Bros. from emulator state, with no screenshots.
-- [Jev Plays StarCraft](https://github.com/phyous/tsai-sc) - Jev plays the first StarCraft shareware mission, with its recorded action probabilities.
+- [TypeSafe Mario](https://github.com/fhshaik/typesafe-mario) *(unmaintained)* - Jev picks NES controller inputs for Super Mario Bros. from emulator state, with no screenshots.
+- [Jev Plays StarCraft](https://github.com/phyous/tsai-sc) *(unmaintained)* - Jev plays the first StarCraft shareware mission, with its recorded action probabilities.
 - [Jev Pong](https://github.com/ably-labs/jev-pong) - Pong where the ball moves one step per model decision, pitting Jev against chat LLMs.
 - [JevPilot](https://github.com/standardagents/jevpilot) - Three.js driving simulator with a Jev-powered autopilot.
 - [jev-drone](https://github.com/RomanSlack/jev-drone) - Camera-only quadrotor in MuJoCo with Jev making judgment calls at about 2.5 Hz.
