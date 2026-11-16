@@ -273,6 +273,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Hermes Switchyard](https://github.com/bgrablin/hermes-switchyard) - Hermes Agent plugin that hands skill choice, reasoning effort, model recommendations and session re-ranking to Jev, through TypeSafe or OpenRouter.
 - [TokenSlash](https://github.com/JessenReinhart/dsh-tokenslash) - DeepSeek Harness plugin that asks a System One decision model such as Jev which tool schemas and prompt sections a task needs, compacts tool output and routes subagents, with a way to unlock pruned tools. No licence yet.
 - [Jev Internal Links](https://github.com/NicoSKOOL/jev-internal-links) - Claude Code skill that crawls your site, shortlists candidate pages locally, asks Jev which page each paragraph should link to, and produces a report for you to approve.
+- [dsh-jev-plugin (jackie-cqz)](https://github.com/jackie-cqz/dsh-jev-plugin) - DeepSeek Harness plugin that gives the agent Noul, Choice and Score as tools, with configurable guardrails and result cards in the web UI; a separate project from the plugin of the same name above.
 
 ## Coding Agents & Developer Tools
 
@@ -349,6 +350,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [judgelint](https://github.com/jpcamara/judgelint) - Linter for conventions written as plain-English bullets in a README: it asks a decision model, Jev by default in its guide, whether each file breaks each bullet and reports violations with line numbers and an exit code.
 - [jevlint (INDXDev)](https://github.com/INDXDev/jevlint) - Scores every file in a repository against principles you choose with a decision model, Jev by default, and ranks what to refactor first, with a prompt for Claude Code or Codex to fix it. Unrelated to the other jevlint entries.
 - [dalgona](https://github.com/gosuda/dalgona) - Go coding agent (`dal`) and daemon harness (`dalgona`) whose `auto` approval mode asks Jev, by default through OpenRouter, about actions its static rules cannot settle, and declines them if the decider fails.
+- [fast-compact](https://github.com/NodarDavituri/fast-compact) - Claude Code `/fc` command that trims old tool output and saves the full text to files, with Jev choosing which outputs stay whole; without a key it keeps the newest ones. Leaves `/compact` untouched.
 
 ## Guardrails & Safety
 
@@ -486,6 +488,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev Mobile](https://github.com/xinwang-nwpu/jev-mobile) - Operates an Android phone from one sentence: Jev picks one action per step from the accessibility tree, executed over ADB, with a local or vision model available to take over. Chinese and English.
 - [jev-browse](https://github.com/danielnc/jev-browse) - Helpers for browser-harness that let Claude Code or Codex hand off a whole website sub-task in one call, with Jev deciding each step and returning the outcome or a typed reason it stopped. A port of jev-ultrafast.
 - [Jev Desktop (Windows)](https://github.com/jacks3tr/Jev-Desktop) - Lets an agent hand off a Windows desktop task through MCP or the command line: Jev observes windows, chooses controls and types supplied text, and the agent gets the result or a request for help. Alpha.
+- [CUA-JEV](https://github.com/ZJU-REAL/CUA-JEV) - Computer-use agent framework for Windows: a text model proposes typed actions, Jev picks the action and the route that runs it (GUI, DOM, UIA, COM, CLI, MCP or file API), and a guard and a separate verifier check each step.
 
 ## Data & Observability
 
@@ -774,6 +777,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [System One from Scratch](https://github.com/VizuaraAI/system-one-from-scratch) - Workshop rebuild of the CLM-8B System One model, including the pre- and mid-training recipes recovered from the released checkpoints, with results and playable demos. Training needs a Modal account.
 - [SparkScore](https://github.com/Enntity/sparkscore) - Serves the open d3-ultra 27B decision model on one NVIDIA DGX Spark behind a `/v1/systemone` endpoint that accepts `jev-latest`, so a Jev client needs only a new base URL.
 - [Go System One](https://github.com/rcarmo/go-system-one) - Native Go runtime that answers Noul, Choice and Score questions with Gemma 4 12B on NVIDIA GPUs through hand-written PTX kernels, serving `/v1/systemone` and a playground.
+- [dspy-wsp](https://github.com/cmpnd-ai/dspy-wsp) - DSPy optimizer in which a frontier model edits the weights of open decision models such as NanoJev, d1 and Clef, scored on a typed-decisions benchmark and served locally over `POST /v1/systemone`.
 
 ## Games & Real-Time Demos
 
