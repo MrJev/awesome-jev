@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**664 entries · every one checked to actually call Jev · last reviewed 2026-11-20**
+**664 entries · every one checked to actually call Jev · last reviewed 2026-11-21**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-11-20.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-11-21.
 
-| Project                                   |  Stars | This week |
-| ----------------------------------------- | -----: | --------: |
-| vercel-labs/agent-desktop                 | 25,667 |    +2,655 |
-| Parcha-ai/agentrun                        |  1,232 |      +492 |
-| NandhaKishorM/laya                        | 35,732 |      +239 |
-| browser-use/jev-ultrafast                 | 24,691 |      +218 |
-| jev-chat/jev-chat-jarvis                  |  8,476 |      +110 |
-| jaredpalmer/kev                           | 10,071 |       +96 |
-| OmniJev/Flide                             |    548 |       +63 |
-| crow-hq/llm-wiki-v2                       |    306 |       +51 |
-| shengjidaguai-china/goutoujunshi-jev-chat |    676 |       +45 |
-| native-bond-lab/Jev-Interaction           |     76 |       +45 |
+| Project                         |  Stars | This week |
+| ------------------------------- | -----: | --------: |
+| vercel-labs/agent-desktop       | 25,866 |    +2,335 |
+| Parcha-ai/agentrun              |  1,243 |      +317 |
+| NandhaKishorM/laya              | 35,757 |      +243 |
+| browser-use/jev-ultrafast       | 24,698 |      +209 |
+| jev-chat/jev-chat-jarvis        |  8,486 |      +111 |
+| jaredpalmer/kev                 | 10,076 |       +96 |
+| CopilotKit/openfuse             |  6,555 |       +82 |
+| OmniJev/Flide                   |    550 |       +54 |
+| crow-hq/llm-wiki-v2             |    307 |       +47 |
+| native-bond-lab/Jev-Interaction |     77 |       +42 |
 
-**New to this list this week:** `CopilotKit/openfuse`, `cmpnd-ai/dspy-wsp`, `gosuda/dalgona`, `ZJU-REAL/CUA-JEV`, `Enntity/sparkscore` and 3 more.
+**New to this list this week:** `cmpnd-ai/dspy-wsp`, `ZJU-REAL/CUA-JEV`, `jackie-cqz/dsh-jev-plugin`, `NodarDavituri/fast-compact`.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
