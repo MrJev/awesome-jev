@@ -352,7 +352,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jevlint (INDXDev)](https://github.com/INDXDev/jevlint) - Scores every file in a repository against principles you choose with a decision model, Jev by default, and ranks what to refactor first, with a prompt for Claude Code or Codex to fix it. Unrelated to the other jevlint entries.
 - [dalgona](https://github.com/gosuda/dalgona) - Go coding agent (`dal`) and daemon harness (`dalgona`) whose `auto` approval mode asks Jev, by default through OpenRouter, about actions its static rules cannot settle, and declines them if the decider fails.
 - [fast-compact](https://github.com/NodarDavituri/fast-compact) - Claude Code `/fc` command that trims old tool output and saves the full text to files, with Jev choosing which outputs stay whole; without a key it keeps the newest ones. Leaves `/compact` untouched.
-- [Jevstice](https://github.com/veschin/jevstice) - oh-my-pi extension that sends an agent's requirements, plans, search candidates and acceptance claims to Jev and keeps each typed verdict as a diagnostic record, not a permission to run or stop.
+- [Jevstice](https://github.com/veschin/jevstice) - Extension for oh-my-pi that sends an agent's requirements, plans, search candidates and acceptance claims to Jev and keeps each typed verdict as a diagnostic record, not a permission to run or stop.
 
 ## Guardrails & Safety
 
@@ -390,7 +390,6 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [safer-with-jev](https://github.com/andrelandgraf/safer-with-jev) - Neon Function proxy for the Neon AI Gateway. Jev classifies each request and routes it to the right downstream model.
 - [jev-gateway](https://github.com/vinilana/jev-gateway) - Local gateway for Codex and Claude Code that asks Jev which tool to call next and passes everything else to your usual model.
 - [JevRouter](https://github.com/BillionsBobby/JevRouter) - Routes each agent step to a model, subagent, Skill, MCP tool, or CLI with one Jev Choice, requiring confirmation for risky capabilities and keeping decision receipts.
-- [Grok Bot Jev Router](https://github.com/Bodila51/grok-bot-jev) - Classifies a Grok Bot request before expensive research, browser, retry, or subagent work, so it can reuse a fresh artifact or stop a failing retry.
 - [pi-jev-router](https://github.com/philippdubach/pi-jev-router) - Ranks the OpenRouter catalogue per task, takes the Pareto frontier over quality, cost and latency, and routes pi to the knee point.
 - [Helm](https://github.com/Jimuelle07/Helm) - Picks which of the coding agents on your machine should take a task, from an answer set a probe builds, so an agent you have not installed cannot be recommended. Installs as a Claude Code plugin, a Gemini CLI extension, or an Agent Skill.
 - [HiRoute](https://github.com/higress-group/HiRoute) - Local-first routing and coordination engine for long-running agent work, with a `jev-decider` extension that routes on typed decisions.
