@@ -376,3 +376,31 @@ artguru-tech-team/factory-oss
 beerandcodeteam/ai-engineer-lab-4
 # Jev optional and off by default in an offline ontology and SPARQL plugin for Obsidian
 DreamLab-AI/ontomark-obsidian
+# Jev optional: one classifier among Claude models in a GitHub backlog harness; Haiku replaces it when off
+storytold/autocraft
+# Not a Jev project: Vitest mutation testing whose README mentions jev-lint in passing
+mizchi/mutator
+# Jev optional: one intent-recognition node in a visual agent builder, with an LLM fallback
+YT-Proteus-bot/MineAgent
+# Jev optional: one of three deciders behind off-by-default features in an AI phone switchboard
+DeskLabs-OpenSource/DeskVoice
+# Jev optional: an OpenRouter key swaps the agent's triage answers for Jev in a GitHub review queue
+gricha/inbox
+# Jev optional: a bundled spam-scorer extension, off until added, in a macOS email client
+wes/spool
+# Jev not central: worked examples for the AIP framework, which calls Jev itself; the only direct call is unfinished
+zach-blumenfeld/graph-memory-system-one-demo
+# Jev optional: one of eight decision providers, a local heuristic by default, in a git-branch agent orchestrator
+gogoymh/git-ontology-agent
+# Not a Jev project: a character-art index of AI models with one Jev entry. Chinese
+saya-ch/model-muses
+# Jev optional: any System One endpoint in a policy linter whose default is Cloudflare Clef
+andrueandersoncs/lint-anything
+# Not a Jev list: an awesome list for the Rune UI framework with one Jev entry
+neiii/awesome-rune
+# Jev optional: an opt-in presentation-advice feature in a DeepSeek Harness UI skin. Chinese
+iroha1145/DSH-Modern-UI
+# Jev optional: an off-by-default relevance judge in a DeepSeek Harness memory plugin. Chinese
+YumenoSayuri/dsh-vcprag
+# Jev optional: one of three decision providers, rules by default, in a second-brain OS. Not open source
+whitebeardit/whitebeard-os

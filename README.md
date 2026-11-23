@@ -274,6 +274,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [TokenSlash](https://github.com/JessenReinhart/dsh-tokenslash) - DeepSeek Harness plugin that asks a System One decision model such as Jev which tool schemas and prompt sections a task needs, compacts tool output and routes subagents, with a way to unlock pruned tools. No licence yet.
 - [Jev Internal Links](https://github.com/NicoSKOOL/jev-internal-links) - Claude Code skill that crawls your site, shortlists candidate pages locally, asks Jev which page each paragraph should link to, and produces a report for you to approve.
 - [dsh-jev-plugin (jackie-cqz)](https://github.com/jackie-cqz/dsh-jev-plugin) - DeepSeek Harness plugin that gives the agent Noul, Choice and Score as tools, with configurable guardrails and result cards in the web UI; a separate project from the plugin of the same name above.
+- [Jev Skill Suggester](https://github.com/win4r/jev-skill-suggester) - Codex skill and standard-library Python CLI in which Jev recommends which installed skill fits the task, and can answer that none fits or that it is unsure; a local keyword mode works without a key. Chinese and English.
 
 ## Coding Agents & Developer Tools
 
@@ -351,6 +352,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jevlint (INDXDev)](https://github.com/INDXDev/jevlint) - Scores every file in a repository against principles you choose with a decision model, Jev by default, and ranks what to refactor first, with a prompt for Claude Code or Codex to fix it. Unrelated to the other jevlint entries.
 - [dalgona](https://github.com/gosuda/dalgona) - Go coding agent (`dal`) and daemon harness (`dalgona`) whose `auto` approval mode asks Jev, by default through OpenRouter, about actions its static rules cannot settle, and declines them if the decider fails.
 - [fast-compact](https://github.com/NodarDavituri/fast-compact) - Claude Code `/fc` command that trims old tool output and saves the full text to files, with Jev choosing which outputs stay whole; without a key it keeps the newest ones. Leaves `/compact` untouched.
+- [Jevstice](https://github.com/veschin/jevstice) - oh-my-pi extension that sends an agent's requirements, plans, search candidates and acceptance claims to Jev and keeps each typed verdict as a diagnostic record, not a permission to run or stop.
 
 ## Guardrails & Safety
 
@@ -377,6 +379,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [guardrails-md](https://github.com/berget-ai/guardrails-md) - Gate for opencode, pi and Claude Code that scores every bash command for destruction, secret leaks and breaches of your `GUARDRAILS.md`, and blocks it above a threshold with a reason the agent can act on.
 - [jev-engineering](https://github.com/eugeniughelbur/jev-engineering) - Two coding-agent tools on Jev with benchmarks you can rerun: jev-gate judges each shell command an agent is about to run, and review-router, a GitHub Action, decides from a diff whether an AI reviewer must read the whole pull request.
 - [jev-enforce](https://github.com/erkamyaman/jev-enforce) - Claude Code plugin whose Stop and PostToolUse hooks ask Jev one question per rule in your CLAUDE.md or AGENTS.md and send broken rules back to Claude to fix in the same turn.
+- [Jev Security Scan](https://github.com/win4r/jev-security-scan) - Reviews Agent Skills, MCP configs and MCP source before install with local static checks and, when enabled, Jev judgments on redacted snippets, reporting file, line, category and what was not scanned. Chinese and English.
 
 ## Model Routing
 
@@ -407,6 +410,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-opus](https://github.com/WXK-AI/jev-opus) - Runs Claude Opus 5.5 with the effort level re-decided by Jev at every step, without breaking the prompt cache; CLI plus Claude Code integration.
 - [Jev Codex Harness](https://github.com/teo-nex/jev-codex-harness) - Installer and local router that adds a `jev/auto` model to Codex, with Jev picking the model and reasoning effort for each task. Public alpha, for fresh Codex profiles.
 - [jev-router (dominicrico)](https://github.com/dominicrico/jev-router) - Claude Code plugin that asks Jev before each prompt, step and subagent which Claude model and reasoning effort to use, with an effort cap and a live status line. A self-hosted System One router can stand in for Jev.
+- [jev-router (hyspacex)](https://github.com/hyspacex/jev-router) - Self-hosted router for coding agents and OpenAI-compatible clients that asks Jev about each new task, applies YAML rules to pick a model and reasoning effort, and keeps that choice for the whole session.
+- [pi-jev-router (win4r)](https://github.com/win4r/pi-jev-router) - Pi extension that asks Jev to classify a task at task boundaries and picks a model from those Pi has by capability, context size, price and recent failures; it starts in a mode that only suggests. Chinese and English.
 
 ## Command-Line Tools
 
@@ -534,6 +539,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [JevGPT](https://github.com/sunyasheng/JevGPT) - Research code for a paper in which Jev inspects sources in parallel while a language model plans the research, with frozen configs, per-item records and a script that rebuilds the paper's tables.
 - [JevGraph](https://github.com/chenmingtang830/jevgraph) - Builds candidate knowledge graphs from PDF, DOCX, PPTX or text: entity pairs are found locally, Jev picks each relation from a fixed schema, and every edge keeps its source text span. Exports to CSV and Neo4j; calls Jev through Vercel AI Gateway.
 - [OntoSmith](https://github.com/Dongbumlee/ontosmith) - Builds a Neo4j knowledge graph under an ontology you approve first: models propose candidate facts and Jev judges each one against its evidence before anything is written, with search, an API, an app and MCP on top.
+- [jev-reranker](https://github.com/hotchpotch/jev-reranker) - Python library for RAG in which Jev judges which retrieved passages are useful evidence for a query, to filter them out or rerank them.
+- [hev reranker](https://github.com/hev/reranker) - Python library that uses a decision model as a reranker in three request shapes (per pair, a batch, or one choice), Jev by default and other vendors or open models with one argument, with notebooks from a talk.
 
 ## Apps & Browser Extensions
 
@@ -612,6 +619,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [netizen](https://github.com/Seheta/netizen) - Simulates how Indonesian netizen personas would react to a post before it goes out, with Jev judging who stops scrolling, what they do and their stance, checked against real comments from past cases. Indonesian.
 - [Jev Subtitle Translator](https://github.com/GeekLinkDev/jev-subtitle-translator) - Translates SRT subtitles with an LLM of your choice through OpenRouter, keeping every cue and timestamp, then has Jev check each source and translation pair and flag lines for human review; it can also check an existing translation on its own.
 - [Practical Data](https://github.com/philrenaud/practical-data) - Chrome extension that shades the comparable columns of any web table, with a decision model choosing which columns to shade and which end is better while code does the parsing and colour. Free through the author's proxy, or with your own TypeSafe or Cloudflare key.
+- [Forma](https://github.com/GPTchatly/Forma) - Local-first website builder in which Jev picks the design settings, component variants, fields and section order for a page you describe, which you then edit and export as standalone HTML.
+- [Good Papers](https://github.com/LzyFischer/good-papers) - Paper-rating site where readers vote on ML papers and Jev answers typed questions for a panel of twenty reviewer personas, so each paper has a score before anyone votes.
 
 ## Evaluation & Benchmarks
 
@@ -777,6 +786,13 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [SparkScore](https://github.com/Enntity/sparkscore) - Serves the open d3-ultra 27B decision model on one NVIDIA DGX Spark behind a `/v1/systemone` endpoint that accepts `jev-latest`, so a Jev client needs only a new base URL.
 - [Go System One](https://github.com/rcarmo/go-system-one) - Native Go runtime that answers Noul, Choice and Score questions with Gemma 4 12B on NVIDIA GPUs through hand-written PTX kernels, serving `/v1/systemone` and a playground.
 - [dspy-wsp](https://github.com/cmpnd-ai/dspy-wsp) - DSPy optimizer in which a frontier model edits the weights of open decision models such as NanoJev, d1 and Clef, scored on a typed-decisions benchmark and served locally over `POST /v1/systemone`.
+- [MedJev](https://github.com/zfkarl/MedJev) - Research code for a medical vision-language decision model on Qwen3.5-4B that scores every candidate answer to an image question in one forward pass, with data preparation, training and evaluation scripts and released weights.
+- [Jeveration](https://github.com/Carol-lyh/Jeveration) - Research code that extends System One decisions to generation: a frozen vision-language model returns an image, or a segmentation, depth or normal map, as one joint decision in a single forward pass. Inference code and weights only.
+- [Visual Jev](https://github.com/guanxuyu-sv/Visual-Jev) - Research code that brings the Jev interface to images: encode an image and shared context once, answer several questions together, and return probabilities over each one's options. Data builders, LoRA training, evaluation and 4B and 8B checkpoints.
+- [trida-stack](https://github.com/trillion-labs/trida-stack) - Training and serving stack for Zoro-1, a 4B block-diffusion model trained both to generate text and to answer typed decisions, served behind a Jev-compatible `/v1/systemone` endpoint on SGLang, vLLM or MLX. Weights are gated on Hugging Face.
+- [karpo-decision](https://github.com/machinepulse-ai/karpo-decision) - Inference code for decision models on Gemma 4 and Qwen3.5 backbones, from 4B to 31B, text and images, served over a Jev-compatible `POST /v1/systemone` and tested against TypeSafe's Python SDK.
+- [GS1](https://github.com/bigai-nlco/GS1) - Open decision models from BIGAI that return Choice, Noul and Score distributions without generating tokens, served on a Jev-compatible `/v1/systemone` endpoint, with a playground for side-by-side runs. Chinese and English.
+- [Laya-as-a-Judge](https://github.com/radeksixi/laya-as-judge) - Python SDK, CLI and FastAPI server that put Laya and other open decision checkpoints behind a Jev-compatible `/v1/systemone` route, with judge and gating endpoints and LangGraph and FastMCP middleware. The default install is a keyword stand-in; Laya needs an extra.
 
 ## Games & Real-Time Demos
 
