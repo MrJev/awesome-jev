@@ -626,7 +626,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [PZ_Optimization](https://github.com/xD3I/PZ_Optimization) - Performance work on a game, notable here for the harness: the arithmetic and the noise floors are computed in code, and Jev is asked only for the verdict on what the numbers mean. No licence file.
 - [jevcal](https://github.com/abhixhek/jevcal) - Picks the confidence threshold that meets your accuracy target on your own data, and fails CI when a model update breaks it.
 - [Janus](https://github.com/FirasSX914/Janus) - Measures Jev's calibration and confidence-based routing on Banking77 and Web of Science.
-- [jev-benchmarks](https://github.com/AbdelStark/jev-benchmarks) - Probability-aware evaluation: calibration, and how much work can be automated at a fixed error budget.
+- [jev-benchmarks](https://github.com/AbdelStark/jev-benchmarks) *(unmaintained)* - Probability-aware evaluation: calibration, and how much work can be automated at a fixed error budget.
 - [inference-benchmarks](https://github.com/iammrduncan/inference-benchmarks) - Compares LLM structured output with Jev on latency, cost, and judgment quality.
 - [Jev Capability Atlas](https://github.com/Zaious/jev-capability-atlas) - A bilingual map of where Jev holds up and where it breaks, built from recorded API calls rather than a leaderboard. Its LICENSE is not a recognised open-source license.
 - [jev-align](https://github.com/sutro-sh/jev-align) - CLI from Sutro that finds the examples a Jev function is least sure about, asks you to label them, and uses GEPA to improve the question.
@@ -839,7 +839,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev Trade](https://github.com/aowang-ai/jev-trade) - Hyperliquid trading bot based on jev-trader, where Jev decides buy, sell, or hold on every tick for five coins. Dry-runs without a private key.
 - [Jev X Sentiment Analysis](https://github.com/brainstormity/Jev-X-Sentiment-Analysis) - Crypto terminal that reads up to 1,000 posts about a ticker alongside market and funding data and turns them into a buy, sell, hold, or take-profit call. No license file at the time of writing. Not financial advice.
 - [Jevinik](https://github.com/unicodeveloper/jevocks) - Stock decision terminal that gathers live market evidence and returns a typed view on the next thirty days, with the sources it used.
-- [jev_stock](https://github.com/sosopop/jev_stock) - Experiment in forecasting Hong Kong stock direction: it builds a past-only state from market data, asks for an up, flat or down call, and renders a standalone report.
+- [jev_stock](https://github.com/sosopop/jev_stock) *(unmaintained)* - Experiment in forecasting Hong Kong stock direction: it builds a past-only state from market data, asks for an up, flat or down call, and renders a standalone report.
 - [Warren Duffer](https://github.com/arimanyus/warrenduffer) - Intraday bot for two Indian brokers where Jev ranks Nifty-50 names in two stages; it places real MIS orders and has no paper-trading mode. Not financial advice.
 - [beebots](https://github.com/imikerussell/beebots) - Three trading bots race on OKX perpetual futures with every decision typed and a risk layer in plain code; paper trading is the default. Not financial advice.
 - [Jeeva](https://github.com/SaratAngajalaoffl/jeeva) - Mid-frequency trading framework for Hyperliquid perpetuals whose decision makers are typed questions, in a TypeScript API and a Rust engine.
