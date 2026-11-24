@@ -183,7 +183,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [ruby_llm-typesafe](https://github.com/kieranklaassen/ruby_llm-typesafe) - TypeSafe provider for RubyLLM 2.
 - [hono-jev-router](https://github.com/yusukebe/hono-jev-router) - Experimental Hono router that matches requests against plain-language descriptions instead of paths.
 - [jev-tree](https://github.com/reachjalil/jev-tree) *(unmaintained)* - Recursive Choice over a taxonomy, for picking among more options than a single Choice question allows.
-- [n8n-nodes-typesafe](https://github.com/zampierid4p/n8n-nodes-typesafe) *(unmaintained)* - n8n community node for asking typed questions inside workflows.
+- [n8n-nodes-typesafe](https://github.com/zampierid4p/n8n-nodes-typesafe) *(unmaintained)* - Community node for n8n that asks typed questions inside workflows.
 - [Jev for Home Assistant](https://github.com/AboveColin/HA-Jev) - Home Assistant integration that turns Jev's answers about your house into entities.
 - [jevcache](https://github.com/hyperspaceai/jevcache) *(unmaintained)* - Local decision cache keyed on (model, schema, state), with redaction and canonicalisation before hashing, for cheaper repeats and deterministic replay in CI. No license file at the time of writing.
 - [invalidate](https://github.com/chopratejas/invalidate) *(unmaintained)* - Gives every remembered fact a lease and asks Jev whether new evidence ends it, so an agent's memory can be made to go stale on purpose.
@@ -458,7 +458,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [voice-browser](https://github.com/moritzkremb/jev-voice-browser) *(unmaintained)* - Voice-controlled Chromium: on each partial transcript, one Jev request judges intent, target element, and whether the command is complete or destructive.
 - [JevScout](https://github.com/hqman/JevScout) *(unmaintained)* - Coding-agent skill that drives Chrome over CDP to look for jobs on company sites, with Jev scoring pages and links.
 - [macbrow](https://github.com/timpratim/macbrow) *(unmaintained)* - Say a command and it runs as AppleScript, or say a web task and it drives Chrome. Its README opens with a warning about an early version tidying a Desktop rather thoroughly.
-- [jev-use](https://github.com/savka777/jev-use) *(unmaintained)* - macOS computer use by voice or typing that reads the screen through the Accessibility tree rather than screenshots. Key stored in the Keychain.
+- [jev-use](https://github.com/savka777/jev-use) *(unmaintained)* - Computer use on macOS, by voice or typing, that reads the screen through the Accessibility tree rather than screenshots. Key stored in the Keychain.
 - [Jev Voice](https://github.com/kevinbadi/jev-voice) *(unmaintained)* - Local whisper.cpp for the transcript, then one Jev request picks the action and its typed arguments; code owns execution.
 - [Jev macOS Loop](https://github.com/jcpsimmons/jev-macos-loop) *(unmaintained)* - Native macOS GUI automation on Apple silicon: OmniParser CoreML and Apple Vision OCR identify controls locally, Jev selects the action. AGPL-3.0.
 - [Jev Desktop](https://github.com/yikangy873-gif/jev-desktop) - Adds a bounded decision loop to Codex Computer Use for browser tabs and native macOS apps.
@@ -545,7 +545,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 
 - [Jev × WebMCP](https://github.com/sdras/jev-webmcp-extension) *(unmaintained)* - Chrome extension that discovers the WebMCP tools a page exposes and has Jev choose which one a sentence means, then fills in its arguments.
 - [JevIntent](https://github.com/Nisaka520/JevIntent) - WeChat plugin that reads intent, tone and reply posture from a long-pressed message and shows the verdict locally. Sends nothing and changes no chat history. Chinese.
-- [jev-哑巴微信](https://github.com/wuxie888/jev-yaba-wechat) *(unmaintained)* - macOS helper beside the WeChat window: an LLM drafts several possible replies and Jev scores them, leaving you to press send. Chinese.
+- [jev-哑巴微信](https://github.com/wuxie888/jev-yaba-wechat) *(unmaintained)* - Helper beside the WeChat window on macOS: an LLM drafts several possible replies and Jev scores them, leaving you to press send. Chinese.
 - [Jev demos](https://github.com/mayank953/Jev) *(unmaintained)* - Seven side-by-side demos that run with no keys and label themselves simulated. Each visitor's key gets its own budget by fingerprint, and any key is redacted out of upstream errors.
 - [Passage (Working Memory Jev)](https://github.com/AustinAWay/Working-Memory-Jev) *(unmaintained)* - Localhost tool for educators that flags where instructional text may ask a reader to hold too many ideas at once. Its evaluation opens by naming the two tests its own model fails. Custom licence, not open source.
 - [RikkaHub Plus](https://github.com/MiaoWuNYA/rikkahub-sillytavern-android) - Android chat client with a built-in Jev client: it scores stored memories for relevance in batches before retrieval, and exposes Jev to the model as a callable judgment tool. Endpoint and key are set in its settings. Chinese documentation.
