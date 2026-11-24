@@ -404,3 +404,11 @@ iroha1145/DSH-Modern-UI
 YumenoSayuri/dsh-vcprag
 # Jev optional: one of three decision providers, rules by default, in a second-brain OS. Not open source
 whitebeardit/whitebeard-os
+# Not a Jev list: an awesome list of SEO and GEO skills with one Jev entry, jev-seo, which we list. Chinese and English
+UnderleveledBuilder/awesome-seo-geo-skills
+# Jev optional: one of two decision providers, OpenAI by default, in a test runner for agent coding rules
+feuersteiner/agentests
+# Jev optional: TypeSafe System One is one channel among many in a .NET port of an LLM gateway. Chinese
+geffzhang/axonhub.net
+# Not a Jev project: an AI team's handbook with no Jev call; the model it describes is served by MetaDecision-31B-Rain, which we list
+chenyuwang166-oss/fleet-handbook

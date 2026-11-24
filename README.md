@@ -216,6 +216,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev Engineering cookbook](https://github.com/Jev-Engineering/cookbook) - Planned set of sixty notebook recipes for Choice, Noul and Score patterns, 33 published so far, each runnable offline on fixtures and labelled with the mode it ran in.
 - [switch](https://github.com/osolmaz/switch) - TypeScript framework for decision-model harnesses: your program offers a short list of next steps and the model picks one at a time until it can answer, with chess, wikirace and rubric-judge examples run on Jev.
 - [Jev-Interaction](https://github.com/native-bond-lab/Jev-Interaction) - Full-duplex voice agents built on a speech-to-text, LLM and TTS cascade, where each turn-taking moment (wait, yield, backchannel, carry on) is a plain-language question for Jev.
+- [TypeSafe Conversation](https://github.com/the-sof/home-assistant-typesafe-conversation-agent) - Home Assistant conversation agent that resolves device commands and questions about the home from Jev's typed answers, or from an open decision model on Ollama; a language model, if you add one, only writes text.
 
 ## Agent Integrations (MCP & Skills)
 
@@ -620,6 +621,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Practical Data](https://github.com/philrenaud/practical-data) - Chrome extension that shades the comparable columns of any web table, with a decision model choosing which columns to shade and which end is better while code does the parsing and colour. Free through the author's proxy, or with your own TypeSafe or Cloudflare key.
 - [Forma](https://github.com/GPTchatly/Forma) - Local-first website builder in which Jev picks the design settings, component variants, fields and section order for a page you describe, which you then edit and export as standalone HTML.
 - [Good Papers](https://github.com/LzyFischer/good-papers) - Paper-rating site where readers vote on ML papers and Jev answers typed questions for a panel of twenty reviewer personas, so each paper has a score before anyone votes.
+- [OS1](https://github.com/nickvasilescu/os1-her) - Voice-first personal assistant inspired by the film Her, in which Jev decides when a card appears on screen, how urgent an incoming item is and how to rank the inbox, while an LLM talks and a Hermes agent runs longer tasks. Built on LiveKit, Fish Audio and Composio.
 
 ## Evaluation & Benchmarks
 
@@ -792,6 +794,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [karpo-decision](https://github.com/machinepulse-ai/karpo-decision) - Inference code for decision models on Gemma 4 and Qwen3.5 backbones, from 4B to 31B, text and images, served over a Jev-compatible `POST /v1/systemone` and tested against TypeSafe's Python SDK.
 - [GS1](https://github.com/bigai-nlco/GS1) - Open decision models from BIGAI that return Choice, Noul and Score distributions without generating tokens, served on a Jev-compatible `/v1/systemone` endpoint, with a playground for side-by-side runs. Chinese and English.
 - [Laya-as-a-Judge](https://github.com/radeksixi/laya-as-judge) - Python SDK, CLI and FastAPI server that put Laya and other open decision checkpoints behind a Jev-compatible `/v1/systemone` route, with judge and gating endpoints and LangGraph and FastMCP middleware. The default install is a keyword stand-in; Laya needs an extra.
+- [medical-jev-train](https://github.com/JuneYaooo/medical-jev-train) - Training and evaluation code for medical-jev-4b, a Qwen3.5-4B LoRA that answers medical multiple-choice questions on a local GPU, with leakage removal, external benchmarks, regression checks on other domains and hash-verified releases. Research use. Chinese and English.
+- [MetaDecision-31B-Rain](https://github.com/chenyuwang166-oss/MetaDecision-31B-Rain) - Self-hosted service for a decision model built from Gemma 4 31B and a LoRA adapter, serving a Jev-compatible `POST /v1/systemone` for the JevBench harness. Needs an NVIDIA GPU with 80 GB of memory.
 
 ## Games & Real-Time Demos
 
