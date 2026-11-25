@@ -412,3 +412,7 @@ feuersteiner/agentests
 geffzhang/axonhub.net
 # Not a Jev project: an AI team's handbook with no Jev call; the model it describes is served by MetaDecision-31B-Rain, which we list
 chenyuwang166-oss/fleet-handbook
+# Jev optional: an off-by-default fallback for unreadable banners in a cookie-rejecting Chrome extension
+upstrategylab/cookie-away
+# Jev optional: an opt-in decision gate in an Obsidian vault template for AI agents; without it the gate is a written critique
+Saud-Zaid/Stratum
