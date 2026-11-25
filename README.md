@@ -444,6 +444,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [tisco](https://github.com/ailiahq/tisco) - Terminal tool that transcribes a folder of video clips, has Jev judge the transcripts against a plain-language request, and previews every move or rename for approval before anything changes, with undo.
 - [Nouli](https://github.com/nouli-ai/nouli) - Terminal app, CLI and Rust library that keeps a ledger of decisions and the facts behind them, so later questions to Jev or another System One service can reuse earlier answers.
 - [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) - Rust CLI and MCP server for SEO and answer-engine audits of local content and live sites, with Jev scoring pages under a per-run spend cap and a rules-only mode without a key.
+- [jevcut](https://github.com/VBS2004/jevcut) - Cuts long videos such as podcasts and talks into standalone short clips: code transcribes the video and enumerates possible cut points, and Jev judges which moments are worth clipping and where each one starts and ends, without ever naming a timestamp itself.
 
 ## Browser & Computer Use
 
@@ -493,6 +494,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [jev-browse](https://github.com/danielnc/jev-browse) - Helpers for browser-harness that let Claude Code or Codex hand off a whole website sub-task in one call, with Jev deciding each step and returning the outcome or a typed reason it stopped. A port of jev-ultrafast.
 - [Jev Desktop (Windows)](https://github.com/jacks3tr/Jev-Desktop) - Lets an agent hand off a Windows desktop task through MCP or the command line: Jev observes windows, chooses controls and types supplied text, and the agent gets the result or a request for help. Alpha.
 - [CUA-JEV](https://github.com/ZJU-REAL/CUA-JEV) - Computer-use agent framework for Windows: a text model proposes typed actions, Jev picks the action and the route that runs it (GUI, DOM, UIA, COM, CLI, MCP or file API), and a guard and a separate verifier check each step.
+- [karpo-browser](https://github.com/machinepulse-ai/karpo-browser) - Browser for AI agents, as an MCP server and Claude Code plugin, in which your agent's model plans and reads while a decision model picks each click, keystroke and scroll from the page's own options. Jev through OpenRouter by default, or any System One endpoint you host.
 
 ## Data & Observability
 
@@ -796,6 +798,8 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Laya-as-a-Judge](https://github.com/radeksixi/laya-as-judge) - Python SDK, CLI and FastAPI server that put Laya and other open decision checkpoints behind a Jev-compatible `/v1/systemone` route, with judge and gating endpoints and LangGraph and FastMCP middleware. The default install is a keyword stand-in; Laya needs an extra.
 - [medical-jev-train](https://github.com/JuneYaooo/medical-jev-train) - Training and evaluation code for medical-jev-4b, a Qwen3.5-4B LoRA that answers medical multiple-choice questions on a local GPU, with leakage removal, external benchmarks, regression checks on other domains and hash-verified releases. Research use. Chinese and English.
 - [MetaDecision-31B-Rain](https://github.com/chenyuwang166-oss/MetaDecision-31B-Rain) - Self-hosted service for a decision model built from Gemma 4 31B and a LoRA adapter, serving a Jev-compatible `POST /v1/systemone` for the JevBench harness. Needs an NVIDIA GPU with 80 GB of memory.
+- [laya-apple](https://github.com/tc3oliver/laya-apple) - Runs the open Laya decision model on a Mac's GPU and Neural Engine together, using the Neural Engine only where it matches upstream's answers, behind a Jev-style `/v1/systemone` server. Chinese and English.
+- [MicroLLM](https://github.com/jmrenouard/MicroLLM) - Local decision engine for Noul, Choice, Score and multi-label questions that runs a cascade of small encoders on CPU, with abstention, behind a Jev-compatible `POST /v1/systemone`, plus a Python client, MCP server and Gradio demo.
 
 ## Games & Real-Time Demos
 
@@ -866,6 +870,7 @@ For tools that need no Jev at all, the whole Open Models & Reproductions section
 - [Jev 따라하기 examples](https://github.com/ady95/jev_tutorial) - Runnable example per chapter for a Korean WikiDocs book on Jev, from a first call through calibration and guardrails to comparisons with LLMs and Laya.
 - [NetworkChuck Jev guide](https://github.com/theNetworkChuck/jev-guide) - Five-chapter companion to a NetworkChuck video: the Playground first, then a first API call, the official skill in a coding agent, and a model router where Jev picks a small, medium or large model per request.
 - [Awesome Jev Prompts](https://github.com/vicfei/awesome-jev-prompts) - Question patterns, anti-patterns and calibration notes for Jev and other System One engines, sorted by question type and job, with a linter. English and Chinese.
+- [upskilling-mwc-taller](https://github.com/midudev/upskilling-mwc-taller) - Workshop by midudev on MCP UI, WebMCP, Jev and in-browser AI, with a live-coded first Jev decision and a proxy the exercises call. Spanish.
 
 ## Related Lists
 
