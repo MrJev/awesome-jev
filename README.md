@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**683 entries · every one checked to actually call Jev · last reviewed 2026-11-24**
+**688 entries · every one checked to actually call Jev · last reviewed 2026-11-25**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,22 +56,22 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-11-24.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-11-25.
 
 | Project                                   |  Stars | This week |
 | ----------------------------------------- | -----: | --------: |
-| vercel-labs/agent-desktop                 | 26,450 |    +1,603 |
-| NandhaKishorM/laya                        | 35,922 |      +293 |
-| browser-use/jev-ultrafast                 | 24,723 |      +162 |
-| native-bond-lab/Jev-Interaction           |    130 |       +78 |
-| jev-chat/jev-chat-jarvis                  |  8,506 |       +77 |
-| CopilotKit/openfuse                       |  6,587 |       +76 |
-| jaredpalmer/kev                           | 10,100 |       +68 |
-| Parcha-ai/agentrun                        |  1,260 |       +68 |
-| shengjidaguai-china/goutoujunshi-jev-chat |    698 |       +47 |
-| INDXDev/jevlint                           |    153 |       +42 |
+| vercel-labs/agent-desktop                 | 26,590 |    +1,430 |
+| NandhaKishorM/laya                        | 35,952 |      +290 |
+| browser-use/jev-ultrafast                 | 24,735 |      +119 |
+| native-bond-lab/Jev-Interaction           |    138 |       +81 |
+| jaredpalmer/kev                           | 10,110 |       +64 |
+| jev-chat/jev-chat-jarvis                  |  8,511 |       +62 |
+| CopilotKit/openfuse                       |  6,585 |       +60 |
+| Parcha-ai/agentrun                        |  1,267 |       +52 |
+| shengjidaguai-china/goutoujunshi-jev-chat |    699 |       +48 |
+| INDXDev/jevlint                           |    153 |       +40 |
 
-**New to this list this week:** `zfkarl/MedJev`, `Carol-lyh/Jeveration`, `nickvasilescu/os1-her`, `hotchpotch/jev-reranker`, `guanxuyu-sv/Visual-Jev` and 15 more.
+**New to this list this week:** `zfkarl/MedJev`, `Carol-lyh/Jeveration`, `machinepulse-ai/karpo-browser`, `nickvasilescu/os1-her`, `hotchpotch/jev-reranker` and 20 more.
 
 Sortable, with hands-on reviews: [mrjev.com/projects](https://mrjev.com/projects/?sort=rising).
 
