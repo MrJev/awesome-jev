@@ -10,7 +10,7 @@
 Jev answers structured questions (**Choice**, **Score**, **Noul**) about program state in a single fast pass. The projects below use it for the questions that come up again and again in real software: *should we, which one, how much, what next?* Open-ended generation and deep reasoning still go to a conventional LLM.
 
 <!-- stats:start -->
-**688 entries · every one checked to actually call Jev · last reviewed 2026-11-27**
+**688 entries · every one checked to actually call Jev · last reviewed 2026-11-28**
 <!-- stats:end -->
 
 There are over a thousand Jev repositories on GitHub, and most of them only mention it. This list is selective, and the bar is written down:
@@ -56,20 +56,20 @@ Browse and filter this list, and read guides on getting started and pricing, at 
 
 ## Trending
 
-Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-11-27.
+Stars gained in the last 7 days, from our own daily snapshots. Updated 2026-11-28.
 
 | Project                         |  Stars | This week |
 | ------------------------------- | -----: | --------: |
-| vercel-labs/agent-desktop       | 27,030 |    +1,363 |
-| NandhaKishorM/laya              | 36,005 |      +273 |
-| native-bond-lab/Jev-Interaction |    175 |       +99 |
-| browser-use/jev-ultrafast       | 24,770 |       +79 |
-| jaredpalmer/kev                 | 10,140 |       +69 |
-| jev-chat/jev-chat-jarvis        |  8,537 |       +61 |
-| CopilotKit/openfuse             |  6,599 |       +57 |
-| Parcha-ai/agentrun              |  1,275 |       +43 |
+| vercel-labs/agent-desktop       | 27,185 |    +1,319 |
+| NandhaKishorM/laya              | 36,024 |      +267 |
+| native-bond-lab/Jev-Interaction |    195 |      +118 |
+| browser-use/jev-ultrafast       | 24,782 |       +84 |
+| jaredpalmer/kev                 | 10,148 |       +72 |
+| jev-chat/jev-chat-jarvis        |  8,538 |       +52 |
+| CopilotKit/openfuse             |  6,606 |       +51 |
 | INDXDev/jevlint                 |    155 |       +42 |
-| nokia-applied-research/AnyJev   |  1,665 |       +35 |
+| nokia-applied-research/AnyJev   |  1,673 |       +41 |
+| Parcha-ai/agentrun              |  1,278 |       +35 |
 
 **New to this list this week:** `shengjidaguai-china/goutoujunshi-chat`, `zfkarl/MedJev`, `Carol-lyh/Jeveration`, `machinepulse-ai/karpo-browser`, `nickvasilescu/os1-her` and 21 more.
 
